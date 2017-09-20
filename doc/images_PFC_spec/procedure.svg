@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG procedure.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="7.67241in" height="2.98416in"
+		viewBox="0 0 552.413 214.86" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
+	<v:documentProperties v:langID="1049">
+		<v:userDefs>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)"/>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:#000000;stroke-width:1.5}
+		.st2 {fill:#000000;font-family:Calibri;font-size:1.24999em}
+		.st3 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50393"
+				v:shadowOffsetY="-8.50393"/>
+		<v:layer v:name="Соединительная линия" v:index="0"/>
+		<g id="group51-1" transform="translate(19.5,-19.2053)" v:mID="51" v:groupContext="group">
+			<title>Лист.51</title>
+			<g id="shape1-2" v:mID="1" v:groupContext="shape" transform="translate(8.80605E-007,-54.567)">
+				<title>Прямоугольник</title>
+				<desc>Идентификатор</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(3.99999,3.99999,3.99999,3.99999)" v:tabSpace="42.5196"/>
+				<v:textRect cx="56.6928" cy="172.34" width="113.39" height="85.0393"/>
+				<rect x="0" y="129.82" width="113.386" height="85.0393" class="st1"/>
+				<text x="6.39" y="176.84" class="st2" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Идентификатор</text>			</g>
+			<g id="shape2-5" v:mID="2" v:groupContext="shape" transform="translate(180.275,227.182) rotate(135)">
+				<title>Лист.2</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape5-8" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(49.0095,-176.904)">
+				<title>Динамическая соединительная линия.5</title>
+				<path d="M6.49 214.86 L7.68 214.86 L7.68 252.16" class="st3"/>
+			</g>
+			<g id="shape16-11" v:mID="16" v:groupContext="shape" v:layerMember="0" transform="translate(63.7795,-54.567)">
+				<title>Динамическая соединительная линия</title>
+				<path d="M-7.09 214.86 L-7.09 269.43" class="st3"/>
+			</g>
+			<g id="shape48-14" v:mID="48" v:groupContext="shape" transform="translate(264.995,283.875) rotate(135)">
+				<title>Лист.48</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape49-17" v:mID="49" v:groupContext="shape" transform="translate(236.968,-76.3358) rotate(45.0001)">
+				<title>Лист.49</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape50-20" v:mID="50" v:groupContext="shape" transform="translate(151.929,-20.2822) rotate(45.0001)">
+				<title>Лист.50</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+		</g>
+		<g id="group52-23" transform="translate(153.071,-18.75)" v:mID="52" v:groupContext="group">
+			<title>Лист.52</title>
+			<g id="shape53-24" v:mID="53" v:groupContext="shape" transform="translate(8.80605E-007,-54.567)">
+				<title>Прямоугольник</title>
+				<desc>Идентификатор</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(3.99999,3.99999,3.99999,3.99999)" v:tabSpace="42.5196"/>
+				<v:textRect cx="56.6928" cy="172.34" width="113.39" height="85.0393"/>
+				<rect x="0" y="129.82" width="113.386" height="85.0393" class="st1"/>
+				<text x="6.39" y="176.84" class="st2" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Идентификатор</text>			</g>
+			<g id="shape54-27" v:mID="54" v:groupContext="shape" transform="translate(180.275,227.182) rotate(135)">
+				<title>Лист.54</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape55-30" v:mID="55" v:groupContext="shape" v:layerMember="0" transform="translate(49.0095,-176.904)">
+				<title>Динамическая соединительная линия.5</title>
+				<path d="M6.49 214.86 L7.68 214.86 L7.68 252.16" class="st3"/>
+			</g>
+			<g id="shape56-33" v:mID="56" v:groupContext="shape" v:layerMember="0" transform="translate(63.7795,-54.567)">
+				<title>Динамическая соединительная линия</title>
+				<path d="M-7.09 214.86 L-7.09 269.43" class="st3"/>
+			</g>
+			<g id="shape57-36" v:mID="57" v:groupContext="shape" transform="translate(264.995,283.875) rotate(135)">
+				<title>Лист.57</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape58-39" v:mID="58" v:groupContext="shape" transform="translate(236.968,-76.3358) rotate(45.0001)">
+				<title>Лист.58</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+		</g>
+		<g id="group60-42" transform="translate(283.465,-18.75)" v:mID="60" v:groupContext="group">
+			<title>Лист.60</title>
+			<g id="shape61-43" v:mID="61" v:groupContext="shape" transform="translate(8.80605E-007,-54.567)">
+				<title>Прямоугольник</title>
+				<desc>Идентификатор</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(3.99999,3.99999,3.99999,3.99999)" v:tabSpace="42.5196"/>
+				<v:textRect cx="56.6928" cy="172.34" width="113.39" height="85.0393"/>
+				<rect x="0" y="129.82" width="113.386" height="85.0393" class="st1"/>
+				<text x="6.39" y="176.84" class="st2" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Идентификатор</text>			</g>
+			<g id="shape62-46" v:mID="62" v:groupContext="shape" transform="translate(180.275,227.182) rotate(135)">
+				<title>Лист.62</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape63-49" v:mID="63" v:groupContext="shape" v:layerMember="0" transform="translate(49.0095,-176.904)">
+				<title>Динамическая соединительная линия.5</title>
+				<path d="M6.49 214.86 L7.68 214.86 L7.68 252.16" class="st3"/>
+			</g>
+			<g id="shape64-52" v:mID="64" v:groupContext="shape" v:layerMember="0" transform="translate(63.7795,-54.567)">
+				<title>Динамическая соединительная линия</title>
+				<path d="M-7.09 214.86 L-7.09 269.43" class="st3"/>
+			</g>
+			<g id="shape66-55" v:mID="66" v:groupContext="shape" transform="translate(236.968,-76.3358) rotate(45.0001)">
+				<title>Лист.66</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+		</g>
+		<g id="group68-58" transform="translate(419.528,-18.75)" v:mID="68" v:groupContext="group">
+			<title>Лист.68</title>
+			<g id="shape69-59" v:mID="69" v:groupContext="shape" transform="translate(8.80605E-007,-54.567)">
+				<title>Прямоугольник</title>
+				<desc>Идентификатор</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(3.99999,3.99999,3.99999,3.99999)" v:tabSpace="42.5196"/>
+				<v:textRect cx="56.6928" cy="172.34" width="113.39" height="85.0393"/>
+				<rect x="0" y="129.82" width="113.386" height="85.0393" class="st1"/>
+				<text x="6.39" y="176.84" class="st2" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Идентификатор</text>			</g>
+			<g id="shape70-62" v:mID="70" v:groupContext="shape" transform="translate(180.275,227.182) rotate(135)">
+				<title>Лист.70</title>
+				<path d="M0 214.86 L40.09 214.86" class="st3"/>
+			</g>
+			<g id="shape71-65" v:mID="71" v:groupContext="shape" v:layerMember="0" transform="translate(49.0095,-176.904)">
+				<title>Динамическая соединительная линия.5</title>
+				<path d="M6.49 214.86 L7.68 214.86 L7.68 252.16" class="st3"/>
+			</g>
+			<g id="shape72-68" v:mID="72" v:groupContext="shape" v:layerMember="0" transform="translate(63.7795,-54.567)">
+				<title>Динамическая соединительная линия</title>
+				<path d="M-7.09 214.86 L-7.09 269.43" class="st3"/>
+			</g>
+		</g>
+	</g>
+</svg>
