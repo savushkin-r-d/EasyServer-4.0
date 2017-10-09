@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="28cm" viewBox="59 9 192 553" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="70,10 110,10 90,40 "/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #ffffff" x1="70" y1="562" x2="110" y2="562"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="70,560 90,530 110,560 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="80" y1="70" x2="100" y2="70"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="80" y1="73" x2="100" y2="73"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="104" y="70.5889">
+      <tspan x="104" y="70.5889">Температура</tspan>
+      <tspan x="104" y="77.6444">смеси &gt;= 28C?</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="40" x2="90" y2="70"/>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="90" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="100" x2="70" y2="90"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="90" x2="120" y2="100"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="107.117">
+      <tspan x="90" y="107.117">Внесение закваски</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="73" x2="90" y2="90"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="170" y1="70" x2="190" y2="70"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="170" y1="73" x2="190" y2="73"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="194" y="70.5889">
+      <tspan x="194" y="70.5889">Температура</tspan>
+      <tspan x="194" y="77.6444">смеси &lt; 28C?</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="180,70 180,55 90,55 "/>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="150" y="90" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="100" x2="160" y2="90"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="200" y1="90" x2="210" y2="100"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="107.117">
+      <tspan x="180" y="107.117">Подогрев основы</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="180" y1="73" x2="180" y2="90"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="105" x2="126.5" y2="105"/>
+    <polygon style="fill: #000000" points="126.5,102 120.5,105 126.5,108 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="126.5,102 120.5,105 126.5,108 "/>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="140" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="150" x2="70" y2="140"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="140" x2="120" y2="150"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="157.117">
+      <tspan x="90" y="157.117">Заквашивание</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="190" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="200" x2="70" y2="190"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="190" x2="120" y2="200"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="207.117">
+      <tspan x="90" y="207.117">Сквашивание</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="240" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="250" x2="70" y2="240"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="240" x2="120" y2="250"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="257.117">
+      <tspan x="90" y="257.117">Нагрев</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="290" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="300" x2="70" y2="290"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="290" x2="120" y2="300"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="307.117">
+      <tspan x="90" y="307.117">Разрезка</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="340" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="350" x2="70" y2="340"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="340" x2="120" y2="350"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="357.117">
+      <tspan x="90" y="357.117">Отделение сыворотки</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="120" x2="90" y2="140"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="170" x2="90" y2="190"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="220" x2="90" y2="239.517"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="289.517" x2="90" y2="270"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="320" x2="90" y2="340"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="79.6592" y1="409.754" x2="99.6592" y2="409.754"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="79.6592" y1="412.978" x2="99.6592" y2="412.978"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="103.659" y="414.02">
+      <tspan x="103.659" y="414.02">Требуется?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="170" y1="411.06" x2="190" y2="411.06"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="170" y1="414.06" x2="190" y2="414.06"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="194" y="415.177">
+      <tspan x="194" y="415.177">Не требуется?</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="370" x2="89.6592" y2="409.754"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="89.8296,389.877 180,389.877 180,411.06 "/>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="150" y="431.06" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="441.06" x2="160" y2="431.06"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="200" y1="431.06" x2="210" y2="441.06"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="448.177">
+      <tspan x="180" y="448.177">Вымешивание</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="180" y1="414.06" x2="180" y2="431.06"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="180,461.06 180,470 250,470 250,380 96.5,380 "/>
+    <polygon style="fill: #000000" points="96.5,377 90.5,380 96.5,383 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="96.5,377 90.5,380 96.5,383 "/>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="430" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="440" x2="70" y2="430"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="430" x2="120" y2="440"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="447.117">
+      <tspan x="90" y="447.117">Откачка сыворотки</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="480" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="490" x2="70" y2="480"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="110" y1="480" x2="120" y2="490"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="497.117">
+      <tspan x="90" y="497.117">Готов к выдаче</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="460" x2="90" y2="480"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="510" x2="90" y2="530"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="89.6592" y1="412.978" x2="90" y2="430"/>
+</svg>

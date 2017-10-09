@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sheet xmlns="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns">
+<!--Dia-Version: 0.97.2-->
+<!--File: C:\Users\id.BMK\.dia\sheets\PFC.sheet-->
+<!--Date: Sat Oct 07 23:17:10 2017-->
+<!--For: id-->
+
+<name>PFC</name>
+<description></description>
+<contents>
+<!--add shapes here-->
+<object name="PFC - recipe procedure">
+<description>Recipe procedure</description></object><object name="PFC - end">
+<description>End</description></object><object name="PFC - begin">
+<description>Begin</description></object><object name="PFC - parallel">
+<description>Parallel</description></object><object name="PFC - allocation">
+<description>Allocation</description></object></contents></sheet>
