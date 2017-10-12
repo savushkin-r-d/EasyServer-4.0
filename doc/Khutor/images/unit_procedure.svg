@@ -95,15 +95,17 @@
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="79.6592" y1="409.754" x2="99.6592" y2="409.754"/>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="79.6592" y1="412.978" x2="99.6592" y2="412.978"/>
-    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="103.659" y="414.02">
-      <tspan x="103.659" y="414.02">Требуется?</tspan>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="103.659" y="410.492">
+      <tspan x="103.659" y="410.492">Вымешивание </tspan>
+      <tspan x="103.659" y="417.548">не требуется?</tspan>
     </text>
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="170" y1="411.06" x2="190" y2="411.06"/>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="170" y1="414.06" x2="190" y2="414.06"/>
-    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="194" y="415.177">
-      <tspan x="194" y="415.177">Не требуется?</tspan>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="194" y="411.649">
+      <tspan x="194" y="411.649">Вымешивание</tspan>
+      <tspan x="194" y="418.704">требуется?</tspan>
     </text>
   </g>
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="370" x2="89.6592" y2="409.754"/>

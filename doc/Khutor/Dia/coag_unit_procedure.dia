@@ -1024,7 +1024,7 @@
         <dia:point val="3.98296,20.4877"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="3.98296,20.3185;6.74046,20.8585"/>
+        <dia:rectangle val="3.98296,20.1336;7.21146,21.0519"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1060,7 +1060,8 @@
       <dia:attribute name="text">
         <dia:composite type="text">
           <dia:attribute name="string">
-            <dia:string>#Требуется?#</dia:string>
+            <dia:string>#Вымешивание 
+не требуется?#</dia:string>
           </dia:attribute>
           <dia:attribute name="font">
             <dia:font family="sans" style="0" name="Helvetica"/>
@@ -1069,7 +1070,7 @@
             <dia:real val="0.35277777983377007"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="5.18296,20.701"/>
+            <dia:point val="5.18296,20.5246"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -1094,7 +1095,7 @@
         <dia:point val="8.5,20.553"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="8.5,20.3763;11.65,20.9163"/>
+        <dia:rectangle val="8.5,20.1914;11.641,21.1097"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1130,7 +1131,8 @@
       <dia:attribute name="text">
         <dia:composite type="text">
           <dia:attribute name="string">
-            <dia:string>#Не требуется?#</dia:string>
+            <dia:string>#Вымешивание
+требуется?#</dia:string>
           </dia:attribute>
           <dia:attribute name="font">
             <dia:font family="sans" style="0" name="Helvetica"/>
@@ -1139,7 +1141,7 @@
             <dia:real val="0.35277777983377007"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="9.7,20.7588"/>
+            <dia:point val="9.7,20.5824"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -1183,14 +1185,14 @@
     </dia:object>
     <dia:object type="Standard - ZigZagLine" version="1" id="O24">
       <dia:attribute name="obj_pos">
-        <dia:point val="4.49148,19.4939"/>
+        <dia:point val="4.49148,19.4938"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
         <dia:rectangle val="4.46648,19.4688;9.025,20.578"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="4.49148,19.4939"/>
-        <dia:point val="9,19.4939"/>
+        <dia:point val="4.49148,19.4938"/>
+        <dia:point val="9,19.4938"/>
         <dia:point val="9,20.553"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
