@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="9cm" height="6cm" viewBox="29 9 168 102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="30" y="20" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="30" y1="30" x2="40" y2="20"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="60" y="37.1167">
+      <tspan x="60" y="37.1167">Идентификатор</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="30" y="70" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="30" y1="80" x2="40" y2="70"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="60" y="87.1167">
+      <tspan x="60" y="87.1167">Идентификатор</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="110" x2="60" y2="100"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="70" x2="60" y2="50.4834"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="20" x2="60" y2="10"/>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="130" y="40" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="130" y1="50" x2="140" y2="40"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="57.1167">
+      <tspan x="160" y="57.1167">Идентификатор</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="160" y1="84.4983" x2="160" y2="70"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="160" y1="40" x2="160" y2="20.4834"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="84.4983" x2="170" y2="84.4983"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="87.4983" x2="170" y2="87.4983"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="174" y="88.615">
+      <tspan x="174" y="88.615"></tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="160" y1="87.4983" x2="160" y2="100"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #ffffff" x1="196" y1="40" x2="196" y2="70"/>
+</svg>
