@@ -127,18 +127,18 @@
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O0" connection="0"/>
-        <dia:connection handle="1" to="O27" connection="4"/>
+        <dia:connection handle="1" to="O22" connection="4"/>
       </dia:connections>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O2">
       <dia:attribute name="obj_pos">
-        <dia:point val="7,21"/>
+        <dia:point val="6.99777,20.998"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.975,20.975;7.025,22.025"/>
+        <dia:rectangle val="6.97272,20.9729;7.02506,22.0251"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="7,21"/>
+        <dia:point val="6.99777,20.998"/>
         <dia:point val="7,22"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -148,7 +148,7 @@
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O25" connection="6"/>
+        <dia:connection handle="0" to="O30" connection="6"/>
         <dia:connection handle="1" to="O3" connection="0"/>
       </dia:connections>
     </dia:object>
@@ -270,16 +270,16 @@ MH1 или MH2#</dia:string>
     </dia:object>
     <dia:object type="PFC - allocation" version="1" id="O5">
       <dia:attribute name="obj_pos">
-        <dia:point val="5.5,4"/>
+        <dia:point val="5.48379,4"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="5.475,3.975;8.525,5.525"/>
+        <dia:rectangle val="5.45879,3.975;8.50879,5.525"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="5.5,4"/>
+        <dia:point val="5.48379,4"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="3"/>
@@ -319,7 +319,7 @@ MH1 или MH2#</dia:string>
             <dia:real val="0.35277777983377007"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="7,4.67944"/>
+            <dia:point val="6.98379,4.67944"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -357,7 +357,7 @@ MH1 или MH2#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O27" connection="3"/>
+        <dia:connection handle="0" to="O22" connection="3"/>
         <dia:connection handle="1" to="O4" connection="0"/>
       </dia:connections>
     </dia:object>
@@ -366,11 +366,11 @@ MH1 или MH2#</dia:string>
         <dia:point val="6.995,3.075"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.96987,3.04987;7.02513,4.02513"/>
+        <dia:rectangle val="6.95849,3.0497;7.0203,4.0253"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="6.995,3.075"/>
-        <dia:point val="7,4"/>
+        <dia:point val="6.98379,4"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -379,160 +379,20 @@ MH1 или MH2#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O27" connection="1"/>
+        <dia:connection handle="0" to="O22" connection="1"/>
         <dia:connection handle="1" to="O5" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="PFC - operation" version="1" id="O8">
-      <dia:attribute name="obj_pos">
-        <dia:point val="5.5,6.5"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="5.475,6.475;8.525,8.025"/>
-      </dia:attribute>
-      <dia:attribute name="meta">
-        <dia:composite type="dict"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="5.5,6.5"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="2.9999999500159711"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="1.4999999750079855"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.05000000074505806"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="line_style">
-        <dia:enum val="0"/>
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="padding">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#Наполнение#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="sans" style="0" name="Helvetica"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.35277777983377007"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="7,7.35583"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="1"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="flip_horizontal">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="flip_vertical">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="subscale">
-        <dia:real val="1"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="PFC - operation" version="1" id="O9">
-      <dia:attribute name="obj_pos">
-        <dia:point val="0.758422,6.5"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="0.733422,6.475;3.78342,8.025"/>
-      </dia:attribute>
-      <dia:attribute name="meta">
-        <dia:composite type="dict"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="0.758422,6.5"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="2.9999999500159711"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="1.4999999750079855"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.05000000074505806"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="line_style">
-        <dia:enum val="0"/>
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="padding">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#Наполнение#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="sans" style="0" name="Helvetica"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.35277777983377007"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="2.25842,7.35583"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="1"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="flip_horizontal">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="flip_vertical">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="subscale">
-        <dia:real val="1"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O10">
+    <dia:object type="Standard - Line" version="0" id="O8">
       <dia:attribute name="obj_pos">
         <dia:point val="2.24827,5.5"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.22312,5.47486;2.27908,6.50097"/>
+        <dia:rectangle val="2.22323,5.47496;2.27504,6.52504"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="2.24827,5.5"/>
-        <dia:point val="2.25393,6.47583"/>
+        <dia:point val="2.25,6.5"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -542,19 +402,19 @@ MH1 или MH2#</dia:string>
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O4" connection="1"/>
-        <dia:connection handle="1" to="O9" connection="8"/>
+        <dia:connection handle="1" to="O26" connection="1"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O11">
+    <dia:object type="Standard - Line" version="0" id="O9">
       <dia:attribute name="obj_pos">
-        <dia:point val="7,5.5"/>
+        <dia:point val="6.98379,5.5"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.975,5.475;7.025,6.525"/>
+        <dia:rectangle val="6.95849,5.4747;7.02154,6.55683"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="7,5.5"/>
-        <dia:point val="7,6.5"/>
+        <dia:point val="6.98379,5.5"/>
+        <dia:point val="6.99624,6.53153"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -564,18 +424,18 @@ MH1 или MH2#</dia:string>
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O5" connection="1"/>
-        <dia:connection handle="1" to="O8" connection="1"/>
+        <dia:connection handle="1" to="O27" connection="1"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O12">
+    <dia:object type="Standard - Line" version="0" id="O10">
       <dia:attribute name="obj_pos">
-        <dia:point val="2.25842,8"/>
+        <dia:point val="2.25,8"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.22489,7.97479;2.28363,9.00648"/>
+        <dia:rectangle val="2.225,7.975;2.2751,9.00627"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="2.25842,8"/>
+        <dia:point val="2.25,8"/>
         <dia:point val="2.2501,8.98127"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -585,19 +445,19 @@ MH1 или MH2#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O9" connection="6"/>
-        <dia:connection handle="1" to="O28" connection="2"/>
+        <dia:connection handle="0" to="O26" connection="6"/>
+        <dia:connection handle="1" to="O23" connection="2"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O13">
+    <dia:object type="Standard - Line" version="0" id="O11">
       <dia:attribute name="obj_pos">
-        <dia:point val="7,8"/>
+        <dia:point val="6.99624,8.03153"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.96485,7.97475;7.02525,9.00652"/>
+        <dia:rectangle val="6.96494,8.00637;7.0214,9.00643"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="7,8"/>
+        <dia:point val="6.99624,8.03153"/>
         <dia:point val="6.9901,8.98127"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -607,11 +467,11 @@ MH1 или MH2#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O8" connection="6"/>
-        <dia:connection handle="1" to="O28" connection="0"/>
+        <dia:connection handle="0" to="O27" connection="6"/>
+        <dia:connection handle="1" to="O23" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="PFC - unit procedure" version="1" id="O14">
+    <dia:object type="PFC - unit procedure" version="1" id="O12">
       <dia:attribute name="obj_pos">
         <dia:point val="5.49345,10"/>
       </dia:attribute>
@@ -681,7 +541,7 @@ MH1 или MH2#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="PFC - allocation" version="1" id="O15">
+    <dia:object type="PFC - allocation" version="1" id="O13">
       <dia:attribute name="obj_pos">
         <dia:point val="10.2389,13.5"/>
       </dia:attribute>
@@ -752,12 +612,12 @@ H1 или H7#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O16">
+    <dia:object type="Standard - Line" version="0" id="O14">
       <dia:attribute name="obj_pos">
         <dia:point val="6.9901,9.23127"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.965,9.20616;7.01856,10.0251"/>
+        <dia:rectangle val="6.96499,9.20616;7.01856,10.0251"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="6.9901,9.23127"/>
@@ -770,11 +630,11 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O28" connection="1"/>
-        <dia:connection handle="1" to="O14" connection="1"/>
+        <dia:connection handle="0" to="O23" connection="1"/>
+        <dia:connection handle="1" to="O12" connection="1"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O17">
+    <dia:object type="Standard - Line" version="0" id="O15">
       <dia:attribute name="obj_pos">
         <dia:point val="6.99345,11.5"/>
       </dia:attribute>
@@ -792,16 +652,16 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O14" connection="6"/>
-        <dia:connection handle="1" to="O29" connection="2"/>
+        <dia:connection handle="0" to="O12" connection="6"/>
+        <dia:connection handle="1" to="O24" connection="2"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O18">
+    <dia:object type="Standard - Line" version="0" id="O16">
       <dia:attribute name="obj_pos">
         <dia:point val="11.7345,12.6864"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.7093,12.6613;11.764,13.5251"/>
+        <dia:rectangle val="11.7094,12.6613;11.764,13.5251"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="11.7345,12.6864"/>
@@ -814,160 +674,20 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O29" connection="1"/>
-        <dia:connection handle="1" to="O15" connection="0"/>
+        <dia:connection handle="0" to="O24" connection="1"/>
+        <dia:connection handle="1" to="O13" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="PFC - operation" version="1" id="O19">
-      <dia:attribute name="obj_pos">
-        <dia:point val="10.2389,16"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="10.2139,15.975;13.2639,17.525"/>
-      </dia:attribute>
-      <dia:attribute name="meta">
-        <dia:composite type="dict"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="10.2389,16"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="2.9999999500159711"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="1.4999999750079855"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.05000000074505806"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="line_style">
-        <dia:enum val="0"/>
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="padding">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#Выдача#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="sans" style="0" name="Helvetica"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.35277777983377007"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="11.7389,16.8558"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="1"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="flip_horizontal">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="flip_vertical">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="subscale">
-        <dia:real val="1"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="PFC - operation" version="1" id="O20">
-      <dia:attribute name="obj_pos">
-        <dia:point val="5.49345,16"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="5.46845,15.975;8.51845,17.525"/>
-      </dia:attribute>
-      <dia:attribute name="meta">
-        <dia:composite type="dict"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="5.49345,16"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="2.9999999500159711"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="1.4999999750079855"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.05000000074505806"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="line_style">
-        <dia:enum val="0"/>
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="padding">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#Выдача#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="sans" style="0" name="Helvetica"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.35277777983377007"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="6.99345,16.8558"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="1"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="flip_horizontal">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="flip_vertical">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="subscale">
-        <dia:real val="1"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O21">
+    <dia:object type="Standard - Line" version="0" id="O17">
       <dia:attribute name="obj_pos">
         <dia:point val="6.99445,12.6864"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.96844,12.6614;7.01946,16.025"/>
+        <dia:rectangle val="6.96092,12.6613;7.01951,16.0304"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="6.99445,12.6864"/>
-        <dia:point val="6.99345,16"/>
+        <dia:point val="6.98598,16.0053"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -976,20 +696,20 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O29" connection="3"/>
-        <dia:connection handle="1" to="O20" connection="1"/>
+        <dia:connection handle="0" to="O24" connection="3"/>
+        <dia:connection handle="1" to="O28" connection="1"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O22">
+    <dia:object type="Standard - Line" version="0" id="O18">
       <dia:attribute name="obj_pos">
         <dia:point val="11.7389,15"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.7139,14.975;11.7639,16.0008"/>
+        <dia:rectangle val="11.7139,14.975;11.7652,15.9707"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="11.7389,15"/>
-        <dia:point val="11.7389,15.9758"/>
+        <dia:point val="11.7402,15.9457"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -998,19 +718,19 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O15" connection="1"/>
-        <dia:connection handle="1" to="O19" connection="8"/>
+        <dia:connection handle="0" to="O13" connection="1"/>
+        <dia:connection handle="1" to="O29" connection="1"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O23">
+    <dia:object type="Standard - Line" version="0" id="O19">
       <dia:attribute name="obj_pos">
-        <dia:point val="6.99345,17.5"/>
+        <dia:point val="6.98598,17.5053"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.96842,17.475;7.01948,18.4933"/>
+        <dia:rectangle val="6.96076,17.4801;7.01967,18.4934"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="6.99345,17.5"/>
+        <dia:point val="6.98598,17.5053"/>
         <dia:point val="6.99445,18.4682"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -1020,19 +740,19 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O20" connection="6"/>
-        <dia:connection handle="1" to="O30" connection="2"/>
+        <dia:connection handle="0" to="O28" connection="6"/>
+        <dia:connection handle="1" to="O25" connection="2"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O24">
+    <dia:object type="Standard - Line" version="0" id="O20">
       <dia:attribute name="obj_pos">
-        <dia:point val="11.7389,17.5"/>
+        <dia:point val="11.7402,17.4457"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.7093,17.4749;11.764,18.4934"/>
+        <dia:rectangle val="11.7094,17.4206;11.7653,18.4933"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="11.7389,17.5"/>
+        <dia:point val="11.7402,17.4457"/>
         <dia:point val="11.7345,18.4682"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -1042,89 +762,19 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O19" connection="6"/>
-        <dia:connection handle="1" to="O30" connection="0"/>
+        <dia:connection handle="0" to="O29" connection="6"/>
+        <dia:connection handle="1" to="O25" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="PFC - operation" version="1" id="O25">
+    <dia:object type="Standard - Line" version="0" id="O21">
       <dia:attribute name="obj_pos">
-        <dia:point val="5.5,19.5"/>
+        <dia:point val="6.99777,19.498"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="5.475,19.475;8.525,21.025"/>
-      </dia:attribute>
-      <dia:attribute name="meta">
-        <dia:composite type="dict"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="5.5,19.5"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="2.9999999500159711"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="1.4999999750079855"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.05000000074505806"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="line_style">
-        <dia:enum val="0"/>
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="padding">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#Мойка#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="sans" style="0" name="Helvetica"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.35277777983377007"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="7,20.3558"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="1"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="flip_horizontal">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="flip_vertical">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="subscale">
-        <dia:real val="1"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O26">
-      <dia:attribute name="obj_pos">
-        <dia:point val="7,19.5"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.96928,18.6931;7.02518,19.5252"/>
+        <dia:rectangle val="6.96934,18.6931;7.02288,19.5231"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="7,19.5"/>
+        <dia:point val="6.99777,19.498"/>
         <dia:point val="6.99445,18.7182"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -1134,11 +784,11 @@ H1 или H7#</dia:string>
         <dia:real val="0.05000000074505806"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O25" connection="1"/>
-        <dia:connection handle="1" to="O30" connection="3"/>
+        <dia:connection handle="0" to="O30" connection="1"/>
+        <dia:connection handle="1" to="O25" connection="3"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="PFC - parallel" version="1" id="O27">
+    <dia:object type="PFC - parallel" version="1" id="O22">
       <dia:attribute name="obj_pos">
         <dia:point val="0.675,2.825"/>
       </dia:attribute>
@@ -1183,7 +833,7 @@ H1 или H7#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="PFC - parallel" version="1" id="O28">
+    <dia:object type="PFC - parallel" version="1" id="O23">
       <dia:attribute name="obj_pos">
         <dia:point val="0.670104,8.98127"/>
       </dia:attribute>
@@ -1228,7 +878,7 @@ H1 или H7#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="PFC - parallel" version="1" id="O29">
+    <dia:object type="PFC - parallel" version="1" id="O24">
       <dia:attribute name="obj_pos">
         <dia:point val="5.41445,12.4364"/>
       </dia:attribute>
@@ -1273,7 +923,7 @@ H1 или H7#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="PFC - parallel" version="1" id="O30">
+    <dia:object type="PFC - parallel" version="1" id="O25">
       <dia:attribute name="obj_pos">
         <dia:point val="5.41445,18.4682"/>
       </dia:attribute>
@@ -1307,6 +957,356 @@ H1 или H7#</dia:string>
       <dia:attribute name="line_style">
         <dia:enum val="0"/>
         <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="flip_horizontal">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="flip_vertical">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="subscale">
+        <dia:real val="1"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="PFC - unit procedure" version="1" id="O26">
+      <dia:attribute name="obj_pos">
+        <dia:point val="0.75,6.5"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="0.725,6.475;3.775,8.025"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="0.75,6.5"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="2.9999999500159715"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.4999999750079858"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.05000000074505806"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute name="show_background">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="padding">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#Наполнение#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.35277777983377007"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="2.25,7.35583"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="flip_horizontal">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="flip_vertical">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="subscale">
+        <dia:real val="1"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="PFC - unit procedure" version="1" id="O27">
+      <dia:attribute name="obj_pos">
+        <dia:point val="5.49624,6.53153"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="5.47124,6.50653;8.52124,8.05653"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="5.49624,6.53153"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="2.9999999500159715"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.4999999750079858"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.05000000074505806"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute name="show_background">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="padding">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#Наполнение#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.35277777983377007"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="6.99624,7.38736"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="flip_horizontal">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="flip_vertical">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="subscale">
+        <dia:real val="1"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="PFC - unit procedure" version="1" id="O28">
+      <dia:attribute name="obj_pos">
+        <dia:point val="5.48598,16.0053"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="5.46098,15.9803;8.51098,17.5303"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="5.48598,16.0053"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="2.9999999500159715"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.4999999750079858"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.05000000074505806"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute name="show_background">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="padding">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#Выдача#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.35277777983377007"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="6.98598,16.8611"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="flip_horizontal">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="flip_vertical">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="subscale">
+        <dia:real val="1"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="PFC - unit procedure" version="1" id="O29">
+      <dia:attribute name="obj_pos">
+        <dia:point val="10.2402,15.9457"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="10.2152,15.9207;13.2652,17.4707"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="10.2402,15.9457"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="2.9999999500159715"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.4999999750079858"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.05000000074505806"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute name="show_background">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="padding">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#Выдача#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.35277777983377007"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="11.7402,16.8015"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="flip_horizontal">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="flip_vertical">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="subscale">
+        <dia:real val="1"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="PFC - unit procedure" version="1" id="O30">
+      <dia:attribute name="obj_pos">
+        <dia:point val="5.49777,19.498"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="5.47277,19.473;8.52277,21.023"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="5.49777,19.498"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="2.9999999500159706"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.4999999750079853"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.05000000074505806"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute name="show_background">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="padding">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#Мойка#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.35277777983377007"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="6.99777,20.3538"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="1"/>
+          </dia:attribute>
+        </dia:composite>
       </dia:attribute>
       <dia:attribute name="flip_horizontal">
         <dia:boolean val="false"/>

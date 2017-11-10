@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="10cm" height="28cm" viewBox="59 9 192 553" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="9cm" height="28cm" viewBox="59 9 174 553" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="70,10 110,10 90,40 "/>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #ffffff" x1="70" y1="562" x2="110" y2="562"/>
@@ -111,19 +111,14 @@
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="370" x2="89.6592" y2="409.754"/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="89.8296,389.877 180,389.877 180,411.06 "/>
   <g>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="150" y="431.06" width="60" height="30"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="441.06" x2="160" y2="431.06"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="200" y1="431.06" x2="210" y2="441.06"/>
-    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="448.177">
-      <tspan x="180" y="448.177">Вымешивание</tspan>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="150" y="430.56" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="440.56" x2="160" y2="430.56"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="200" y1="430.56" x2="210" y2="440.56"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="447.677">
+      <tspan x="180" y="447.677">Вымешивание</tspan>
     </text>
   </g>
-  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="180" y1="414.06" x2="180" y2="431.06"/>
-  <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="180,461.06 180,470 250,470 250,380 96.5,380 "/>
-    <polygon style="fill: #000000" points="96.5,377 90.5,380 96.5,383 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="96.5,377 90.5,380 96.5,383 "/>
-  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="180" y1="414.06" x2="180" y2="430.56"/>
   <g>
     <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="430" width="60" height="30"/>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="440" x2="70" y2="430"/>
@@ -143,4 +138,9 @@
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="460" x2="90" y2="480"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="510" x2="90" y2="530"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="89.6592" y1="412.978" x2="90" y2="430"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="445.56" x2="126.499" y2="445.121"/>
+    <polygon style="fill: #000000" points="126.555,442.122 120.5,445.009 126.443,448.121 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="126.555,442.122 120.5,445.009 126.443,448.121 "/>
+  </g>
 </svg>
