@@ -93,11 +93,11 @@
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="289.517" x2="90" y2="270"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="320" x2="90" y2="340"/>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="79.6592" y1="409.754" x2="99.6592" y2="409.754"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="79.6592" y1="412.978" x2="99.6592" y2="412.978"/>
-    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="103.659" y="410.492">
-      <tspan x="103.659" y="410.492">Вымешивание </tspan>
-      <tspan x="103.659" y="417.548">не требуется?</tspan>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="80.2538" y1="409.754" x2="100.254" y2="409.754"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="80.2538" y1="412.978" x2="100.254" y2="412.978"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="104.254" y="410.492">
+      <tspan x="104.254" y="410.492">Вымешивание </tspan>
+      <tspan x="104.254" y="417.548">не требуется?</tspan>
     </text>
   </g>
   <g>
@@ -108,17 +108,17 @@
       <tspan x="194" y="418.704">требуется?</tspan>
     </text>
   </g>
-  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="370" x2="89.6592" y2="409.754"/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="89.8296,389.877 180,389.877 180,411.06 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="370" x2="90.2538" y2="409.754"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="90.1269,389.877 180,389.877 180,411.06 "/>
   <g>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="150" y="430.56" width="60" height="30"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="440.56" x2="160" y2="430.56"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="200" y1="430.56" x2="210" y2="440.56"/>
-    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="447.677">
-      <tspan x="180" y="447.677">Вымешивание</tspan>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="150" y="429.668" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="439.668" x2="160" y2="429.668"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="200" y1="429.668" x2="210" y2="439.668"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="446.785">
+      <tspan x="180" y="446.785">Вымешивание</tspan>
     </text>
   </g>
-  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="180" y1="414.06" x2="180" y2="430.56"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="180" y1="414.06" x2="180" y2="429.668"/>
   <g>
     <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="60" y="430" width="60" height="30"/>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="60" y1="440" x2="70" y2="430"/>
@@ -137,10 +137,18 @@
   </g>
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="460" x2="90" y2="480"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90" y1="510" x2="90" y2="530"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="89.6592" y1="412.978" x2="90" y2="430"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="90.2538" y1="412.978" x2="90" y2="430"/>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="445.56" x2="126.499" y2="445.121"/>
-    <polygon style="fill: #000000" points="126.555,442.122 120.5,445.009 126.443,448.121 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="126.555,442.122 120.5,445.009 126.443,448.121 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="150" y1="444.668" x2="126.5" y2="444.928"/>
+    <polygon style="fill: #000000" points="126.466,441.928 120.5,444.994 126.533,447.928 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="126.466,441.928 120.5,444.994 126.533,447.928 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="116.981" y1="340.58" x2="117.004" y2="345.814"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="114.448" y1="343.148" x2="119.468" y2="343.122"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="116.977" y1="430.618" x2="116.999" y2="435.854"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="114.443" y1="433.186" x2="119.464" y2="433.16"/>
   </g>
 </svg>
