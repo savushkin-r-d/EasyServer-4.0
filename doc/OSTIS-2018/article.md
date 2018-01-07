@@ -90,7 +90,7 @@
       - Коагулятор
       - ПФУ
       - Охладитель
-    Цех готовой продукции [производственная ячейка]
+    - Цех готовой продукции [производственная ячейка]
       - Коробка
       - Палета (поддон)
       - Склад
@@ -197,4 +197,7 @@ OLP-системы как первый шаг на пути к универса�
 9. Recommendations for Implementing the Strategic Initiative Industrie 4.0: Securing the Future of German Manufacturing Industry / H. Kagermann, J.Helbig, A.Hellinger, W. Wahlster // Final Report of the Industrie 4.0 Working Group, 2013.  
 10. Applied Cyber-Physical Systems/Ed. by S.C.Suh, U.J.Tanik, J.N.Carbone, A.E.Eroglu. – Heidelberg: Springer-Verlag, 2014.  
 11. [Савушкин, 2017] Голенков, В.В. Проектирование предприятий рецептурного производства на основе онтологий / В.В. Таберко, Д.С. Иванюк, В.В. Голенков, К.В. Русецкий, Д.В. Шункевич,  И.Т. Давыденко, В.В. Захаров, В.П. Ивашенко, Д.Н. Корончик // Онтология проектирования. – 2017. – Т. 7, №2(24). - С. 123-144. – DOI: 10.18287/2223-9537-2017-7-2-123-144.  
-12. [DesignPrinciples 2016] Hermann M, Pentek T, Otto B. Design principles for industrie 4.0 scenarios. InSystem Sciences (HICSS), 2016 49th Hawaii International Conference on 2016 Jan 5 (pp. 3928-3937). IEEE.
+12. [DesignPrinciples 2016] Hermann M, Pentek T, Otto B. Design principles for industrie 4.0 scenarios. InSystem Sciences (HICSS), 2016 49th Hawaii International Conference on 2016 Jan 5 (pp. 3928-3937). IEEE.  
+13. Серенков П.С., Николаева И.В. Стандартизация как база знаний на основе онтологий, 2005.
+http://quality.eup.ru/STANDART/stand_baza.htm  
+
