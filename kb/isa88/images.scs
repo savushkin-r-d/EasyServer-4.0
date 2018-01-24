@@ -1,0 +1,86 @@
+common_finished
+=> nrel_main_idtf: [Общий протокол выполнения] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [General protocol] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/common_finished.png" (* <-lang_ru;; *);; 
+		*);;
+
+common_in_process
+=> nrel_main_idtf: [Процедура управляющего рецепта производства творога Хуторок] (* <- lang_ru;; *); 
+=> nrel_idtf: [Общий план производства творога Хуторок в процессе реализации] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [General plan in process] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/common_in_process.png" (* <-lang_ru;; *);; 
+		*);;
+
+common_plan
+=> nrel_main_idtf: [Процедура главного рецепта производства творога Хуторок] (* <- lang_ru;; *); 
+=> nrel_idtf: [Общий план производства творога Хуторок] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [General plan] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/common_plan.png" (* <-lang_ru;; *);; 
+		*);;
+
+common_scheme
+=> nrel_main_idtf: [Процедура местного рецепта производства творога Хуторок] (* <- lang_ru;; *); 
+=> nrel_idtf: [Общая схема производства творога Хуторок] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Common scheme] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/common_scheme.png" (* <-lang_ru;; *);; 
+		*);
+		...
+		(* 
+		-> rrel_example: "file://images/common_scheme_diagram.png" (* <-lang_ru;; *);; 
+		*);;
+
+hardware_example_3.6.1
+=> nrel_main_idtf: [Пример агрегата для этапа нагрева] (* <- lang_ru;; *);
+=> nrel_idtf: [Пример конфигурации оборудования на этапе нагрева] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [An example of the hardware configuration during the heating step] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/hardware_example_3.6.1.png" (* <-lang_ru;; *);; 
+		*);
+		...
+		(* 
+		-> rrel_example: "file://images/hardware_example_diagram.png" (* <-lang_ru;; *);; 
+		*);;
+
+cottage_cheese_production_status
+<- sc_node_struct;
+=> nrel_main_idtf: [Снимок состояния процесса производства творога] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Snapshot of the current state of cottage cheese production process] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/process_production_cottage_cheese.png" (* <-lang_ru;; *);; 
+		*);;
+
+last_shift_production_stats
+<- sc_node_struct;
+=> nrel_main_idtf: [Количество творога и сыворотки за последнюю смену] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Cottage cheese and whey amount during last shift] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/workshop_production_cottage_cheese_ru.png" (* <-lang_ru;; *);; 
+		*);;
+		
+production_inconsistency
+<- sc_node_struct;
+=> nrel_main_idtf: [Невыполнение плана производства] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Production shortfall] (* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://images/production_inconsistency.png" (* <-lang_ru;; *);; 
+		*);;

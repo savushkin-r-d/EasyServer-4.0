@@ -1,0 +1,5 @@
+sc_node_not_relation -> action_of_searching_for_current_state_of_specified_object;;
+
+action_of_searching_for_current_state_of_specified_object => nrel_main_idtf:
+	[действие. Найти текущее состояние заданного объекта]
+		(*<- lang_ru;;*);;

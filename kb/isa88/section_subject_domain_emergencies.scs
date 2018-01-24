@@ -1,0 +1,9 @@
+section_subject_domain_emergencies
+=> nrel_main_idtf: [Раздел. Предметная область нештатных ситуаций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Subject domain of emergencies] (* <- lang_en;; *);;
+
+section_subject_domain_emergencies
+= [*^"file://section_subject_domain_emergencies.scsi"*];;
+
+section_subject_domain_emergencies
+-> rrel_key_sc_element: unnominal_situation;;

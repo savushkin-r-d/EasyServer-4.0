@@ -1,0 +1,271 @@
+cottage_cheese_production_cell
+=> nrel_main_idtf: [Производство творожной массы] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Cottage cheese production] (* <- lang_en;; *);
+
+=> nrel_contains:
+B1; B2; B3; B4; B5; B6; B7; B8; B9; B10; B11; B12; B13; B14; B15; B16;
+K1; K2; K3; K4; K5; K6; K7; K8; K9; K10; K11; K12; K13; Coagulator_14; Coagulator_15; K16;
+K17; K18; K19; K20; K21; K22; K23; K24; K25; K26; K27; K28; K29; K30; K31; K32;
+AL1; AL2;
+OL1; OL2; OL3; OL4; OL5; OL6; OL7; OL8;
+PL1; PL2; PL3; PL4; PL5; PL6; PL7; PL8;;
+
+boiler
+=> nrel_main_idtf: [бойлер] (* <- lang_ru;; *);
+=> nrel_main_idtf: [boiler] (* <- lang_en;; *);;
+
+acceptance_line
+=> nrel_main_idtf: [линия приемки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [acceptance line] (* <- lang_en;; *);;
+
+output_line
+=> nrel_main_idtf: [линия выдачи] (* <- lang_ru;; *);
+=> nrel_main_idtf: [output line] (* <- lang_en;; *);;
+
+pumpdown_line
+=> nrel_main_idtf: [линия откачки сыворотки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [whey pumpdown line] (* <- lang_en;; *);;
+
+boiler -> B1; B2; B3; B4; B5; B6; B7; B8; B9; B10; B11; B12; B13; B14; B15; B16;;
+
+coagulator -> K4; K9; K10; K11; K12; K13; K16; K17; K18; K19; K20; K21; K22; K23; K24; K25; K26; K27; K28; K29; K30; K31; K32;;
+
+acceptance_line -> AL1; AL2;;
+
+output_line -> OL1; OL2; OL3; OL4; OL5; OL6; OL7; OL8;;
+
+pumpdown_line -> PL1; PL2; PL3; PL4; PL5; PL6; PL7; PL8;;
+
+unit -> K1; K2; K3; K4; K5; K6; K7; K8; K9; K10; K11; K12; K13; Coagulator_14; Coagulator_15; K16;
+K17; K18; K19; K20; K21; K22; K23; K24; K25; K26; K27; K28; K29; K30; K31; K32;;
+
+equipment_module -> B1; B2; B3; B4; B5; B6; B7; B8; B9; B10; B11; B12; B13; B14; B15; B16;
+AL1; AL2; OL1; OL2; OL3; OL4; OL5; OL6; OL7; OL8; PL1; PL2; PL3; PL4; PL5; PL6; PL7; PL8;;
+
+B1
+=> nrel_main_idtf: [Бойлер 1] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 1] (* <- lang_en;; *);;
+
+B2
+=> nrel_main_idtf: [Бойлер 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 2] (* <- lang_en;; *);;
+
+B3
+=> nrel_main_idtf: [Бойлер 3] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 3] (* <- lang_en;; *);;
+
+B4
+=> nrel_main_idtf: [Бойлер 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 4] (* <- lang_en;; *);;
+
+B5
+=> nrel_main_idtf: [Бойлер 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 5] (* <- lang_en;; *);;
+
+B6
+=> nrel_main_idtf: [Бойлер 6] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 6] (* <- lang_en;; *);;
+
+B7
+=> nrel_main_idtf: [Бойлер 7] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 7] (* <- lang_en;; *);;
+
+B8
+=> nrel_main_idtf: [Бойлер 8] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 8] (* <- lang_en;; *);;
+
+B9
+=> nrel_main_idtf: [Бойлер 9] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 9] (* <- lang_en;; *);;
+
+B10
+=> nrel_main_idtf: [Бойлер 10] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 10] (* <- lang_en;; *);;
+
+B11
+=> nrel_main_idtf: [Бойлер 11] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 11] (* <- lang_en;; *);;
+
+B12
+=> nrel_main_idtf: [Бойлер 12] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 12] (* <- lang_en;; *);;
+
+B13
+=> nrel_main_idtf: [Бойлер 13] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 13] (* <- lang_en;; *);;
+
+B14
+=> nrel_main_idtf: [Бойлер 14] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 14] (* <- lang_en;; *);;
+
+B15
+=> nrel_main_idtf: [Бойлер 15] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 15] (* <- lang_en;; *);;
+
+B16
+=> nrel_main_idtf: [Бойлер 16] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Boiler 16] (* <- lang_en;; *);;
+
+AL1
+=> nrel_main_idtf: [Линия приемки 1] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Acceptance line 1] (* <- lang_en;; *);;
+
+AL2
+=> nrel_main_idtf: [Линия приемки 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Acceptance line 2] (* <- lang_en;; *);;
+
+OL1
+=> nrel_main_idtf: [Линия выдачи 1] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 1] (* <- lang_en;; *);;
+
+OL2
+=> nrel_main_idtf: [Линия выдачи 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 2] (* <- lang_en;; *);;
+
+OL3
+=> nrel_main_idtf: [Линия выдачи 3] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 3] (* <- lang_en;; *);;
+
+OL4
+=> nrel_main_idtf: [Линия выдачи 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 4] (* <- lang_en;; *);;
+
+OL5
+=> nrel_main_idtf: [Линия выдачи 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 5] (* <- lang_en;; *);;
+
+OL6
+=> nrel_main_idtf: [Линия выдачи 6] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 6] (* <- lang_en;; *);;
+
+OL7
+=> nrel_main_idtf: [Линия выдачи 7] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 7] (* <- lang_en;; *);;
+
+OL8
+=> nrel_main_idtf: [Линия выдачи 8] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Output line 8] (* <- lang_en;; *);;
+
+PL1
+=> nrel_main_idtf: [Линия откачки 1] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 1] (* <- lang_en;; *);;
+
+PL2
+=> nrel_main_idtf: [Линия откачки 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 2] (* <- lang_en;; *);;
+
+PL3
+=> nrel_main_idtf: [Линия откачки 3] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 3] (* <- lang_en;; *);;
+
+PL4
+=> nrel_main_idtf: [Линия откачки 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 4] (* <- lang_en;; *);;
+
+PL5
+=> nrel_main_idtf: [Линия откачки 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 5] (* <- lang_en;; *);;
+
+PL6
+=> nrel_main_idtf: [Линия откачки 6] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 6] (* <- lang_en;; *);;
+
+PL7
+=> nrel_main_idtf: [Линия откачки 7] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 7] (* <- lang_en;; *);;
+
+PL8
+=> nrel_main_idtf: [Линия откачки 8] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Pumpdown line 8] (* <- lang_en;; *);;
+
+K4
+=> nrel_main_idtf: [Коагулятор 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 4] (* <- lang_en;; *);; 
+
+K9
+=> nrel_main_idtf: [Коагулятор 9] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 9] (* <- lang_en;; *);; 
+
+K10
+=> nrel_main_idtf: [Коагулятор 10] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 10] (* <- lang_en;; *);; 
+
+K11
+=> nrel_main_idtf: [Коагулятор 11] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 11] (* <- lang_en;; *);; 
+
+K12
+=> nrel_main_idtf: [Коагулятор 12] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 12] (* <- lang_en;; *);;  
+
+K13
+=> nrel_main_idtf: [Коагулятор 13] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 13] (* <- lang_en;; *);;  
+
+K16
+=> nrel_main_idtf: [Коагулятор 16] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 16] (* <- lang_en;; *);;  
+
+K17
+=> nrel_main_idtf: [Коагулятор 17] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 17] (* <- lang_en;; *);; 
+
+K18
+=> nrel_main_idtf: [Коагулятор 18] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 18] (* <- lang_en;; *);; 
+
+K19
+=> nrel_main_idtf: [Коагулятор 19] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 19] (* <- lang_en;; *);; 
+
+K20
+=> nrel_main_idtf: [Коагулятор 20] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 20] (* <- lang_en;; *);; 
+
+K21
+=> nrel_main_idtf: [Коагулятор 21] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 21] (* <- lang_en;; *);; 
+
+K22
+=> nrel_main_idtf: [Коагулятор 22] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 22] (* <- lang_en;; *);; 
+
+K23
+=> nrel_main_idtf: [Коагулятор 23] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 23] (* <- lang_en;; *);; 
+
+K24
+=> nrel_main_idtf: [Коагулятор 24] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 24] (* <- lang_en;; *);; 
+
+K25
+=> nrel_main_idtf: [Коагулятор 25] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 25] (* <- lang_en;; *);; 
+
+K26
+=> nrel_main_idtf: [Коагулятор 26] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 26] (* <- lang_en;; *);; 
+
+K27
+=> nrel_main_idtf: [Коагулятор 27] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 27] (* <- lang_en;; *);; 
+
+K28
+=> nrel_main_idtf: [Коагулятор 28] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 28] (* <- lang_en;; *);; 
+
+K29
+=> nrel_main_idtf: [Коагулятор 29] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 29] (* <- lang_en;; *);; 
+
+K30
+=> nrel_main_idtf: [Коагулятор 30] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 30] (* <- lang_en;; *);; 
+
+K31
+=> nrel_main_idtf: [Коагулятор 31] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 31] (* <- lang_en;; *);; 
+
+K32
+=> nrel_main_idtf: [Коагулятор 32] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 32] (* <- lang_en;; *);;

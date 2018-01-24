@@ -1,0 +1,9 @@
+cottage_cheese_shop
+=> nrel_main_idtf: 
+[Цех мягких сыров и творога] (* <- lang_ru;; *);
+[Cottage cheese shop] (* <- lang_en;; *);;
+
+finished_products_shop
+=> nrel_main_idtf: 
+[Цех готовой продукции] (* <- lang_ru;; *);
+[Finished products shop] (* <- lang_en;; *);;

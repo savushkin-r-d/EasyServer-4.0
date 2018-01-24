@@ -1,0 +1,49 @@
+nrel_gregorian_calendar_measure
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [измерение по григорианскому календарю*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gregorian calendar measure*] (* <- lang_en;; *);;
+
+nrel_time_measure
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [измерение времени*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [time measure*] (* <- lang_en;; *);;
+
+nrel_answer
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [ответ*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [answer*] (* <- lang_en;; *);;
+
+Current_time
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Текущее время] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Current time] (* <- lang_en;; *);;
+
+nrel_cause_effect
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [причина-следствие*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [cause-effect*] (* <- lang_en;; *);;
+
+rrel_hour
+<- sc_node_role_relation;
+=> nrel_main_idtf: [час'] (* <- lang_ru;; *);
+=> nrel_main_idtf: [hour'] (* <- lang_en;; *);;
+
+nrel_nonstationary_measurement_unit
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [нестационарная единица измерения*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [non-stationary measurement*] (* <- lang_en;; *);;
+
+second_minute_hour
+<- sc_node_not_relation;
+=> nrel_main_idtf: [секунда-минута-час] (* <- lang_ru;; *);
+=> nrel_main_idtf: [second-minute-hour] (* <- lang_en;; *);;
+
+delay_time
+<- sc_node_not_relation;
+=> nrel_main_idtf: [время задержки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [delay time] (* <- lang_en;; *);;
+
+delayed_planned_situation
+<- sc_node_not_relation;
+=> nrel_main_idtf: [задержанная запланированная ситуация] (* <- lang_ru;; *);
+=> nrel_main_idtf: [delayed planned situation] (* <- lang_en;; *);;

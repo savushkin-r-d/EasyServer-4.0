@@ -1,0 +1,225 @@
+Mixer1
+=> nrel_main_idtf: [Мешалка 1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Mixer 1] (* <- lang_en;; *);;
+
+Skim_milk1
+=> nrel_main_idtf: [Обрат 1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Skim milk1] (* <- lang_en;; *);;
+
+1000liter
+=> nrel_main_idtf: [1000 литров] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [1000 liter] (* <- lang_en;; *);;
+
+Button_next1
+=> nrel_main_idtf: [Кнопка Дальше 1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Button Next 1] (* <- lang_en;; *);;
+
+Ivanov
+=> nrel_main_idtf: [Иванов] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Ivanov] (* <- lang_en;; *);;
+
+2_2rpm
+=> nrel_main_idtf: [2,2 об\мин] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [2,2 rpm] (* <- lang_en;; *);;
+
+Starter
+=> nrel_main_idtf: [Закваска] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Starter] (* <- lang_en;; *);;
+
+Skim_milk_with_starter
+=> nrel_main_idtf: [Обрат с закваской] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Skim milk with starter] (* <- lang_en;; *);;
+
+15minutes
+=> nrel_main_idtf: [15 минут] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [15 minutes] (* <- lang_en;; *);;
+
+Water1
+=> nrel_main_idtf: [Вода 1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Water 1] (* <- lang_en;; *);;
+
+65C
+=> nrel_main_idtf: [65 С] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [65 C] (* <- lang_en;; *);;
+
+10minutes
+=> nrel_main_idtf: [10 минут] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [10 minutes] (* <- lang_en;; *);;
+
+5minutes
+=> nrel_main_idtf: [5 минут] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [5 minutes] (* <- lang_en;; *);;
+
+Cottage_cheese1
+=> nrel_main_idtf: [Творог 1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Cottage cheese 1] (* <- lang_en;; *);;
+
+Washing_substance1
+=> nrel_main_idtf: [Моющее вещество 1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Washing substance 1] (* <- lang_en;; *);;
+
+temperature_sensor_TE4
+=> nrel_main_idtf: [TE4] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [temperature sensor TE4] (* <- lang_en;; *);;
+
+valve_14V1
+=> nrel_main_idtf: [14V1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [valve 14V1] (* <- lang_en;; *);;
+
+valve_15V1
+=> nrel_main_idtf: [15V1] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [valve 15V1] (* <- lang_en;; *);;
+
+Coagulator_14
+=> nrel_main_idtf: [Коагулятор 14] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Coagulator 14] (* <- lang_en;; *);;
+
+temperature_sensor_TE142
+=> nrel_main_idtf: [ТЕ142] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [temperature sensor TE142] (* <- lang_en;; *);;
+
+temperature_sensor_TE141
+=> nrel_main_idtf: [ТЕ141] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [temperature sensor TE141] (* <- lang_en;; *);;
+
+Coagulator_15
+=> nrel_main_idtf: [Коагулятор 15] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Coagulator 15] (* <- lang_en;; *);;
+
+temperature_sensor_TE151
+=> nrel_main_idtf: [ТЕ151] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [temperature_sensor_TE151] (* <- lang_en;; *);;
+
+temperature_sensor_TE152
+=> nrel_main_idtf: [ТЕ152] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [temperature sensor TE152] (* <- lang_en;; *);;
+
+valve_V40
+=> nrel_main_idtf: [V40] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [valve V40] (* <- lang_en;; *);;
+
+pump_N4
+=> nrel_main_idtf: [N4] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [pump N4] (* <- lang_en;; *);;
+
+valve_V41
+=> nrel_main_idtf: [V41] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [valve V41] (* <- lang_en;; *);;
+
+volume_sensor_LS42
+=> nrel_main_idtf: [LS42] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [volume sensor LS42] (* <- lang_en;; *);;
+
+volume_sensor_LS41
+=> nrel_main_idtf: [LS41] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [volume sensor LS41] (* <- lang_en;; *);;
+
+june_6_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf: [6 июня 2016 года] (* <- lang_ru;; *);
+=> nrel_main_idtf: [June 6, 2016] (* <- lang_en;; *);;
+
+eight_o_clock
+<- sc_node_not_relation;
+=> nrel_main_idtf: [8:00] (* <- lang_ru;; *);
+=> nrel_main_idtf: [8:00] (* <- lang_en;; *);;
+
+sixteen_o_clock
+<- sc_node_not_relation;
+=> nrel_main_idtf: [16:00] (* <- lang_ru;; *);
+=> nrel_main_idtf: [16:00] (* <- lang_en;; *);;
+
+first_shift
+<- sc_node_not_relation;
+=> nrel_main_idtf: [первая смена] (* <- lang_ru;; *);
+=> nrel_main_idtf: [first shift] (* <- lang_en;; *);;
+
+action_how_long_is_the_first_shift
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Действие. Каковы временные рамки первой смены?] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Action. How long is the first shift?] (* <- lang_en;; *);;
+
+Coagulator_4
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 4] (* <- lang_en;; *);;
+
+Cottage_cheese
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Творог] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Cottage cheese] (* <- lang_en;; *);;
+
+process_production_cottage_cheese_plan
+<- sc_node_not_relation;
+=> nrel_main_idtf: [План процесса производства творога] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Plan of the process of cottage cheese production] (* <- lang_en;; *);;
+
+process_production_cottage_cheese_status
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Ситуация процесса производства творога] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Status of the process of cottage cheese production] (* <- lang_en;; *);;
+
+Shift_8_6_16
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Смена 08.06.2016] (* <- lang_ru;; *);
+=> nrel_main_idtf: [2016/06/08 shift] (* <- lang_en;; *);;
+
+K1
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 1] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 1] (* <- lang_en;; *);;
+
+K2
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 2] (* <- lang_en;; *);;
+
+K3
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 3] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 3] (* <- lang_en;; *);;
+
+K8
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 8] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 8] (* <- lang_en;; *);;
+
+K5
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 5] (* <- lang_en;; *);;
+
+K6
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 6] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 6] (* <- lang_en;; *);;
+
+K7
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 7] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 7] (* <- lang_en;; *);;
+
+Coagulator_14
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 14] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 14] (* <- lang_en;; *);;
+
+Coagulator_15
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Коагулятор 15] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Coagulator 15] (* <- lang_en;; *);;
+
+khutor_site_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Местный рецепт производства творога Хуторок] (* <- lang_ru;; *);
+=> nrel_main_idtf: ["Khutor" cheese production site recipe] (* <- lang_en;; *);;
+
+khutor_master_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Главный рецепт производства творога Хуторок] (* <- lang_ru;; *);
+=> nrel_main_idtf: ["Khutor" cheese production master recipe] (* <- lang_en;; *);;
+
+khutor_control_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Управляющий рецепт производства творога Хуторок] (* <- lang_ru;; *);
+=> nrel_main_idtf: ["Khutor" cheese production control recipe] (* <- lang_en;; *);;
