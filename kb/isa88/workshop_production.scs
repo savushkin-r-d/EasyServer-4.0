@@ -1,0 +1,62 @@
+Workshop_production_cottage_cheese
+=> nrel_main_idtf: [Цех производства творога] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [The workshop for production of cottage cheese] (* <- lang_en;; *);;
+
+nrel_process_production_management
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [процесс управления производством*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [the process of production management*] (* <- lang_en;; *);;
+
+nrel_process_production
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [процесс производства*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [the production process*] (* <- lang_en;; *);;
+
+process_production_cottage_cheese
+=> nrel_main_idtf: [Процесс производства творога] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [The process production of cottage cheese production] (* <- lang_en;; *);;
+
+last_completed_shift
+=> nrel_main_idtf: [последняя завершенная смена] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [the last complete shift] (* <- lang_en;; *);;
+
+process_result_relation
+<- sc_node_not_relation;
+=> nrel_main_idtf: [отношение процесс-результат] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [process-result relation] (* <- lang_en;; *);;
+
+nrel_byproduct
+<- sc_node_norole_relation;
+<- process_result_relation;
+=> nrel_main_idtf: [побочный продукт*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [byproduct*] (* <- lang_en;; *);;
+
+nrel_main_product
+<- sc_node_norole_relation;
+<- process_result_relation;
+=> nrel_main_idtf: [основной продукт*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [the main product] (* <- lang_en;; *);;
+
+packaged_cottage_cheese
+=> nrel_main_idtf: [расфасованный творог] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [packaged cheese] (* <- lang_en;; *);;
+
+packaged_serum
+=> nrel_main_idtf: [расфасованная сыворотка] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [packaged serum] (* <- lang_en;; *);;
+
+nrel_current_status
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [текущее состояние*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [current state*] (* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+
+
+

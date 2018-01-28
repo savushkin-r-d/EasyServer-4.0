@@ -1,0 +1,30 @@
+lib_component_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска подклассов заданного класса, входящих в программу, соответствующую указанному классу процессов]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of finding subclasses of given class, included in the program, corresponding to the specified class of the processes]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_Finding_Subclasses_Included_In_The_Program.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+

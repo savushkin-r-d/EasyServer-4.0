@@ -1,0 +1,24 @@
+jsc_savushkin_product
+=> nrel_main_idtf: 
+[ОАО Савушкин продукт] (* <- lang_ru;; *);
+[JSC Savushkin product] (* <- lang_en;; *);;
+
+site_brest1
+=> nrel_main_idtf: 
+[Брест 1] (* <- lang_ru;; *);
+[Brest 1] (* <- lang_en;; *);;
+
+site_brest2
+=> nrel_main_idtf: 
+[Брест 2] (* <- lang_ru;; *);
+[Brest 2] (* <- lang_en;; *);;
+
+site_stolin
+=> nrel_main_idtf: 
+[Столин] (* <- lang_ru;; *);
+[Stolin] (* <- lang_en;; *);;
+
+site_pinsk
+=> nrel_main_idtf: 
+[Пинск] (* <- lang_ru;; *);
+[Pinsk] (* <- lang_en;; *);;

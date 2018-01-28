@@ -1,0 +1,4 @@
+kilogram <- sc_node_not_relation;;
+liter <- sc_node_not_relation;;
+last_completed_shift <- sc_node_not_relation;;
+packaged_cottage_cheese <- sc_node_not_relation;;

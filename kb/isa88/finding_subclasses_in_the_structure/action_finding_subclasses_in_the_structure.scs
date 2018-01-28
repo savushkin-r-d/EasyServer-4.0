@@ -1,0 +1,4 @@
+action_find_subclasses_in_the_structure
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. найти подклассы заданного класса, входящие в указанную структуру] (* <- lang_ru;; *);;

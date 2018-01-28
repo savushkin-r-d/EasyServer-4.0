@@ -1,0 +1,18 @@
+ui_menu_khutor
+<- sc_node_not_relation;
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf: 
+	[Запросы к АСУТП] (* <- lang_ru;; *);
+	[ASTPM requests] (* <- lang_en;; *);;
+
+ui_menu_khutor <= nrel_ui_commands_decomposition: .ui_menu_khutor_decomposition
+(*
+	-> ui_menu_advanced;;
+	-> ui_menu_file_for_searching_for_current_state_of_specified_object;;
+	-> ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes;;
+	-> ui_menu_file_for_searching_time_limits_specified_temporary_nature;;
+	-> ui_menu_for_finding_results_of_process;;
+	-> ui_menu_file_for_finding_subclasses_in_the_structure;;
+*);;
+
+

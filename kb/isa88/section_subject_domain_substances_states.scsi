@@ -1,0 +1,376 @@
+subject_domain_substances_states
+<- subject_domain;
+-> rrel_maximum_studied_object_class: substance;
+=> nrel_main_idtf: [Предметная область веществ] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Subject domain of substances] (* <- lang_en;; *);; 
+
+substance
+=> nrel_idtf: [продукт] (* <- lang_ru;; *);
+=> nrel_idtf: [product] (* <- lang_en;; *); 
+=> nrel_idtf: [субстанция] (* <- lang_ru;; *);
+=> nrel_main_idtf: [вещество] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [substance] (* <- lang_en;; *); 
+<= nrel_inclusion: material_entity;
+=> nrel_inclusion: water; starter; washing_substance; whey; end_product; skim_milk; skim_milk_with_starter;;
+
+water
+=> nrel_main_idtf: [water] (* <- lang_en;; *); 
+=> nrel_main_idtf: [вода] (* <- lang_ru;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Вода - неорганическое вещество в жидком состоянии, молекулы которого имеют два атома водорода и атом кислорода.](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+starter
+=> nrel_main_idtf: [закваска] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [starter] (* <- lang_en;; *);;
+
+whey
+=> nrel_main_idtf: [сыворотка] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [whey] (* <- lang_en;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Сыворотка - побочный продукт, получаемый при производстве творога, сыра, пищевого казеина, молочного белка](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+end_product
+=> nrel_main_idtf: [готовая продукция] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [end product] (* <- lang_en;; *); 
+=> nrel_inclusion:  milk; kefir; cheese; yoghurt; cottage_cheese;;
+
+milk
+=> nrel_main_idtf: [молоко] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [milk] (* <- lang_en;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Молоко - продукт нормальной физиологической секреции молочных желез, полученный от одного или более лактирующих животных от одного или более доений без каких-либо добавлений или извлечений из него.](* <-lang_ru;; *);; 
+		*);;
+	*);; 
+
+kefir
+=> nrel_main_idtf: [кефир] (* <- lang_ru;; *);
+=> nrel_main_idtf: [kefir] (* <- lang_en;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Кефир - кисломолочный напиток смешанного брожения - молочнокислого и спиртового, вырабатываемый сквашиванием молока кефирными грибками или чистыми культурами.](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+cheese
+=> nrel_main_idtf: [сыр] (* <- lang_ru;; *);
+=> nrel_main_idtf: [cheese] (* <- lang_en;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Сыр - пищевой продукт, получаемый свертыванием молока и дальнейшейобработкой полученного сгустка. Содержит белки (15-27%), жиры (20-32%, всухом веществе - до 55%), минеральные вещества, витамины А и В.Энергетическая ценность 100 г сыра до 1,61 МДж (400 ккал). Известно ок.700 видов сыра. По способу свертывания молока различают сыры сычужные икисломолочные, по способу выработки - твердые, мягкие и рассольные.Плавленые сыры получают плавлением натурального сыра при температуре 75-80.С с использованием солей-плавителей. ](* <-lang_ru;; *);; 
+		*);;
+	*);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Сыр - молочный продукт или молочный составной продукт, произведенные из молока, молочных продуктов и (или) побочных продуктов переработки молока с использованием специальных заквасок, технологий, обеспечивающих коагуляцию молочных белков с помощью молокосвертывающих ферментов или без их использования, либо кислотным или термокислотным способом с последующим отделением сырной массы от сыворотки, ее формованием, прессованием, посолкой, созреванием или без созревания с добавлением не в целях замены составных частей молока немолочных компонентов или без их добавления. ](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+yoghurt
+=> nrel_main_idtf: [йогурт] (* <- lang_ru;; *);
+=> nrel_main_idtf: [yoghurt] (* <- lang_en;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Йогурт - Кисломолочный напиток с повышенным содержанием сухих обезжиренных веществ молока, вырабатываемый из молока или молочной смеси с добавлением сухого молока, сахара, плодово-ягодных сиропов сквашиванием чистыми культурами молочнокислых стрептококков термофильных рас и болгарской палочки.](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+cottage_cheese
+=> nrel_main_idtf: [творог] (* <- lang_ru;; *);
+=> nrel_main_idtf: [cottage-cheese] (* <- lang_en;; *);
+=> nrel_inclusion: fatty_cottage_cheese; fat_free_cottage_cheese;
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Творог - белковый кисломолочный продукт, вырабатываемый сквашиванием молока чистыми культурами молочнокислых бактерий с применением или без применения хлористого кальция, сычужного фермента или пепсина и удалением части сыворотки. В зависимости от применяемого сырья творог вырабатывается жирный, полужирный и нежирный.](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+fatty_cottage_cheese
+=> nrel_main_idtf: [жирный творог] (* <- lang_ru;; *);
+=> nrel_main_idtf: [fatty cottage cheese] (* <- lang_en;; *);;
+
+fat_free_cottage_cheese
+=> nrel_main_idtf: [нежирный творог] (* <- lang_ru;; *);
+=> nrel_main_idtf: [fat free cottage cheese] (* <- lang_en;; *);
+=> nrel_idtf: [обезжиренный творог] (* <- lang_ru;; *);;
+
+nrel_heating_substance
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [греющее вещество*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [heating substance*] (* <- lang_en;; *);
+=> nrel_first_domain: manufacturing_operation;
+=> nrel_second_domain: substance;;
+
+nrel_pushing_substance
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [проталкивающее вещество*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [pushing substance*] (* <- lang_en;; *);
+=> nrel_first_domain: manufacturing_operation;
+=> nrel_second_domain: substance;;
+
+nrel_product
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [продукт*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [product*] (* <- lang_en;; *);
+=> nrel_first_domain: manufacturing_operation;
+=> nrel_second_domain: substance;;
+
+nrel_base_substance
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [основа*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [base substance*] (* <- lang_en;; *);
+=> nrel_first_domain: manufacturing_operation;
+=> nrel_second_domain: substance;;
+
+fat_content
+<- measurable_parameter;
+=> nrel_main_idtf: [жирность] (* <- lang_ru;; *);
+=> nrel_main_idtf: [fat content] (* <- lang_en;; *);
+-> fat_content_7; fat_content_0; fat_content_3;;
+
+fat_content_7
+=> nrel_main_idtf: [жирность 7%] (* <- lang_ru;; *);
+=> nrel_main_idtf: [7% fat content] (* <- lang_en;; *);;
+
+fat_content_0
+=> nrel_main_idtf: [жирность 0%] (* <- lang_ru;; *);
+=> nrel_main_idtf: [0% fat content] (* <- lang_en;; *);
+=> nrel_idtf: [обезжиренный] (* <- lang_ru;; *);
+=> nrel_idtf: [fat-free] (* <- lang_en;; *);
+=> nrel_idtf: [zero-fat] (* <- lang_en;; *);;
+
+fat_content_3
+=> nrel_main_idtf: [жирность 3%] (* <- lang_ru;; *);
+=> nrel_main_idtf: [3% fat content] (* <- lang_en;; *);;
+
+acidity
+<- measurable_parameter;
+=> nrel_main_idtf: [кислотность] (* <- lang_ru;; *);
+=> nrel_main_idtf: [acidity] (* <- lang_en;; *);;
+
+temperature
+<- measurable_parameter;
+=> nrel_main_idtf: [температура] (* <- lang_ru;; *);
+=> nrel_main_idtf: [temperature] (* <- lang_en;; *);
+-> temperature_100C;;
+
+temperature_100C
+=> nrel_main_idtf: [100°С] (* <- lang_ru;; *);
+=> nrel_main_idtf: [100°С] (* <- lang_en;; *);
+=> nrel_idtf: [точка кипения воды] (* <- lang_ru;; *);
+=> nrel_idtf: [boiling point of water] (* <- lang_en;; *);;
+
+volume
+<- measurable_parameter;
+=> nrel_main_idtf: [объем] (* <- lang_ru;; *);
+=> nrel_main_idtf: [volume] (* <- lang_en;; *);
+-> liter; cubic_meter;;
+
+liter
+=> nrel_main_idtf: [литр] (* <- lang_ru;; *);
+=> nrel_main_idtf: [liter] (* <- lang_en;; *);;
+
+cubic_meter
+=> nrel_main_idtf: [кубический метр] (* <- lang_ru;; *);
+=> nrel_main_idtf: [cubic meter] (* <- lang_en;; *);;
+
+mass
+<- measurable_parameter;
+=> nrel_main_idtf: [масса] (* <- lang_ru;; *);
+=> nrel_main_idtf: [mass] (* <- lang_en;; *);
+-> kilogram; ton; gram;;
+
+kilogram
+=> nrel_main_idtf: [килограмм] (* <- lang_ru;; *);
+=> nrel_main_idtf: [kilogram] (* <- lang_en;; *);;
+
+ton
+=> nrel_main_idtf: [тонна] (* <- lang_ru;; *);
+=> nrel_main_idtf: [ton] (* <- lang_en;; *);;
+
+gram
+=> nrel_main_idtf: [грамм] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gram] (* <- lang_en;; *);;
+
+flow_velocity
+<- measurable_parameter;
+=> nrel_main_idtf: [скорость течения] (* <- lang_ru;; *);
+=> nrel_main_idtf: [flow velocity] (* <- lang_en;; *);
+-> meters_per_second; meters_per_minute; centimeters_per_minute; millimeters_per_minute;;
+
+meters_per_second
+=> nrel_main_idtf: [метры в секунду] (* <- lang_ru;; *);
+=> nrel_main_idtf: [meters per second] (* <- lang_en;; *);;
+
+meters_per_minute
+=> nrel_main_idtf: [метры в минуту] (* <- lang_ru;; *);
+=> nrel_main_idtf: [meters per minute] (* <- lang_en;; *);;
+
+centimeters_per_minute
+=> nrel_main_idtf: [сантиметры в минуту] (* <- lang_ru;; *);
+=> nrel_main_idtf: [centimeters per minute] (* <- lang_en;; *);;
+
+millimeters_per_minute
+=> nrel_main_idtf: [миллиметры в минуту] (* <- lang_ru;; *);
+=> nrel_main_idtf: [millimeters per minute] (* <- lang_en;; *);;
+
+revolution_rate
+<- measurable_parameter;
+=> nrel_main_idtf: [частота вращения] (* <- lang_ru;; *);
+=> nrel_main_idtf: [revolution rate] (* <- lang_en;; *);
+-> revolutions_per_second; revolutions_per_minute;;
+
+revolutions_per_second
+=> nrel_main_idtf: [оборотов в секунду] (* <- lang_ru;; *);
+=> nrel_main_idtf: [revolutions per second] (* <- lang_en;; *);;
+
+revolutions_per_minute
+=> nrel_main_idtf: [оборотов в минуту] (* <- lang_ru;; *);
+=> nrel_main_idtf: [revolutions per minute] (* <- lang_en;; *);;
+
+matter_discharge
+<- measurable_parameter;
+=> nrel_main_idtf: [расход вещества] (* <- lang_ru;; *);
+=> nrel_main_idtf: [matter discharge] (* <- lang_en;; *);
+-> liters_per_minute; liters_per_second;;
+
+liters_per_minute
+=> nrel_main_idtf: [литров в минуту] (* <- lang_ru;; *);
+=> nrel_main_idtf: [liters per minute] (* <- lang_en;; *);;
+
+liters_per_second
+=> nrel_main_idtf: [литров в секунду] (* <- lang_ru;; *);
+=> nrel_main_idtf: [liters per second] (* <- lang_en;; *);;
+
+duration
+=> nrel_main_idtf: [длительность] (* <- lang_ru;; *);
+=> nrel_main_idtf: [duration] (* <- lang_en;; *);;
+
+recipe
+<= nrel_inclusion: program;
+=> nrel_main_idtf: [рецептура] (* <- lang_ru;; *);
+=> nrel_main_idtf: [recipe] (* <- lang_en;; *);
+=> nrel_idtf: [рецепт] (* <- lang_ru;; *);;
+
+aggregate_state
+=> nrel_main_idtf: [агрегатное состояние] (* <- lang_ru;; *);
+=> nrel_main_idtf: [aggregate_state] (* <- lang_en;; *);
+<= nrel_inclusion: situational_set;
+<= nrel_set_of_subsets: substance;
+-> liquid; gas; solid; suspension;;
+
+liquid
+=> nrel_main_idtf: [жидкость] (* <- lang_ru;; *);
+=> nrel_main_idtf: [liquid] (* <- lang_en;; *);;
+
+gas
+=> nrel_main_idtf: [газ] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gas] (* <- lang_en;; *);;
+
+solid
+=> nrel_main_idtf: [твердое тело] (* <- lang_ru;; *);
+=> nrel_main_idtf: [solid] (* <- lang_en;; *);;
+
+suspension
+=> nrel_main_idtf: [взвесь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [suspension] (* <- lang_en;; *);;
+
+steam
+=> nrel_main_idtf: [пар] (* <- lang_ru;; *);
+=> nrel_main_idtf: [steam] (* <- lang_en;; *);
+<= nrel_inclusion: gas; water;;
+
+ice
+=> nrel_main_idtf: [лед] (* <- lang_ru;; *);
+=> nrel_main_idtf: [ice] (* <- lang_en;; *);
+<= nrel_inclusion: solid; water;;
+
+nrel_substance
+=> nrel_main_idtf: [вещество*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [substance*] (* <- lang_en;; *);; 
+
+washing_substance
+=> nrel_main_idtf: [моющее вещество] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [washing substance] (* <- lang_en;; *);
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Моющее вещество - вещество для мытья.](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+skim_milk
+=> nrel_main_idtf: [обрат] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [skim milk] (* <- lang_en;; *);; 
+
+skim_milk_with_starter
+=> nrel_main_idtf: [обрат с закваской] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [skim milk with starter] (* <- lang_en;; *);; 
+
+set_temperature
+=> nrel_main_idtf: [Заданная температура] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [The set temperature] (* <- lang_en;; *);; 
+
+average_temperature
+=> nrel_main_idtf: [Средняя температура] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [average temperature] (* <- lang_en;; *);;
+
+fat_content_1_3
+<- sc_node_not_relation;
+=> nrel_main_idtf: [жирность 1,3%] (* <- lang_ru;; *);
+=> nrel_main_idtf: [fat content 1,3%] (* <- lang_en;; *);;
+
+fat_content_1_5
+<- sc_node_not_relation;
+=> nrel_main_idtf: [жирность 1,5%] (* <- lang_ru;; *);
+=> nrel_main_idtf: [fat content 1,5%] (* <- lang_en;; *);;

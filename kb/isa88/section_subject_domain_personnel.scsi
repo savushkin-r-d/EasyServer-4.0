@@ -1,0 +1,44 @@
+subject_domain_personnel
+=> nrel_main_idtf: [Предметная область персонала] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Subject domain of personnel] (* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: personnel; 
+<= nrel_private_subject_domain: subjdomain_persons;;
+
+personnel
+=> nrel_main_idtf: [персонал] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [personnel] (* <- lang_en;; *);
+<= nrel_inclusion: person;
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Персонал - коллектив работников или совокупность лиц, осуществляющих трудовые функции на основе трудового договора (контракта).](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+person
+=> nrel_main_idtf: [персона] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [person] (* <- lang_en;; *);;
+
+nrel_operator
+=> nrel_main_idtf: [оператор*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [operator*] (* <- lang_en;; *);
+-> binary_relation;
+=> nrel_first_domain: hardware;
+=> nrel_second_domain: personnel;
+<-rrel_key_sc_element:
+	...  
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Оператор* - бинарное отношение, связывающее специалиста, выполняющий работу по управлению или обслуживанию какого-либо сложного оборудования или установки с этим оборудовнаием или установкой.](* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+
