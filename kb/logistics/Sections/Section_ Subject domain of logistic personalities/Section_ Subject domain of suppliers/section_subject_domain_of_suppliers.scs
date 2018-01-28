@@ -1,0 +1,14 @@
+section_subject_domain_of_suppliers
+=> nrel_main_idtf:
+	[Раздел. Предметная область поставщиков]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of suppliers]
+	(* <- lang_en;; *);
+	
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_suppliers = [*^"file://section_subject_domain_of_suppliers.scsi"*];;
+
+section_subject_domain_of_suppliers
+-> rrel_key_sc_element: subject_domain_of_suppliers;;

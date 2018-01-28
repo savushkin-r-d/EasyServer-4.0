@@ -1,0 +1,16 @@
+section_subject_domain_of_logistic_documents
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область документов логистики]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of logistic documents]
+	(* <- lang_en;; *);
+
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_logistic_documents = [*^"file://section_subject_domain_of_logistic_documents.scsi"*];;
+
+section_subject_domain_of_logistic_documents
+-> rrel_key_sc_element: subject_domain_of_logistic_documents;;

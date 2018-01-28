@@ -1,0 +1,442 @@
+township
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[городской поселок]
+    (*<- lang_ru;;*);;
+
+town
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[город]
+    (*<- lang_ru;;*);;
+
+city
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[областной центр]
+    (*<- lang_ru;;*);;
+
+country
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[страна]
+    (*<- lang_ru;;*);;
+
+Ruzhany
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ружаны]
+    (*<- lang_ru;;*);
+<-township;;
+
+Rogachev
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Рогачев]
+    (*<- lang_ru;;*);
+<-town;;
+
+Vasilishki
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Василишки]
+    (*<- lang_ru;;*);
+<-village;;
+
+nrel_main_livestock_sector
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[основное направление животноводства*]
+    (*<- lang_ru;;*);;
+
+nrel_nearest_locality
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[ближайший населенный пункт*]
+    (*<- lang_ru;;*);;
+
+nrel_area
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[площадь*]
+    (*<- lang_ru;;*);;
+
+rrel_hectare
+	<- sc_node_role_relation;
+	=> nrel_main_idtf:
+			[га']
+			(*<-lang_ru;;*);
+			[ha']
+			(*<-lang_en;;*);;
+
+nrel_main_crop_sector
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[основное направление растениеводства*]
+    (*<- lang_ru;;*);;
+
+dairy_cattle_breeding
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[молочное скотоводство]
+    (*<- lang_ru;;*);;
+
+cattle_breeding
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[разведение скота]
+    (*<- lang_ru;;*);;
+
+cereals
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[зерновые культуры]
+    (*<- lang_ru;;*);;
+
+apple
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[яблоко]
+    (*<- lang_ru;;*);;
+
+fodder_crops
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[кормовые культуры]
+    (*<- lang_ru;;*);;
+
+potato
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[картофель]
+    (*<- lang_ru;;*);;
+
+rapeseed
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+	[рапс]
+    (*<- lang_ru;;*);;
+
+farm
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[farm]
+		(*<- lang_en;;*);
+		[ферма]
+		(*<- lang_ru;;*);
+
+	=> nrel_idtf:
+		[фермерское хозяйство]
+		(*<- lang_ru;;*);
+
+	<- rrel_key_sc_element: ...
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр. (ферма)]
+			(*<- lang_ru;;*);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example:
+                [<b>Ферма</b> — частное сельскохозяйственное предприятие, занимающееся производством сельскохозяйственной продукции.]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+		*);;
+	*);;
+
+ruzhany_agro_farm
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ферма "Ружаны-Агро"] 
+	(* <- lang_ru;; *);
+<- farm;
+=> nrel_nearest_locality: Ruzhany;
+=> nrel_area: ...
+	(*
+		<- value;;
+		<= nrel_measurement:...
+		(*
+			-> rrel_hectare: 20511 (*<- number;;*);;
+		*);;
+	*);
+=>nrel_main_crop_sector:
+    cereals;
+    rapeseed;
+    potato;
+
+=>nrel_main_livestock_sector:
+    dairy_cattle_breeding;;
+
+
+vasilishki_farm
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ферма "Василишки"] 
+	(* <- lang_ru;; *);
+<- farm;
+=> nrel_nearest_locality: Vasilishki;
+=> nrel_area: ...
+	(*
+		<- value;;
+		<= nrel_measurement:...
+		(*
+			-> rrel_hectare: 21791 (*<- number;;*);;
+		*);;
+	*);
+=>nrel_main_crop_sector:
+    fodder_crops;
+=>nrel_main_livestock_sector:
+    dairy_cattle_breeding;;
+
+tihinichi_farm
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ферма "Тихиничи"] 
+	(* <- lang_ru;; *);
+<- farm;
+=> nrel_nearest_locality: Rogachev;
+=> nrel_area: ...
+	(*
+		<- value;;
+		<= nrel_measurement:...
+		(*
+			-> rrel_hectare: 10775 (*<- number;;*);;
+		*);;
+	*);
+
+=>nrel_main_crop_sector:
+    apple;
+    potato;
+    cereals;
+    fodder_crops;
+
+=>nrel_main_livestock_sector:
+    cattle_breeding;;
+
+/////////////////////////////////////////////////////////////////////////
+factory
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[factory]
+		(*<- lang_en;;*);
+		[фабрика]
+		(*<- lang_ru;;*);
+
+	=> nrel_idtf:
+        [plant]
+		(*<- lang_en;;*);
+		[завод]
+		(*<- lang_ru;;*);
+
+	<- rrel_key_sc_element: ...
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр. (фабрика)]
+			(*<- lang_ru;;*);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example:
+                [<b>Фабрика</b> — промышленное предприятие, основанное на применении машин, характеризующееся крупномасштабным производством]
+               (*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+		*);;
+	*);;
+
+
+Shuchin
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Щучин]
+		(*<- lang_ru;;*);
+	<-town;;
+
+Volkovysk
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Волковыск]
+		(*<- lang_ru;;*);
+	<-town;;
+
+Belarus
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Беларусь]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Russia
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Россия]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Grodno
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Гродно]
+		(*<- lang_ru;;*);
+	<-city;;
+
+Brest
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Брест]
+		(*<- lang_ru;;*);
+	<-city;;
+
+Ukraine
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Украина]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Kazakhstan
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Казахстан]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Armenia
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Армения]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Azerbaijan
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Азербайджан]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Moldova
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Молдова]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Singapore
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Сингапур]
+		(*<- lang_ru;;*);
+	<-country;;
+
+Thailand
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Таиланд]
+		(*<- lang_ru;;*);
+	<-country;;
+
+dairy_products
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[молочная продукция]
+    (*<- lang_ru;;*);;
+
+meat_products
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[мясная продукция]
+    (*<- lang_ru;;*);;
+
+nrel_manufactured_products
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[выпускаемая продукция*]
+    (*<- lang_ru;;*);;
+
+nrel_staff_size
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[количество рабочих*]
+    (*<- lang_ru;;*);;
+
+nrel_target_market
+    <- sc_node_norole_relation;
+    => nrel_main_idtf:
+	[целевой рынок*]
+    (*<- lang_ru;;*);;
+
+shuchin_creamery_factory
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Щучинский маслосырзавод] 
+		(* <- lang_ru;; *);
+	<- factory;
+	=> nrel_nearest_locality: Shuchin;
+	=> nrel_staff_size: 
+		750(*<- number;;*);
+	=> nrel_manufactured_products: dairy_products;
+	=> nrel_target_market: Belarus;;
+
+grodno_meat_packing_factory
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Гродненский мясокомбинат] 
+		(* <- lang_ru;; *);
+	<- factory;
+	=> nrel_nearest_locality: Grodno;
+	=> nrel_manufactured_products: meat_products;
+	=> nrel_target_market: Belarus;;
+
+bellact_factory
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Беллакт] 
+		(* <- lang_ru;; *);
+	=> nrel_idtf:
+		[Предприятие "Беллакт"] 
+		(* <- lang_ru;; *);
+	<- factory;
+	=> nrel_nearest_locality: Volkovysk;
+	=> nrel_manufactured_products: dairy_products;
+	=> nrel_target_market: Belarus; Russia;;
+
+savushkin_product_factory
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Савушкин Продукт] 
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Savushkin Product] 
+		(* <- lang_en;; *);
+	=> nrel_idtf:
+		[Предприятие "Савушкин Продукт"] 
+		(* <- lang_ru;; *);
+	=> nrel_idtf:
+		[Предприятие "Савушкин"] 
+		(* <- lang_ru;; *);
+
+	<- factory;
+	=> nrel_nearest_locality: Brest;
+	=> nrel_manufactured_products: dairy_products;
+	=> nrel_target_market: 
+		Belarus; Russia; Ukraine;
+		Kazakhstan; Armenia; Azerbaijan;
+		Moldova; Singapore; Thailand;
+
+	<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example:
+				"file://savushkin_product_factory.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
