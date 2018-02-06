@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="13cm" height="24cm" viewBox="13 9 253 463" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="72.4142,10 112.414,10 92.4142,40 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="92.4142" y1="40" x2="92.5" y2="56.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.955" y1="419.96" x2="140" y2="440"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #ffffff" x1="120" y1="472" x2="160" y2="472"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="120,470 140,440 160,470 "/>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="44.9654" cy="95" rx="30" ry="15"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="44.9654" y="93.5889">
+      <tspan x="44.9654" y="93.5889">Выбор линии подачи</tspan>
+      <tspan x="44.9654" y="100.644">MH1 или MH2</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="139.676" cy="95" rx="30" ry="15"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139.676" y="93.5889">
+      <tspan x="139.676" y="93.5889">Выбор коагулятора</tspan>
+      <tspan x="139.676" y="100.644">1 или 12</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="45.1" y1="61.5" x2="44.9654" y2="80"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.9" y1="61.5" x2="139.676" y2="80"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="44.9654" y1="110" x2="45" y2="130"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.676" y1="110" x2="139.925" y2="130.631"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="45" y1="160" x2="45.002" y2="179.625"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.925" y1="160.631" x2="139.802" y2="179.625"/>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="109.869" y="200" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="109.869" y1="210" x2="119.869" y2="200"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.869" y1="200" x2="169.869" y2="210"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.869" y1="230" x2="169.869" y2="220"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139.869" y="217.117">
+      <tspan x="139.869" y="217.117">Приготовление</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="234.778" cy="285" rx="30" ry="15"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="234.778" y="283.589">
+      <tspan x="234.778" y="283.589">Выбор линии</tspan>
+      <tspan x="234.778" y="290.644">H1 или H7</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.802" y1="184.625" x2="139.869" y2="200"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.869" y1="230" x2="139.889" y2="248.728"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="234.69" y1="253.728" x2="234.778" y2="270"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.889" y1="253.728" x2="139.72" y2="320.106"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="234.778" y1="300" x2="234.804" y2="318.914"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.72" y1="350.106" x2="139.889" y2="369.364"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="234.804" y1="348.914" x2="234.69" y2="369.364"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="139.955" y1="389.96" x2="139.889" y2="374.364"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="13.5" y1="56.5" x2="171.5" y2="56.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="13.5" y1="61.5" x2="171.5" y2="61.5"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="13.4021" y1="179.625" x2="171.402" y2="179.625"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="13.4021" y1="184.625" x2="171.402" y2="184.625"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="108.289" y1="248.728" x2="266.289" y2="248.728"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="108.289" y1="253.728" x2="266.289" y2="253.728"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="108.289" y1="369.364" x2="266.289" y2="369.364"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="108.289" y1="374.364" x2="266.289" y2="374.364"/>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="15" y="130" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="15" y1="140" x2="25" y2="130"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="65" y1="130" x2="75" y2="140"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="65" y1="160" x2="75" y2="150"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="45" y="147.117">
+      <tspan x="45" y="147.117">Наполнение</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="109.925" y="130.631" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="109.925" y1="140.631" x2="119.925" y2="130.631"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.925" y1="130.631" x2="169.925" y2="140.631"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.925" y1="160.631" x2="169.925" y2="150.631"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139.925" y="147.747">
+      <tspan x="139.925" y="147.747">Наполнение</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="109.72" y="320.106" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="109.72" y1="330.106" x2="119.72" y2="320.106"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.72" y1="320.106" x2="169.72" y2="330.106"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.72" y1="350.106" x2="169.72" y2="340.106"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139.72" y="337.223">
+      <tspan x="139.72" y="337.223">Выдача</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="204.804" y="318.914" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="204.804" y1="328.914" x2="214.804" y2="318.914"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="254.804" y1="318.914" x2="264.804" y2="328.914"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="254.804" y1="348.914" x2="264.804" y2="338.914"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="234.804" y="336.031">
+      <tspan x="234.804" y="336.031">Выдача</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="109.955" y="389.96" width="60" height="30"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="109.955" y1="399.96" x2="119.955" y2="389.96"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.955" y1="389.96" x2="169.955" y2="399.96"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="159.955" y1="419.96" x2="169.955" y2="409.96"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139.955" y="407.077">
+      <tspan x="139.955" y="407.077">Мойка</tspan>
+    </text>
+  </g>
+</svg>
