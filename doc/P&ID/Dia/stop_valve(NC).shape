@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>Dia - stop_valve(NC)</name>
+  <icon>stop_valve(NC).png</icon>
+  <connections>
+    <point x="-0" y="-0.15"/>
+    <point x="-0.6" y="-0.15"/>
+  </connections>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:rect style="fill: #ffffff; stroke: #000000" x="-0.075" y="-0.6" width="-0.45" height="-0.3"/>
+	<svg:line x1="-0.075" y1="-0.75" x2="-0.525" y2="-0.75"/>
+	<svg:line x1="-0.3" y1="-0.75" x2="-0.3" y2="-0.15"/>
+    <svg:polygon style="fill: #000000" points="-0.2625,-0.3 -0.3,-0.15 -0.3375,-0.3 "/>
+	<svg:polygon style="fill: #ffffff" points="0,0 -0.3,-0.15 -0.6,0 -0.6,-0.3 -0.3,-0.15 0,-0.3 "/>
+  </svg:svg>
+</shape>
