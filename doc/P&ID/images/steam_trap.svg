@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="11cm" height="11cm" viewBox="0 0 201 201" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="3cm" height="3cm" viewBox="-20 -20 41 41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <ellipse style="fill: #ffffff" cx="102.889" cy="102.889" rx="97.1113" ry="97.1113"/>
-    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="102.889" cy="102.889" rx="97.1113" ry="97.1113"/>
-    <path style="fill: #000000" d="M 34.2207 171.557 C 9.6272,147.036 0,111.249 8.97188,77.6989 C 17.9438,44.1489 44.1489,17.9438 77.6989,8.97188 C 111.249,0 147.036,9.6272 171.557,34.2207 L 34.2207,171.557z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 34.2207 171.557 C 9.6272,147.036 0,111.249 8.97188,77.6989 C 17.9438,44.1489 44.1489,17.9438 77.6989,8.97188 C 111.249,0 147.036,9.6272 171.557,34.2207 L 34.2207,171.557"/>
+    <ellipse style="fill: #ffffff" cx="0.577741" cy="0.577741" rx="19.4223" ry="19.4223"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="0.577741" cy="0.577741" rx="19.4223" ry="19.4223"/>
+    <path style="fill: #000000" d="M -13.1559 14.3113 C -18.0746,9.40723 -20,2.24977 -18.2056,-4.46023 C -16.4112,-11.1702 -11.1702,-16.4112 -4.46023,-18.2056 C 2.24977,-20 9.40723,-18.0746 14.3113,-13.1559 L -13.1559,14.3113z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -13.1559 14.3113 C -18.0746,9.40723 -20,2.24977 -18.2056,-4.46023 C -16.4112,-11.1702 -11.1702,-16.4112 -4.46023,-18.2056 C 2.24977,-20 9.40723,-18.0746 14.3113,-13.1559 L -13.1559,14.3113"/>
   </g>
 </svg>
