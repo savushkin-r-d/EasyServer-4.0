@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
-  <name>Dia - steam_trap</name>
+  <name>P&amp;ID - steam_trap</name>
   <icon>steam_trap.png</icon>
   <connections>
     <point x="-0.5" y="0"/>

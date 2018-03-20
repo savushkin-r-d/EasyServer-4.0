@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
-  <name>Dia - valve_NO</name>
+  <name>P&amp;ID - valve_NO</name>
   <icon>valve_NO.png</icon>
   <connections>
     <point x="0" y="0.15"/>

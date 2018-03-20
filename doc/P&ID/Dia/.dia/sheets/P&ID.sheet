@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sheet xmlns="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns">
+<!--Dia-Version: 0.97.2-->
+<!--File: C:\Users\id.BMK\.dia\sheets\P&ID.sheet-->
+<!--Date: Tue Mar 20 10:13:41 2018-->
+<!--For: id-->
+
+<name>P&amp;ID</name>
+<description>P&amp;ID</description>
+<contents>
+<!--add shapes here-->
+<object name="P&amp;ID - valve_NO"><description>Valve NO</description></object>
+<object name="P&amp;ID - valve_NC"><description>Valve NC</description></object>
+<object name="P&amp;ID - vertical_vessel"><description>Vertical vessel</description></object>
+<object name="P&amp;ID - steam_trap"><description>Steam trap</description></object>
+<object name="P&amp;ID - centrifugal_pump"><description>Centrifugal pump</description></object>
+<object name="P&amp;ID - controllable_valve(NC)"><description>Controllable valve (NC)</description></object>
+<object name="P&amp;ID - drain"><description>Drain</description></object>
+<object name="P&amp;ID - filter"><description>Filter</description></object>
+</contents></sheet>

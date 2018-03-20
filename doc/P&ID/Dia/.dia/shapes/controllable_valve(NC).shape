@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
-  <name>Dia - controllable_valve(NC)</name>
+  <name>P&amp;ID - controllable_valve(NC)</name>
   <icon>controllable_valve(NC).png</icon>
   <connections>
     <point x="0,3" y="0"/>
