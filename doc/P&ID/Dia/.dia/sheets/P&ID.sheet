@@ -11,10 +11,16 @@
 <!--add shapes here-->
 <object name="P&amp;ID - valve_NO"><description>Valve NO</description></object>
 <object name="P&amp;ID - valve_NC"><description>Valve NC</description></object>
+<object name="P&amp;ID - stop_valve(NC)"><description>Stop valve (NC)</description></object>
 <object name="P&amp;ID - vertical_vessel"><description>Vertical vessel</description></object>
 <object name="P&amp;ID - steam_trap"><description>Steam trap</description></object>
 <object name="P&amp;ID - centrifugal_pump"><description>Centrifugal pump</description></object>
 <object name="P&amp;ID - controllable_valve(NC)"><description>Controllable valve (NC)</description></object>
+<object name="P&amp;ID - hand_valve(NO)"><description>Hand valve (NO)</description></object>
+<object name="P&amp;ID - hand_valve(NC)"><description>Hand valve (NC)</description></object>
 <object name="P&amp;ID - drain"><description>Drain</description></object>
 <object name="P&amp;ID - filter"><description>Filter</description></object>
+<object name="P&amp;ID - function_symbol"><description>Function symbol</description></object>
+<object name="P&amp;ID - heat_exchanger"><description>Heat exchanger</description></object>
+<object name="P&amp;ID - indicator"><description>Indicator</description></object>
 </contents></sheet>
