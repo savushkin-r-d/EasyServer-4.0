@@ -3,12 +3,11 @@
   <name>P&amp;ID - valve_NC</name>
   <icon>valve_NC.png</icon>
   <connections>
-    <point x="0" y="0.15"/>
-    <point x="0.3" y="0.15"/>
-    <point x="0.6" y="0.15"/>
+    <point x="0,3" y="0"/>
+    <point x="-0,3" y="0"/>
   </connections>
   <aspectratio type="fixed"/>
   <svg:svg>
-    <svg:polygon style="fill: #000000" points="0,0 0.3,0.15 0.6,0 0.6,0.3 0.3,0.15 0,0.3 "/>
+    <svg:polygon style="fill: #ffffff" points="0.3,-0.15 0.3,0.15 0,0 -0.3,-0.15 -0.3,0.15 "/>
   </svg:svg>
 </shape>
