@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
   <name>P&amp;ID - vertical_vessel</name>
-  <default-width>1</default-width>
-  <default-height>1</default-height>
+  <default-width>4</default-width>
+  <default-height>6</default-height>
   <icon>vertical_vessel.png</icon>
   <connections>
     <point x="-4" y="-4"/>
