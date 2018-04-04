@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
   <name>P&amp;ID - indicator</name>
+  <default-width>1</default-width>
+  <default-height>1</default-height>
   <icon>indicator.png</icon>
   <connections>
-    <point x="-0.5" y="0"/>
-    <point x="0.5" y="0"/>
-	<point x="0" y="-0.5"/>
-    <point x="0" y="0.5"/>
   </connections>
   <aspectratio type="fixed"/>
   <svg:svg>
-    <svg:circle style="fill: #ffffff" cx="0" cy="0" r="0.5" />
+    <svg:circle style="fill: #ffffff" cx="0.5" cy="0.5" r="1" />
   </svg:svg>
 </shape>
