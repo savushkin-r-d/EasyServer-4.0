@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
   <name>P&amp;ID - function_symbol</name>
-  <default-width>1.05</default-width>
-  <default-height>1.05</default-height>
+  <default-width>1</default-width>
+  <default-height>1</default-height>
   <icon>function_symbol.png</icon>
   <connections>
     <point x="2.3422" y="-0.992784"/>
