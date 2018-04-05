@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>Desktop - filter(view2)</name>
+  <default-width>1</default-width>
+  <default-height>1</default-height>
+  <icon>filter(view2).png</icon>
+  <connections>
+    <point x="0.6" y="0.6"/>
+    <point x="-0.6" y="0.6"/>
+  </connections>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:polygon style="fill: #ffffff" points="0,0 0.6,0.6 0,1.2 -0.6,0.6 "/>
+    <svg:line style="fill: none; stroke-dasharray: 0.24; stroke: #000000" x1="0" y1="0" x2="0" y2="1.2"/>
+  </svg:svg>
+</shape>
