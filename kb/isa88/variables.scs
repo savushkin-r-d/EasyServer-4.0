@@ -1,0 +1,36 @@
+_heating_water
+=> nrel_main_idtf: [_греющая_вода] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_heating_water] (* <- lang_en;; *);;
+
+_starter
+=> nrel_main_idtf: [_закваска] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_starter] (* <- lang_en;; *);;
+
+_button_next
+=> nrel_main_idtf: [_кнопка_дальше] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_button_next] (* <- lang_en;; *);;
+
+_mixer
+=> nrel_main_idtf: [_мешалка] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_mixer] (* <- lang_en;; *);;
+
+_washing_substance
+=> nrel_main_idtf: [_моющее_вещество] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_washing_substance] (* <- lang_en;; *);;
+
+_skim_milk
+=> nrel_main_idtf: [_обрат] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_skim_milk] (* <- lang_en;; *);;
+
+_skim_milk_with_starter
+=> nrel_main_idtf: [_обрат_с_закваской] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_skim_milk_with_starter] (* <- lang_en;; *);;
+
+_operator
+=> nrel_main_idtf: [_оператор] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_operator] (* <- lang_en;; *);;
+
+
+_cottage_cheese
+=> nrel_main_idtf: [_творог] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [_cottage_cheese] (* <- lang_en;; *);;

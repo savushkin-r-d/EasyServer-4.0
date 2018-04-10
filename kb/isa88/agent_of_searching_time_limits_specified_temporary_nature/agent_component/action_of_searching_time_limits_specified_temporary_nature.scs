@@ -1,0 +1,5 @@
+sc_node_not_relation -> action_of_searching_time_limits_specified_temporary_nature;;
+
+action_of_searching_time_limits_specified_temporary_nature => nrel_main_idtf:
+	[Действие. Найти временные границы указанной временной сущности]
+		(*<- lang_ru;;*);;
