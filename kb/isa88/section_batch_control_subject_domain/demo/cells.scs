@@ -1,9 +1,0 @@
-cottage_cheese_production_cell
-=> nrel_main_idtf: 
-[Производство творожной массы] (* <- lang_ru;; *);
-[Cottage cheese production] (* <- lang_en;; *);;
-
-cottage_cheese_forming_packing_cell
-=> nrel_main_idtf: 
-[Формовка и фасовка творожной массы] (* <- lang_ru;; *);
-[Cottage cheese forming and packing] (* <- lang_en;; *);;

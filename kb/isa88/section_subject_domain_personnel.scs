@@ -1,8 +1,0 @@
-section_subject_domain_personnel
-=> nrel_main_idtf: [Раздел. Предметная область персонала] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Section. Subject domain of personnel] (* <- lang_en;; *);;
-
-section_subject_domain_personnel = [*^"file://section_subject_domain_personnel.scsi"*];;
-
-section_subject_domain_personnel
--> rrel_key_sc_element: person; nrel_operator;;
