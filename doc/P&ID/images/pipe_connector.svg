@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3pt" height="3pt" viewBox="0 0 3 3" version="1.1">
-<g id="surface139010">
-<rect x="0" y="0" width="3" height="3" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
-<path style="fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.102039 -0.00667305 C 0.102039 0.126725 -0.0979612 0.126725 -0.0979612 -0.00667305 C -0.0979612 -0.140071 0.102039 -0.140071 0.102039 -0.00667305 " transform="matrix(20,0,0,20,1.959224,2.133461)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21pt" height="21pt" viewBox="0 0 21 21" version="1.1">
+<g id="surface175759">
+<rect x="0" y="0" width="21" height="21" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<path style="fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.06;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 2.067832 0.986363 C 2.067832 1.26234 1.843808 1.486363 1.567832 1.486363 C 1.29166 1.486363 1.067832 1.26234 1.067832 0.986363 C 1.067832 0.710191 1.29166 0.486363 1.567832 0.486363 C 1.843808 0.486363 2.067832 0.710191 2.067832 0.986363 " transform="matrix(20,0,0,20,-20.755069,-9.125697)"/>
 </g>
 </svg>
