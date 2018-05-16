@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="1pt" viewBox="0 0 6 1" version="1.1">
-<g id="surface146106">
-<rect x="0" y="0" width="6" height="1" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
-<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.375752 0.271622 C 0.375752 0.230215 0.409346 0.196622 0.450752 0.196622 C 0.492158 0.196622 0.525752 0.230215 0.525752 0.271622 " transform="matrix(20,0,0,20,-6.015037,-3.93243)"/>
-<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.300752 0.271622 L 0.375752 0.271622 " transform="matrix(20,0,0,20,-6.015037,-3.93243)"/>
-<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.525752 0.271622 L 0.600752 0.271622 " transform="matrix(20,0,0,20,-6.015037,-3.93243)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60pt" height="16pt" viewBox="0 0 60 16" version="1.1">
+<g id="surface169533">
+<rect x="0" y="0" width="60" height="16" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.123829 0.612657 C 0.123829 0.198399 0.459571 -0.137343 0.873829 -0.137343 C 1.288087 -0.137343 1.623829 0.198399 1.623829 0.612657 " transform="matrix(20,0,0,20,12.523417,3.246866)"/>
+<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M -0.626171 0.612657 L 0.123829 0.612657 " transform="matrix(20,0,0,20,12.523417,3.246866)"/>
+<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 1.623829 0.612657 L 2.373829 0.612657 " transform="matrix(20,0,0,20,12.523417,3.246866)"/>
 </g>
 </svg>
