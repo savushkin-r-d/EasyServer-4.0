@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>P&amp;ID - indicator_1</name>
+  <default-width>1</default-width>
+  <default-height>1</default-height>
+  <icon>indicator_1.png</icon>
+  <connections>
+    <point x="-0.5" y="0"/>
+    <point x="0.5" y="0"/>
+    <point x="0" y="-0.5"/>
+    <point x="0" y="0.5"/>
+  </connections>
+  <aspectratio type="fixed"/>
+  <textbox style="font-size: 16px" x1="-0.5" y1="-0.5" x2="0.5" y2="0" resize="no"/>
+  <svg:svg>
+    <svg:circle style="stroke-width: 0; fill: #ffffff" cx="0" cy="0" r="0.5" />
+   <svg:line style="stroke-width: 0" x1="-0.5" y1="0" x2="0.5" y2="0"/>
+  </svg:svg>
+</shape>
+

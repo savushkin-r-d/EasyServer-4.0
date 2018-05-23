@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>P&amp;ID - sanitary_hand_valve(NC)</name>
+  <default-height>1.2</default-height>
+  <icon>sanitary_hand_valve(NC).png</icon>
+   <connections>
+    <point x="-0.4" y="0"/>
+    <point x="0.4" y="0"/>
+  </connections>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:line style="stroke-width: 0.001" x1="-0.15" y1="-0.7" x2="0.15" y2="-0.7"/>
+    <svg:line style="stroke-width: 0.001" x1="0" y1="-0.5" x2="0" y2="-0.7"/>
+    <svg:rect style="fill: #ffffff; stroke-width: 0.001" x="-0.3" y="-0.5" width="0.6" height="1"/>
+    <svg:line style="stroke-width: 0.001" x1="0" y1="-0.5" x2="0" y2="0.5"/>
+    <svg:rect style="fill: #ffffff; stroke-width: 0.001" x="-0.4" y="-0.1" width="0.1" height="0.2"/>
+    <svg:rect style="fill: #ffffff; stroke-width: 0.001" x="0.3" y="-0.1" width="0.1" height="0.2"/>
+    <svg:circle style="fill: #ffffff; stroke-width: 0.001" cx="0" cy="0" r="0.1"/>
+  </svg:svg>
+</shape>
