@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="20pt" viewBox="0 0 16 20" version="1.1">
+<g id="surface8597">
+<rect x="0" y="0" width="16" height="20" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.368435 19.103211 L 32.968435 19.103211 L 32.968435 20.103211 L 32.368435 20.103211 Z M 32.368435 19.103211 " transform="matrix(20,0,0,20,-645.368702,-382.064211)"/>
+<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.668435 19.103211 L 32.668435 20.103211 " transform="matrix(20,0,0,20,-645.368702,-382.064211)"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.268435 19.503211 L 32.368435 19.503211 L 32.368435 19.703211 L 32.268435 19.703211 Z M 32.268435 19.503211 " transform="matrix(20,0,0,20,-645.368702,-382.064211)"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.968435 19.503211 L 33.068435 19.503211 L 33.068435 19.703211 L 32.968435 19.703211 Z M 32.968435 19.503211 " transform="matrix(20,0,0,20,-645.368702,-382.064211)"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.768435 19.603211 C 32.768435 19.736609 32.568435 19.736609 32.568435 19.603211 C 32.568435 19.470007 32.768435 19.470007 32.768435 19.603211 " transform="matrix(20,0,0,20,-645.368702,-382.064211)"/>
+</g>
+</svg>

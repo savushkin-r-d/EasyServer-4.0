@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="20pt" viewBox="0 0 16 20" version="1.1">
+<g id="surface9373">
+<rect x="0" y="0" width="16" height="20" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.059077 19.359535 L 32.659077 19.359535 L 32.659077 20.359535 L 32.059077 20.359535 Z M 32.059077 19.359535 " transform="matrix(20,0,0,20,-639.181548,-387.19071)"/>
+<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.059077 19.859535 L 32.659077 19.859535 " transform="matrix(20,0,0,20,-639.181548,-387.19071)"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 31.959077 19.759535 L 32.059077 19.759535 L 32.059077 19.959535 L 31.959077 19.959535 Z M 31.959077 19.759535 " transform="matrix(20,0,0,20,-639.181548,-387.19071)"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.659077 19.759535 L 32.759077 19.759535 L 32.759077 19.959535 L 32.659077 19.959535 Z M 32.659077 19.759535 " transform="matrix(20,0,0,20,-639.181548,-387.19071)"/>
+<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 32.459077 19.859535 C 32.459077 19.992934 32.259077 19.992934 32.259077 19.859535 C 32.259077 19.726332 32.459077 19.726332 32.459077 19.859535 " transform="matrix(20,0,0,20,-639.181548,-387.19071)"/>
+</g>
+</svg>
