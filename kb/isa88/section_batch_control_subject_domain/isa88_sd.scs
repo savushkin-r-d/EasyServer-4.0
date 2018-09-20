@@ -846,7 +846,7 @@ process_cell
 unit
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[установка]
+	[аппарат]
 	(* <- lang_ru;; *);
 	[unit]
 	(* <- lang_en;; *);
