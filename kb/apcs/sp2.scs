@@ -1,0 +1,75 @@
+s_sb_d_of_p_id_rules
+	=> nrel_main_idtf:
+		[Раздел. Предметная область правил языка P&ID]
+		(* <- lang_ru;; *);
+	=> nrel_idtf:
+		[Раздел базы знаний, описывающий Предметную область правил языка P&ID]
+		(* <- lang_ru;; *);;
+
+pfc_rule
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[правило языка PFC]
+		(* <- lang_ru;; *);;
+
+s_sb_d_of_p_id_rules = 
+[*
+sb_d_of_p_id_rules
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Предметная область правил языка P&ID]
+		(* <- lang_ru;; *);
+	<-subject_domain;
+	-> rrel_maximum_studied_object_class: p_id_rule;
+	-> rrel_explored_relation: nrel_mapping;
+	-> rrel_explored_relation: nrel_isomorphic;;
+
+
+rule_language_P_and_ID
+	=> nrel_idtf:"file://images/rule_language_P&ID.png";
+	<- rrel_key_sc_element:
+		...
+		(*
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			<- explanation;;
+			-> rrel_example: 
+				[правило языка P&ID — sc-текст, являющийся описанием переходов от семантики языка P&ID к соответствующим синтаксическим текстам, основанных на графических примитивах.]
+				(* <- lang_ru;; *);;
+			*);;
+		*);;
+		
+nrel_compliance
+	=> nrel_idtf:"file://images/compliance.png";
+	<- rrel_key_sc_element:
+		...
+		(*
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			<- explanation;;
+			-> rrel_example: 
+				[соответствие* – бинарное отношение, заданное на множествах и задающее наличие отношения, в котором участвуют только элементы этих множеств.]
+				(* <- lang_ru;; *);;
+			*);;
+		*);;
+
+nrel_isomorphism_state
+	=> nrel_idtf:"file://images/isomorphism_state.png";
+	<- rrel_key_sc_element:
+		...
+		(*
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			<- explanation;;
+			-> rrel_example: 
+				[изоморфность* – это гомоморфность*, при которой для каждого элемента из области значения существует ровно один соответствующий элемент из области определения.]
+				(* <- lang_ru;; *);;
+			*);;
+		*);;
+
+*];;
+
+
