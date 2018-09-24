@@ -1,0 +1,52 @@
+pid_test 
+=> nrel_main_idtf: [Тестовая диаграмма P&ID] (* <- lang_ru;; *);
+=> nrel_main_idtf: [P&ID test diagram] (* <- lang_en;; *);;
+
+pid_test_layout
+=> nrel_main_idtf: [Тестовая диаграмма P&ID с размещением] (* <- lang_ru;; *);
+=> nrel_main_idtf: [P&ID test diagram with layout] (* <- lang_en;; *);;
+
+image_of_centrifugal_pump
+<- element_class_image;
+=> nrel_html_template: [
+<rect class="S2UBorderRect" x="0" y="0" style="fill: none; fill-opacity:0" width="40" height="40"/>
+<ellipse style="fill: #ffffff" cx="20" cy="20" rx="20" ry="20"/>
+<ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="20" cy="20" rx="20" ry="20"/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="0" y1="20" x2="40" y2="20"/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="20" y1="0" x2="40" y2="20"/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="20" y1="40" x2="40" y2="20"/>
+];;
+
+image_of_gate_valve 
+<- element_class_image;
+=> nrel_html_template: [
+<rect class="S2UBorderRect" x="0" y="0" style="fill: none; fill-opacity:0" width="80" height="40"/>
+<polygon style="fill: #ffffff" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
+<polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
+];;
+
+image_of_hand_valve
+<- element_class_image;
+=> nrel_html_template: [
+<rect class="S2UBorderRect" x="0" y="0" style="fill: none; fill-opacity:0" width="80" height="40"/>
+<polygon style="fill: #ffffff" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
+<polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="40" y1="20" x2="40" y2="-40"/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="20" y1="-40" x2="60" y2="-40"/>
+];;
+
+image_of_closed_gate_valve
+<- element_class_image;
+=> nrel_html_template: [
+<rect class="S2UBorderRect" x="0" y="0" style="fill: none; fill-opacity:0" width="80" height="40"/>
+<polygon style="fill: #000000; stroke-width: 2; stroke: #000000" points="0,0 40,20 80,0 80,40 40,20 0,40"/>
+];;
+
+image_of_closed_hand_valve
+<- element_class_image;
+=> nrel_html_template: [
+<rect class="S2UBorderRect" x="0" y="0" style="fill: none; fill-opacity:0" width="80" height="40"/>
+<polygon style="fill: #000000; stroke-width: 2; stroke: #000000" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="40" y1="20" x2="40" y2="-40"/>
+<line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="20" y1="-40" x2="60" y2="-40"/>
+];;
