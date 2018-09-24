@@ -1,0 +1,325 @@
+..last_pattern = [* 
+_x _<= nrel_object:: _a;;
+_a _<- last_entity;;
+_a _<- _a_class;;
+_a_class _<= nrel_inclusion:: question;;
+_a _=> nrel_result:: _s;;
+_s _-> _p;;
+_s _-> _...;;
+*];;
+
+..real_pattern = [* 
+_x _<= nrel_object:: _a;;
+_a _<- real_entity;;
+_a _=> nrel_situation:: _s;;
+_s _-> _p;;
+_s _-> _...;;
+*];;
+
+
+agent_finding_reason_of_object_state
+=> nrel_main_idtf:
+	[агентная scp-программа поиска причин текущего состояния заданного объекта] (* <- lang_ru;; *);
+	[agent scp-program of finding the reasons of the given object current state] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_reason_of_object_state 
+	(*
+	-> rrel_params: ...
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: ...
+		(*
+		-> rrel_init: .agent_finding_reason_of_object_state_operator1A 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_finding_reason_of_object_state_operator1B;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator1B 
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: action_find_reason_of_object_state;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_finding_reason_of_object_state_operator1C;;
+		  	=> nrel_else: .agent_finding_reason_of_object_state_operator_return;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator1C
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+		  	=> nrel_then: .agent_finding_reason_of_object_state_operatorD;;
+		  	=> nrel_else: .agent_finding_reason_of_object_state_operator_return;;
+			*);;
+		
+		-> .agent_finding_reason_of_object_state_operatorD
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _answer;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorD1;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorD1
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _object_set;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorD2;;
+			*);;
+
+//Find general objects
+		-> .agent_finding_reason_of_object_state_operatorD2
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _object_set;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorE1;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorE1
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_find_general_entities;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+		  		(*
+		  			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+		  			-> rrel_2: rrel_fixed: rrel_scp_var: _object_set;;
+		  		*)
+		  	;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorE2;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorE2
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorF;;
+			*);;
+
+//Find actions
+		-> .agent_finding_reason_of_object_state_operatorF
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _object_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			
+			=> nrel_then: .agent_finding_reason_of_object_state_operatorF1;;
+			=> nrel_else: .agent_finding_reason_of_object_state_operatorE3;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorF1
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorF2;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorF2
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ..last_pattern;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... 
+				(*
+					-> ... (* 
+							-> rrel_1: rrel_fixed: rrel_scp_const: _x;;
+							-> rrel_2: rrel_fixed: rrel_scp_var: _elem;;
+							*);;
+					-> ... (* 
+							-> rrel_1: rrel_fixed: rrel_scp_const: _p;;
+							-> rrel_2: rrel_fixed: rrel_scp_var: _param;;
+							*);;
+				*);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_finding_reason_of_object_state_operatorF2_1;;
+			=> nrel_else: .agent_finding_reason_of_object_state_operatorF3;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorF2_1
+			(*
+		  	<- ifVarAssign;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _last_found;;
+
+		  	=> nrel_then: .agent_finding_reason_of_object_state_operatorF3;;
+		  	=> nrel_else: .agent_finding_reason_of_object_state_operatorF2_2;;
+			*);;
+		
+		-> .agent_finding_reason_of_object_state_operatorF2_2
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: ..last_pattern;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_const: _elem;;
+
+		  	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorF2_3;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorF2_3
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _last_found;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorF3;;
+			*);;		
+
+		-> .agent_finding_reason_of_object_state_operatorF3
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ..real_pattern;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... 
+				(*
+					-> ... (* 
+							-> rrel_1: rrel_fixed: rrel_scp_const: _x;;
+							-> rrel_2: rrel_fixed: rrel_scp_var: _elem;;
+							*);;
+					-> ... (* 
+							-> rrel_1: rrel_fixed: rrel_scp_const: _p;;
+							-> rrel_2: rrel_fixed: rrel_scp_var: _param;;
+							*);;
+				*);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_finding_reason_of_object_state_operatorF3_1;;
+			=> nrel_else: .agent_finding_reason_of_object_state_operatorF;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorF3_1
+			(*
+		  	<- ifVarAssign;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _real_found;;
+
+		  	=> nrel_then: .agent_finding_reason_of_object_state_operatorF;;
+		  	=> nrel_else: .agent_finding_reason_of_object_state_operatorF3_2;;
+			*);;
+		
+		-> .agent_finding_reason_of_object_state_operatorF3_2
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: ..real_pattern;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_const: _elem;;
+
+		  	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorF3_3;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operatorF3_3
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _real_found;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operatorF;;
+			*);;
+
+//Forming answer
+
+		-> .agent_finding_reason_of_object_state_operatorE3
+			(*
+		  	<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operator_clean1;;
+			*);;                                            
+		
+		-> .agent_finding_reason_of_object_state_operator_clean1
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _object_set;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operator_clean2;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator_clean2
+			(*
+		  	<- ifVarAssign;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _real_found;;
+
+		  	=> nrel_then: .agent_finding_reason_of_object_state_operator_clean3;;
+		  	=> nrel_else: .agent_finding_reason_of_object_state_operator_clean4;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator_clean3
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _real_found;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operator_clean4;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator_clean4
+			(*
+		  	<- ifVarAssign;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _last_found;;
+
+		  	=> nrel_then: .agent_finding_reason_of_object_state_operator_clean5;;
+		  	=> nrel_else: .agent_finding_reason_of_object_state_operator_return;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator_clean5
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _last_found;;
+
+		  	=> nrel_goto: .agent_finding_reason_of_object_state_operator_return;;
+			*);;
+
+		-> .agent_finding_reason_of_object_state_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;
