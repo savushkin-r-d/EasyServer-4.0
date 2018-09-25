@@ -1,0 +1,12 @@
+section_subject_domain_of_vehicles
+=> nrel_main_idtf:
+	[Раздел. Предметная область транспортных средств]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of vehicles]
+	(* <- lang_en;; *);
+<- structure;;
+
+section_subject_domain_of_vehicles = [*^"file://section_subject_domain_of_vehicles.scsi"*];;
+
+section_subject_domain_of_vehicles
+-> rrel_key_sc_element: subject_domain_of_vehicles;;

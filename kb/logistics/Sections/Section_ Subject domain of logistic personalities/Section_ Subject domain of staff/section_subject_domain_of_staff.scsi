@@ -1,0 +1,344 @@
+subject_domain_of_staff
+	=> nrel_main_idtf:
+	[Предметная область персонала]
+	(* <- lang_ru;; *);
+	[Subject domain of staff]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	staff;
+-> rrel_not_maximum_studied_object_class:
+	logistician;
+	transport_logistician;
+	carrier;
+	ood_operator;
+	vet;
+	driver;
+	dispatcher;
+	customs_clearance_specialist;
+	storekeeper;
+	security_specialist;
+	shift_supervisor;
+	bookkeeper;;
+
+
+staff
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[персонал]
+	(* <- lang_ru;; *);
+	[staff]
+	(* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_staff.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);;
+
+logistician
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[логист]
+	(* <- lang_ru;; *);
+	[logistician]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[логистик]
+	(* <- lang_ru;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_logistician.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> supplier;;
+				*);;
+		*);;
+
+transport_logistician
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[транспортный логист]
+	(* <- lang_ru;; *);
+	[transport logistician]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+<= nrel_inclusion: logistician;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_transport_logistician.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);;
+
+carrier
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[перевозчик]
+	(* <- lang_ru;; *);
+	[carrier]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_carrier.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> vehicle;;
+				*);;
+		*);;
+
+ood_operator
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[оператор ООД]
+	(* <- lang_ru;; *);
+	[OOD operator]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_ood_operator.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> documents_formalization;;
+				*);;
+		*);;
+
+vet
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ветеринарный врач]
+	(* <- lang_ru;; *);
+	[vet]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ветеринар]
+	(* <- lang_ru;; *);
+	[ветврач]
+	(* <- lang_ru;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_vet.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);;
+
+driver
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[водитель]
+	(* <- lang_ru;; *);
+	[driver]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_driver.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> vehicle;;
+				*);;
+		*);;
+
+dispatcher
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[диспетчер]
+	(* <- lang_ru;; *);
+	[dispatcher]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_dispatcher.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> vehicle;;
+				*);;
+		*);;
+
+customs_clearance_specialist
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[специалист по таможенному оформлению]
+	(* <- lang_ru;; *);
+	[customs clearance specialist]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_customs_clearance_specialist.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> customs_clearance;;
+				*);;
+		*);;
+
+bookkeeper
+=> nrel_main_idtf:
+	[бухгалтер]
+	(*<-lang_ru;;*);
+	[bookkeeper]
+	(*<-lang_en;;*);
+=> nrel_idtf:
+	[accountant]
+	(* <- lang_en;; *);
+	[booker]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_bookkeeper.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);
+<= nrel_inclusion: staff;
+<- sc_node_not_relation;;
+	
+storekeeper
+=> nrel_main_idtf:
+	[кладовщик]
+	(*<-lang_ru;;*);
+	[storekeeper]
+	(*<-lang_en;;*);
+<= nrel_inclusion: staff;
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_storekeeper.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);
+<- sc_node_not_relation;;
+	
+security_specialist
+=> nrel_main_idtf:
+	[специалист службы безопасности]
+	(*<-lang_ru;;*);
+	[security specialist]
+	(*<-lang_en;;*);
+<= nrel_inclusion: staff;
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_security_specialist.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);
+<- sc_node_not_relation;;
+	
+shift_supervisor
+=> nrel_main_idtf:
+	[начальник смены]
+	(*<-lang_ru;;*);
+	[shift supervisor]
+	(*<-lang_en;;*);
+=> nrel_idtf:
+	[shiftman]
+	(* <- lang_en;; *);
+<= nrel_inclusion: staff;
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_shift_supervisor.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);
+<= nrel_inclusion: staff;
+<- sc_node_not_relation;;

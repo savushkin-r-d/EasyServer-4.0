@@ -1,0 +1,15 @@
+section_subject_domain_of_logistic_processes
+
+=> nrel_main_idtf: 
+	[Раздел. Предметная область логистических процессов]
+	(*<- lang_ru;;*);
+	[Section. Subject domain of logistics processes]
+	(*<- lang_en;;*);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_logistic_processes = [*^"file://section_subject_domain_of_logistic_processes.scsi"*];;
+
+section_subject_domain_of_logistic_processes
+-> rrel_key_sc_element: subject_domain_of_logistic_processes;;
