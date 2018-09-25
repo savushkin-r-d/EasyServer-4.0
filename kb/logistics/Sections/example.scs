@@ -1,0 +1,172 @@
+emergency_one
+	<- bad_weather;
+	=> nrel_main_idtf:
+		[ice-crusted ground]
+		(*<- lang_en;;*);
+		[гололедица]
+		(*<- lang_ru;;*);
+
+	=> nrel_delay: ...
+	(*
+		=> nrel_main_idtf:
+			[1 час]
+			(*<- lang_ru;;*);
+			[1 hour]
+			(*<- lang_en;;*);;
+		-> rrel_number_of_hour_in_day: 1 (* <-hour;;*);;
+		-> rrel_number_of_minute_in_hour: 0 (* <-minute;;*);;
+		-> rrel_number_of_second_in_minute: 0 (* <-second;;*);;
+	*);
+	-> rrel_participant: gaz_one;
+	=> nrel_consequence:
+		car_repair;
+
+	=> nrel_purchase: ... 
+	(*
+		<- value;;
+		=> nrel_main_idtf:
+			[50 BYN]
+			(*<- lang_en; lang_ru;;*);;
+		<= nrel_measurement:...
+		(*
+			-> rrel_BYN:...
+			(*
+				=> nrel_main_idtf: [50] (* <- lang_en; lang_ru;;*);;
+				<- number;;
+			*);;
+		*);;
+	*);;
+
+
+emergency_two
+	<- car_trouble;
+	=> nrel_main_idtf:
+		[wheel puncture]
+		(*<- lang_en;;*);
+		[прокол колеса]
+		(*<- lang_ru;;*);
+
+	=> nrel_delay: ...
+	(*
+		=> nrel_main_idtf:
+			[2 часа 30 минут]
+			(*<- lang_ru;;*);
+			[2 hour 30 minutes]
+			(*<- lang_en;;*);;
+		-> rrel_number_of_hour_in_day: 2 (* <-hour;;*);;
+		-> rrel_number_of_minute_in_hour: 30 (* <-minute;;*);;
+		-> rrel_number_of_second_in_minute: 0 (* <-second;;*);;
+	*);
+	-> rrel_participant: gaz_one;
+	=> nrel_consequence:
+		car_repair;
+
+	=> nrel_purchase: ... 
+	(*
+		<- value;;
+		=> nrel_main_idtf:
+			[30 BYN]
+			(*<- lang_en; lang_ru;;*);;
+		<= nrel_measurement:...
+		(*
+			-> rrel_BYN:...
+			(*
+				=> nrel_main_idtf: [30] (* <- lang_en; lang_ru;;*);;
+				<- number;;
+			*);;
+		*);;
+	*);
+
+	=> nrel_address: ...
+	(*
+		=> nrel_nearest_locality: Ruzhany;;
+	*);;
+
+emergency_three
+	<- crash_injury;
+	=> nrel_main_idtf:
+		[road accident]
+		(*<- lang_en;;*);
+		[авария на дороге]
+		(*<- lang_ru;;*);
+
+	=> nrel_delay: ...
+	(*
+		=> nrel_main_idtf:
+			[2 часа 30 минут]
+			(*<- lang_ru;;*);
+			[2 hour 30 minutes]
+			(*<- lang_en;;*);;
+		-> rrel_number_of_hour_in_day: 2 (* <-hour;;*);;
+		-> rrel_number_of_minute_in_hour: 30 (* <-minute;;*);;
+		-> rrel_number_of_second_in_minute: 0 (* <-second;;*);;
+	*);
+  -> rrel_participant: gaz_one;
+
+=> nrel_consequence:
+		car_repair;
+		treatment;
+
+	=> nrel_purchase: ... 
+	(*
+		<- value;;
+		=> nrel_main_idtf:
+			[300 BYN]
+			(*<- lang_en; lang_ru;;*);;
+		<= nrel_measurement:...
+		(*
+			-> rrel_BYN:...
+			(*
+				=> nrel_main_idtf: [300] (* <- lang_en; lang_ru;;*);;
+				<- number;;
+			*);;
+		*);;
+	*);
+
+	=> nrel_address: ...
+	(*
+		=> nrel_nearest_locality: Ruzhany;;
+	*);
+
+
+	=> nrel_amount_of_leakage: ... 
+	(*
+		<- value;;
+		=> nrel_main_idtf:
+			[3 литра]
+			(*<- lang_ru;;*);
+			[3 liters]
+			(*<- lang_en;;*);;
+		<= nrel_measurement:...
+		(*
+			-> rrel_liter:...
+			(*
+				=> nrel_main_idtf: [3] (* <- lang_en; lang_ru;;*);;
+				<- number;;
+			*);;
+		*);;
+	*);;
+
+gaz_one
+	<- gaz_mm;
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[GAZ ONE]
+		(*<- lang_en;;*);
+		[ГАЗ ОДИН]
+		(*<- lang_ru;;*);
+
+	-> rrel_destination_point:savushkin_product_factory;
+	-> rrel_departure_point:ruzhany_agro_farm;;
+
+gaz_two
+	<- gaz_mm;
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[GAZ TWO]
+		(*<- lang_en;;*);
+		[ГАЗ ДВА]
+		(*<- lang_ru;;*);
+
+	-> rrel_destination_point:vasilishki_farm;
+	-> rrel_departure_point:savushkin_product_factory;;

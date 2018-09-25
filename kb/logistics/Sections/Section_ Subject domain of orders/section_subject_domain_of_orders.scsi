@@ -1,0 +1,59 @@
+subject_domain_of_orders
+	=> nrel_main_idtf:
+	[Предметная область заказов]
+	(* <- lang_ru;; *);
+	[Subject domain of orders]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	order;
+-> rrel_not_maximum_studied_object_class:
+	transport_order;;
+
+order
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[заказ]
+	(* <- lang_ru;; *);
+	[order]
+	(* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_order.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);;
+
+transport_order
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[транспортный заказ]
+	(* <- lang_ru;; *);
+	[transport order]
+	(* <- lang_en;; *);
+<= nrel_inclusion: order;
+<= nrel_inclusion: document;
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_transport_order.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> document;;
+				*);;
+		*);;

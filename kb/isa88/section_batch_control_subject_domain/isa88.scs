@@ -1,0 +1,45 @@
+section_isa88
+<- ui_start_sc_element;
+<- sc_node_struct;
+=> nrel_main_idtf: [Раздел. Предметная область предприятий рецептурного производства] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Subject domain of batch manufacturing enterprises] (* <- lang_en;; *);
+<= nrel_section_decomposition: { 
+section_isa88_physical_models
+(* => nrel_section_base_order: section_isa88_process_models;; *); 
+section_isa88_process_models
+(* => nrel_section_base_order: section_isa88_procedural_control_models;; *); 
+section_isa88_procedural_control_models
+(* => nrel_section_base_order: section_control_activities;; *);
+section_control_activities
+};;
+
+rrel_key_sc_element -> (section_isa88 -> subject_domain_isa88); (section_isa88_physical_models -> subject_domain_isa88_physical);
+(section_isa88_process_models -> subject_domain_isa88_process); (section_isa88_procedural_control_models -> subject_domain_isa88_procedural);;
+
+section_isa88_physical_models
+=> nrel_main_idtf:
+	[Раздел. Предметная область физических моделей рецептурных производств]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of physical models of batch manufacturing enterprises]
+	(* <- lang_en;; *);;
+
+section_isa88_process_models
+=> nrel_main_idtf:
+	[Раздел. Предметная область процессных моделей рецептурных производств]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of process models of batch manufacturing enterprises]
+	(* <- lang_en;; *);;
+	
+section_isa88_procedural_control_models
+=> nrel_main_idtf:
+	[Раздел. Предметная область моделей процедурного управления оборудованием рецептурных производств]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of procedural control models of batch manufacturing enterprises]
+	(* <- lang_en;; *);;
+
+section_control_activities
+=> nrel_main_idtf:
+	[Раздел. Предметная область деятельности по управлению рецептурным производством]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of batch control activities]
+	(* <- lang_en;; *);;

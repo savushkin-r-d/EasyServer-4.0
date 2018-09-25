@@ -1,0 +1,15 @@
+ui_menu_advanced
+<- sc_node_not_relation;
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf: 
+	[Расширенные запросы] (* <- lang_ru;; *);
+	[Advanced requests] (* <- lang_en;; *);;
+
+ui_menu_advanced <= nrel_ui_commands_decomposition: .ui_menu_advanced_decomposition
+(*
+	-> ui_menu_file_for_finding_connections;;
+	-> ui_menu_file_for_finding_definitions;;
+	-> ui_menu_view_links_of_relation_connected_with_element;;
+*);;
+
+

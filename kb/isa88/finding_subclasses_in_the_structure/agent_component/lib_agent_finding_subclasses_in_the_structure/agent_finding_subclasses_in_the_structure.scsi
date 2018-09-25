@@ -1,0 +1,286 @@
+agent_finding_subclasses_in_the_structure
+=> nrel_main_idtf:
+	[агентная scp-программа поиска подклассов заданного класса, входящих в программу, соответствующую указанному классу процессов] (* <- lang_ru;; *);
+	[agent scp-program of finding subclasses of given class, included in the program, corresponding to the specified class of the processes] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_subclasses_in_the_structure 
+	(*
+	-> rrel_params: .agent_finding_subclasses_in_the_structure_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_finding_subclasses_in_the_structure_operator_set 
+		(*
+		-> rrel_init: .agent_finding_subclasses_in_the_structure_operator1A 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator1B;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator1B 
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: action_find_subclasses_in_the_structure;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_finding_subclasses_in_the_structure_operator1C1;;
+		  	=> nrel_else: .agent_finding_subclasses_in_the_structure_operator_return;;
+			*);;
+		
+		-> .agent_finding_subclasses_in_the_structure_operator1C1 
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _class_of_entities;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+		  	=> nrel_then: .agent_finding_subclasses_in_the_structure_operator1C2;;
+		  	=> nrel_else: .agent_finding_subclasses_in_the_structure_operator_return;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator1C2 
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _struct;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+		  	=> nrel_then: .agent_finding_subclasses_in_the_structure_operator2A;;
+		  	=> nrel_else: .agent_finding_subclasses_in_the_structure_operator_return;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2A
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator2B;;
+			*);;   
+
+		-> .agent_finding_subclasses_in_the_structure_operator2B
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest2;;
+		  	-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _class_of_entities;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator2C;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2C
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_search_all_subclasses_in_quasybinary_relation;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator2D;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2D
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator2E;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2E
+			(*
+    		 	<- sys_wait;;
+
+    		 	-> rrel_1: rrel_fixed: rrel_scp_const: sc_event_add_input_arc;;
+                     	-> rrel_2: rrel_fixed: rrel_scp_var: _quest2;;
+
+    		 	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator2F;;
+    		 	*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2F
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest2;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _temp_answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_then: .agent_finding_subclasses_in_the_structure_operator2G;;
+			=> nrel_else: .agent_finding_subclasses_in_the_structure_operator2E;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2G
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _temp_answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _subclass;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _subclasses;;
+
+		  	=> nrel_then: .agent_finding_subclasses_in_the_structure_operator2H;;
+			=> nrel_else: .agent_finding_subclasses_in_the_structure_operator2E;;
+			*);; 
+
+		-> .agent_finding_subclasses_in_the_structure_operator2H
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp_answer;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator2I;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator2I
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator3A;;
+			*);;  
+
+		-> .agent_finding_subclasses_in_the_structure_operator3A
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _set_of_subclasses;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator3E;;
+			*);;    
+
+		 -> .agent_finding_subclasses_in_the_structure_operator3E
+                	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_equivalent_elements;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_finding_subclasses_in_the_structure_operator3E_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _subclasses;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _struct;;
+                                -> rrel_3: rrel_fixed: rrel_scp_var: _set_of_subclasses;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator3E2;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator3E2
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator4A;;
+			*);;
+		
+		-> .agent_finding_subclasses_in_the_structure_operator4A
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _main_answer;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator4B;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator4B
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_subclasses;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _main_answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _main_answer;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator4C;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator4C
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _main_answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_subclasses;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator4D;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator4D
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _subclasses;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator4E;;
+			*);;
+
+		-> .agent_finding_subclasses_in_the_structure_operator4E
+			(*
+		  	<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _main_answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_finding_subclasses_in_the_structure_operator_return;;
+			*);;                                            
+					
+		-> .agent_finding_subclasses_in_the_structure_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

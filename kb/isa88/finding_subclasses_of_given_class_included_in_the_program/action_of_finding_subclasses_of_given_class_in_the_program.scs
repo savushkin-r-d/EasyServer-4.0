@@ -1,0 +1,5 @@
+sc_node_not_relation -> action_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes;;
+
+action_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes => nrel_main_idtf:
+	[действие. найти подклассы заданного класса, входящих в программу, соответствующую указанному классу процессов]
+		(*<- lang_ru;;*);;
