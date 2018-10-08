@@ -1,0 +1,350 @@
+agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes
+=> nrel_main_idtf:
+	[агентная scp-программа поиска подклассов заданного класса, входящих в программу, соответствующую указанному классу процессов] (* <- lang_ru;; *);
+	[agent scp-program of finding subclasses of given class, included in the program, corresponding to the specified class of the processes] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes 
+	(*
+	-> rrel_params: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_set 
+		(*
+		-> rrel_init: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1A 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1B;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1B 
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1C1;;
+		  	=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_return;;
+			*);;
+		
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1C1 
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _class_of_entities;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1C2;;
+		  	=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_return;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator1C2 
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _class_of_processes;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2A;;
+		  	=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_return;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2A
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2B;;
+			*);;   
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2B
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest2;;
+		  	-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _class_of_entities;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2C;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2C
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_search_all_subclasses_in_quasybinary_relation;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2D;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2D
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2E;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2E
+			(*
+    		 	<- sys_wait;;
+
+    		 	-> rrel_1: rrel_fixed: rrel_scp_const: sc_event_add_input_arc;;
+                     	-> rrel_2: rrel_fixed: rrel_scp_var: _quest2;;
+
+    		 	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2F;;
+    		 	*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2F
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest2;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _temp_answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2G;;
+			=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2E;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2G
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _temp_answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _subclass;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _subclasses;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2H;;
+			=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2E;;
+			*);; 
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2H
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp_answer;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2I;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator2I
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _quest2;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3A;;
+			*);;  
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3A
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _set_of_subclasses;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3B;;
+			*);;    
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3B
+			(*
+		  	<- searchSetStr5;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _key_elements;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _class_of_processes;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_key_elements;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3C;;
+			=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3B_erase;;  
+			*);; 
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3B_erase
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _subclasses;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3B_erase2;;
+			*);; 
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3B_erase2
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_subclasses;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_return;;
+			*);; 
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3C
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_key_elements;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _key_element;;
+
+		  	=> nrel_then: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3D;;
+			=> nrel_else: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3C_erase;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3C_erase
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_key_elements;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4A;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3D
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3E;;
+			*);;
+
+		 -> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3E
+                	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_equivalent_elements;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3E_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _subclasses;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _key_element;;
+                                -> rrel_3: rrel_fixed: rrel_scp_var: _set_of_subclasses;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3E2;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3E2
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator3C;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4A
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _main_answer;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4B;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4B
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_subclasses;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _main_answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _main_answer;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4C;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4C
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _main_answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_subclasses;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4D;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4D
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _subclasses;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4E;;
+			*);;
+
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator4E
+			(*
+		  	<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _main_answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_return;;
+			*);;                                            
+					
+		-> .agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

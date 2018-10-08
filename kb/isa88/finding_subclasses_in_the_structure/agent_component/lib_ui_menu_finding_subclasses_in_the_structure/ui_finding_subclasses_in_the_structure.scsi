@@ -1,0 +1,20 @@
+ui_menu_file_for_finding_subclasses_in_the_structure 
+<- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;
+
+=> nrel_main_idtf: 
+[Какие подклассы заданного класса входят в указанную структуру?] (* <- lang_ru;; *);
+[Which subclasses of a given class are in this structure?] (* <- lang_en;; *);
+
+=> ui_nrel_command_template:
+	[*
+		action_find_subclasses_in_the_structure _-> ... 
+		(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;
+			_<- question;;
+		*);;
+	*];
+
+=> ui_nrel_command_lang_template: [Какие подклассы класса $ui_arg_1 входят в структуру $ui_arg_2?] (* <- lang_ru;; *);
+
+=> ui_nrel_command_lang_template: [Which subclasses of $ui_arg_1 are in the $ui_arg_2 structure?] (* <- lang_en;; *);;

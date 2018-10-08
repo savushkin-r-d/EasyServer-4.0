@@ -1,0 +1,52 @@
+sc_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes
+=> nrel_main_idtf:
+	[sc-агент поиска подклассов заданного класса, входящих в программу, соответствующую указанному классу процессов] (* <- lang_ru;; *);
+	[sc-agent of finding subclasses of given class, included in the program, corresponding to the specified class of the processes] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_rule_changing_condition => ..sc_agent_of_rule_changing_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes;
+                proc_equivalent_elements
+		};;
+		
+	-> sc_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_condition
+= [*
+	action_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._parameter1;;
+	.._question _-> rrel_2:: .._parameter2;;
+*];;
+
+..sc_agent_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes_result
+= [*
+	action_of_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> rrel_1:: .._parameter1;;
+	.._question _-> rrel_2:: .._parameter2;;
+*];;

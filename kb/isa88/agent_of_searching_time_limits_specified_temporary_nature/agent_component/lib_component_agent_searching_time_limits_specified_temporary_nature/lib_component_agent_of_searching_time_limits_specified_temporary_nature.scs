@@ -1,0 +1,30 @@
+lib_component_agent_of_searching_time_limits_specified_temporary_nature
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска временных границ указанной временной сущности]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of searching_time_limits_specified_temporary_nature]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_searching_time_limits_specified_temporary_nature;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_searching_time_limits_specified_temporary_nature;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_searching_time_limits_specified_temporary_nature.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+
