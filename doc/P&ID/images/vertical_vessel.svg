@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="6cm" height="8cm" viewBox="-53 -80 107 160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-52" y1="-53.5" x2="-52" y2="52.5"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="54" y1="-53.5" x2="54" y2="52.5"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -52 -53.5 C -52,-80 54,-80 54,-53.5"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -52 52.5 C -52,79 54,79 54,52.5"/>
+<svg width="25mm" height="40mm" viewBox="0 0 25 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(1,5) scale(.5)">
+    <path style="fill: none; stroke-width: 1; stroke: #000000" d="m 0,0 c 10,-10 30,-10 40,0 v 0,50 c -10,10 -30,10, -40,0 z"/>
   </g>
 </svg>

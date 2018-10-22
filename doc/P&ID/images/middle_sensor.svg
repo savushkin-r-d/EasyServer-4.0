@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26pt" height="20pt" viewBox="0 0 26 20" version="1.1">
-<g id="surface23860">
-<rect x="0" y="0" width="26" height="20" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
-<path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 35.045973 17.948346 C 35.045973 18.224517 34.822145 18.448346 34.545973 18.448346 C 34.269801 18.448346 34.045973 18.224517 34.045973 17.948346 C 34.045973 17.672174 34.269801 17.448346 34.545973 17.448346 C 34.822145 17.448346 35.045973 17.672174 35.045973 17.948346 " transform="matrix(20,0,0,20,-680.919462,-348.966912)"/>
-<path style="fill:none;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 35.145973 18.148346 L 35.145973 17.748346 L 35.245973 17.948346 L 35.345973 17.748346 L 35.345973 18.148346 " transform="matrix(20,0,0,20,-680.919462,-348.966912)"/>
-</g>
-</svg>

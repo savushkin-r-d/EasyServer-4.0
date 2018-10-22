@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="5cm" height="3cm" viewBox="-1 -2 82 44" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <polygon style="fill: #ffffff" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="0,0 40,20 80,0 80,40 40,20 0,40 "/>
+<svg width="22mm" height="12mm" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(1,1) scale(3)">
+    <polygon style="fill: #ffffff; stroke-width: 0.1; stroke: #000000" points="0,0 4,2 4,0 0,2"/>
   </g>
 </svg>
