@@ -10,6 +10,7 @@
 
 | Номер | Символ                                              | Описание       |
 | ----- |:---------------------------------------------------:| :--------------|
+| 1     | ![трубопровод](images/pipe.svg)                     | Трубопровод <br/> (pipe). |
 | 1     | ![нормально закрытый клапан](images/valve_nc.svg)   | Нормально закрытый двухходовой клапан <br/> (generic two-way normally open valve). |
 | 2     | ![нормально открытый клапан](images/valve_no.svg)   | Нормально открытый двухходовой клапан <br/> (generic two-way normally closed valve).|
 | 3     | ![ручной н.о. клапан ](images/hand_valve_nc.svg)    | Ручной нормально закрытый двухходовой клапан <br/> (generic two-way normally closed valve with manual actuator).|
@@ -20,5 +21,10 @@
 
 ## Узел нагрева ##
 
-P&ID-схема узла нагрева.
+Упрощенная P&ID-схема узла нагрева.
+
+![узел нагрева](images/heating_node.svg)
+
+Полная P&ID-схема узла нагрева.
+
 ![узел нагрева](images/heating_node.png)

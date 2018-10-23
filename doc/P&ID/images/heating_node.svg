@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="14.908cm" height="6.386cm" viewBox="0.471 0.913 15.379 7.300"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="2.849" y="3.075" width="1.950" height="3.175" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="2.849" y="3.075" width="1.950" height="3.175" fill="none" stroke="#000000" stroke-width="0.020" />
+<polygon fill="#FFFFFF" stroke="none" stroke-width="0.040" points="1.664,1.639 2.464,2.039 2.464,1.639 1.664,2.039 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.040"  points="1.664,1.639 2.464,2.039 2.464,1.639 1.664,2.039 "/>
+<text x="1.964" y="1.308"  fill="#000000" text-anchor="start" font-size="0.49" font-family="sans" font-style="normal" font-weight="400">
+-V1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.050"  points="2.464,1.839 3.824,1.839 3.824,3.075 "/>
+<line x1="0.496" y1="1.834" x2="1.339" y2="1.838" stroke="#000000" stroke-width="0.050" />
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="1.339,1.988 1.639,1.839 1.340,1.688 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="1.339,1.988 1.639,1.839 1.340,1.688 "/>
+<rect x="10.756" y="3.707" width="3.343" height="1.871" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="10.756" y="3.707" width="3.343" height="1.871" fill="none" stroke="#000000" stroke-width="0.020" />
+<polyline fill="none" stroke="#000000" stroke-width="0.050"  points="3.824,6.250 3.824,7.275 15.123,7.275 15.123,4.642 14.098,4.642 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.050"  points="14.109,4.127 15.188,4.127 15.188,1.907 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="15.338,1.907 15.188,1.607 15.038,1.907 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="15.338,1.907 15.188,1.607 15.038,1.907 "/>
+<polygon fill="#FFFFFF" stroke="none" stroke-width="0.040" points="9.246,3.967 10.046,4.367 10.046,3.967 9.246,4.367 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.040"  points="9.246,3.967 10.046,4.367 10.046,3.967 9.246,4.367 "/>
+<polygon fill="#FFFFFF" stroke="none" stroke-width="0.040" points="7.738,3.968 8.538,4.368 8.538,3.968 7.738,4.368 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.040"  points="7.738,3.968 8.538,4.368 8.538,3.968 7.738,4.368 "/>
+<line x1="6.933" y1="4.168" x2="7.413" y2="4.168" stroke="#000000" stroke-width="0.050" />
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="7.413,4.318 7.713,4.168 7.413,4.018 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="7.413,4.318 7.713,4.168 7.413,4.018 "/>
+<line x1="8.538" y1="4.168" x2="9.246" y2="4.167" stroke="#000000" stroke-width="0.050" />
+<line x1="10.046" y1="4.167" x2="10.756" y2="4.169" stroke="#000000" stroke-width="0.050" />
+<line x1="7.629" y1="5.209" x2="10.756" y2="5.211" stroke="#000000" stroke-width="0.050" />
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="7.629,5.059 7.329,5.209 7.628,5.359 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="7.629,5.059 7.329,5.209 7.628,5.359 "/>
+<text x="7.905" y="3.750"  fill="#000000" text-anchor="start" font-size="0.49" font-family="sans" font-style="normal" font-weight="400">
+-V2</text>
+<text x="9.284" y="3.750"  fill="#000000" text-anchor="start" font-size="0.49" font-family="sans" font-style="normal" font-weight="400">
+-VC1</text>
+<text x="11.920" y="3.535"  fill="#000000" text-anchor="start" font-size="0.49" font-family="sans" font-style="normal" font-weight="400">
+-W1</text>
+<text x="2.059" y="4.666"  fill="#000000" text-anchor="start" font-size="0.49" font-family="sans" font-style="normal" font-weight="400">
+-B1</text>
+</svg>
