@@ -1,0 +1,6 @@
+lang_uk
+<-languages;
+=> nrel_main_idtf:
+   [Украинский язык] (* <- lang_ru;; *);
+   [Ukrainian language] (* <- lang_en;; *);
+   [Українська мова] (* <- lang_uk;; *);;
