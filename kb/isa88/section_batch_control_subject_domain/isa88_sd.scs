@@ -850,6 +850,8 @@ unit
 	(* <- lang_ru;; *);
 	[unit]
 	(* <- lang_en;; *);
+	[апарат]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
