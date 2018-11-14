@@ -1,0 +1,20 @@
+nrel_situation
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [ситуация*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [situation*] (* <- lang_en;; *);;
+
+nrel_equipment_decomposition
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [декомпозиция оборудования*] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [equipment decomposition*] (* <- lang_en;; *);;
+
+IvanovII
+=> nrel_main_idtf: [Иванов И. И.] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Ivanov I. I.] (* <- lang_en;; *);;
+
+action_open
+<- sc_node_not_relation;
+=> nrel_main_idtf: [действие. открыть] (* <- lang_ru;; *);
+=> nrel_main_idtf: [action. open] (* <- lang_en;; *);
+<= nrel_inclusion:
+   question;;
