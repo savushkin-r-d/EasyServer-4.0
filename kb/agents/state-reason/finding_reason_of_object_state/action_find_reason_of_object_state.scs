@@ -1,0 +1,4 @@
+action_find_reason_of_object_state
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. найти причины текущего состояния заданного объекта] (* <- lang_ru;; *);;
