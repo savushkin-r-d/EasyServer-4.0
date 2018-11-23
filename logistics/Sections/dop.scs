@@ -1,0 +1,313 @@
+daily
+	=> nrel_main_idtf:
+		[ежедневно]
+		(*<-lang_ru;;*);
+		[daily]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+shipping_schedule
+	=> nrel_main_idtf:
+		[график отгрузки]
+		(*<-lang_ru;;*);
+		[shipping schedule]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+customer_application
+	=> nrel_main_idtf:
+		[заявка покупателя]
+		(*<-lang_ru;;*);
+		[customer_application]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+	
+
+hour -> one_am;two_am;three_am;four_am;five_am;six_am;seven_am;eight_am;nine_am;ten_am;eleven_am;twelve_pm;one_pm;two_pm;three_pm;our_pm;five_pm;six_pm;seven_pm;eight_pm;nine_pm;ten_pm;eleven_pm;twelve_am;;
+
+one_am
+	=> nrel_main_idtf:
+		[1 час]
+		(*<-lang_ru;;*);
+		[1 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+two_am
+	=> nrel_main_idtf:
+		[2 часа]
+		(*<-lang_ru;;*);
+		[2 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+three_am
+	=> nrel_main_idtf:
+		[3 часа]
+		(*<-lang_ru;;*);
+		[3 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+four_am
+	=> nrel_main_idtf:
+		[4 часа]
+		(*<-lang_ru;;*);
+		[4 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+five_am
+	=> nrel_main_idtf:
+		[5 часов]
+		(*<-lang_ru;;*);
+		[5 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+six_am
+	=> nrel_main_idtf:
+		[6 часов]
+		(*<-lang_ru;;*);
+		[6 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+seven_am
+	=> nrel_main_idtf:
+		[7 часов]
+		(*<-lang_ru;;*);
+		[7 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+eight_am
+	=> nrel_main_idtf:
+		[8 часов]
+		(*<-lang_ru;;*);
+		[8 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+nine_am
+	=> nrel_main_idtf:
+		[9 часов]
+		(*<-lang_ru;;*);
+		[9 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+ten_am
+	=> nrel_main_idtf:
+		[10 часов]
+		(*<-lang_ru;;*);
+		[10 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+eleven_am
+	=> nrel_main_idtf:
+		[11 часов]
+		(*<-lang_ru;;*);
+		[11 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+twelve_pm
+	=> nrel_main_idtf:
+		[12 часов]
+		(*<-lang_ru;;*);
+		[12 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+one_pm
+	=> nrel_main_idtf:
+		[13 часов]
+		(*<-lang_ru;;*);
+		[1 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+two_pm
+	=> nrel_main_idtf:
+		[14 часов]
+		(*<-lang_ru;;*);
+		[2 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+three_pm
+	=> nrel_main_idtf:
+		[15 часов]
+		(*<-lang_ru;;*);
+		[3 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+four_pm
+	=> nrel_main_idtf:
+		[16 часов]
+		(*<-lang_ru;;*);
+		[4 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+five_pm
+	=> nrel_main_idtf:
+		[17 часов]
+		(*<-lang_ru;;*);
+		[5 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+six_pm
+	=> nrel_main_idtf:
+		[18 часов]
+		(*<-lang_ru;;*);
+		[6 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+seven_pm
+	=> nrel_main_idtf:
+		[19 часов]
+		(*<-lang_ru;;*);
+		[7 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+eight_pm
+	=> nrel_main_idtf:
+		[20 часов]
+		(*<-lang_ru;;*);
+		[8 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+nine_pm
+	=> nrel_main_idtf:
+		[21 часов]
+		(*<-lang_ru;;*);
+		[9 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+ten_pm
+	=> nrel_main_idtf:
+		[22 часов]
+		(*<-lang_ru;;*);
+		[10 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+eleven_pm
+	=> nrel_main_idtf:
+		[13 часов]
+		(*<-lang_ru;;*);
+		[1 p.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+twelve_am
+	=> nrel_main_idtf:
+		[0 часов]
+		(*<-lang_ru;;*);
+		[12 a.m.]
+		(*<-lang_en;;*);
+	<- sc_node_not_relation;;
+
+rrel_liter
+	<- sc_node_role_relation;
+	<- role_relation;
+	=> nrel_main_idtf:
+		[liter']
+		(*<- lang_en;;*);
+		[литр']
+		(*<- lang_ru;;*);
+
+	=> nrel_first_domain: 
+		set;
+	=> nrel_second_domain: 
+		number;;
+
+nrel_max_speed
+	=> nrel_main_idtf:
+		[максимальная скорость*]
+		(*<-lang_ru;;*);
+		[maximum speed*]
+		(*<-lang_en;;*);
+	<- sc_node_norole_relation;;
+
+rrel_km_per_h
+=> nrel_main_idtf:
+		[км\ч']
+		(*<-lang_ru;;*);
+		[km\h']
+		(*<-lang_en;;*);
+	<- sc_node_role_relation;;
+
+nrel_weight
+=> nrel_main_idtf:
+		[масса*]
+		(*<-lang_ru;;*);
+		[weight*]
+		(*<-lang_en;;*);
+	<- sc_node_norole_relation;;
+
+rrel_kg
+=> nrel_main_idtf:
+		[кг']
+		(*<-lang_ru;;*);
+		[kg']
+		(*<-lang_en;;*);
+	<- sc_node_role_relation;;
+
+nrel_ltd
+=> nrel_main_idtf:
+		[координаты*]
+		(*<-lang_ru;;*);
+		[coordinates*]
+		(*<-lang_en;;*);
+	<- sc_node_norole_relation;;
+
+nrel_carrying_capacity
+=> nrel_main_idtf:
+		[грузоподъёмность*]
+		(*<-lang_ru;;*);
+		[carrying capacity*]
+		(*<-lang_en;;*);
+	<- sc_node_norole_relation;;
+
+nrel_fuel_consumption
+=> nrel_main_idtf:
+		[расход топлива*]
+		(*<-lang_ru;;*);
+		[fuel consumption*]
+		(*<-lang_en;;*);
+	<- sc_node_norole_relation;;
+
+rrel_l_per_hundred_km
+=> nrel_main_idtf:
+		[л\100 км']
+		(*<-lang_ru;;*);
+		[l\100 km']
+		(*<-lang_en;;*);
+	<- sc_node_role_relation;;
+
+rrel_BYN
+	<- sc_node_role_relation;
+	<- role_relation;
+	=> nrel_main_idtf:
+		[belorussian ruble']
+		(*<- lang_en;;*);
+		[белорусский рубль']
+		(*<- lang_ru;;*);
+	=> nrel_idtf:
+		[BYN']
+		(*<- lang_en;;*);
+
+	=> nrel_first_domain: 
+		value;
+	=> nrel_second_domain: 
+		number;;

@@ -1,0 +1,36 @@
+subject_domain_of_clients
+	=> nrel_main_idtf:
+	[Предметная область клиентов]
+	(* <- lang_ru;; *);
+	[Subject domain of clients]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	client;;
+
+client
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[клиент]
+	(* <- lang_ru;; *);
+	[client]
+	(* <- lang_en;; *);
+	=> nrel_idtf:
+	[customer]
+	(* <- lang_en;; *);
+	[заказчик]
+	(* <- lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_client.html"
+						(* <- lang_ru;; *);; 
+				*);;
+		*);;
