@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>PFC - phase</name>
+  <icon>phase.png</icon>
+  <connections>
+    <point x="0" y="0"/>   
+    <point x="1.5" y="0"/>
+    <point x="3" y="0"/>    
+    <point x="0" y="0.75"/>    
+    <point x="3" y="0.75"/>    
+    <point x="0" y="1.5"/>    
+    <point x="1.5" y="1.5"/>    
+    <point x="3" y="1.5"/>    
+    <point x="1.5" y="0.75" main="yes"/>
+  </connections>
+  <aspectratio type="fixed"/>
+  <default-width>3cm</default-width> 
+  <default-height>1.5cm</default-height>
+  <textbox x1="0" y1="0" x2="3" y2="1.5" resize="no"/>
+  <svg:svg>
+	<svg:rect x="0" y="0" width="3" height="1.5"/>
+	<svg:line x1="0" y1="0.5" x2="0.5" y2="0"/>
+  </svg:svg>
+</shape>
+

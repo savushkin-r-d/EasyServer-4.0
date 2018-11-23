@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>PFC - sync</name>
+  <icon>sync.png</icon>
+  <connections>
+    <point x="1" y="0.375"/>
+    <point x="0" y="0.375"/>
+  </connections>
+  <default-width>1cm</default-width> 
+  <default-height>0.75cm</default-height>
+  <textbox x1="0" y1="0" x2="1" y2="0.75" resize="no"/>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:polygon points="0,0 1,0 1,0.75 0,0.75"/>
+  </svg:svg>
+</shape>
