@@ -1,0 +1,34 @@
+subject_domain_of_suppliers
+	=> nrel_main_idtf:
+	[Предметная область поставщиков]
+	(* <- lang_ru;; *);
+	[Subject domain of suppliers]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+-> rrel_maximum_studied_object_class: 
+	supplier;;
+
+supplier 
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[поставщик]
+	(* <- lang_ru;; *);
+	[supplier]
+	(* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+					"file://content_html/explanation_for_supplier.html"
+						(* <- lang_ru;; *);; 
+				*);;
+			<= nrel_using_constants: ...
+				(*
+				-> client;;
+				*);;
+		*);;
