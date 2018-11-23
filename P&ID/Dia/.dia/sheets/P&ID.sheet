@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sheet xmlns="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns">
+<!--Dia-Version: 0.97.2-->
+<!--File: C:\Users\id.BMK\.dia\sheets\P&ID.sheet-->
+<!--Date: Tue Mar 20 10:13:41 2018-->
+<!--For: id-->
+
+<name>P&amp;ID</name>
+<description>P&amp;ID</description>
+<contents>
+<!--add shapes here-->
+<object name="P&amp;ID - valve_no"><description>Valve normally open</description></object>
+<object name="P&amp;ID - valve_nc"><description>Valve normally closed</description></object>
+<object name="P&amp;ID - hand_valve_no"><description>Hand valve normally open</description></object>
+<object name="P&amp;ID - hand_valve_nc"><description>Hand valve normally closed</description></object>
+</contents></sheet>
