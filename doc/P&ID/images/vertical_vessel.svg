@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="25mm" height="40mm" viewBox="0 0 25 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g transform="translate(1,5) scale(.5)">
-    <path style="fill: none; stroke-width: 1; stroke: #000000" d="m 0,0 c 10,-10 30,-10 40,0 v 0,50 c -10,10 -30,10, -40,0 z"/>
-  </g>
-</svg>
