@@ -1,0 +1,12 @@
+s_sb_d_of_p_id_semantics
+=> nrel_main_idtf:
+	[Раздел. Предметная область семантики языка P&ID]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел базы знаний, описывающий Предметную область семантики языка P&ID]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;;
+s_sb_d_of_p_id_semantics = [*^"file://s_sb_d_of_p_id_semantics.scsi"*];;
+
+rrel_key_sc_element -> (s_sb_d_of_p_id_semantics -> sb_d_of_p_id_semantics);;

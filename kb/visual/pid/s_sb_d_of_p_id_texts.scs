@@ -1,0 +1,10 @@
+s_sb_d_of_p_id_texts 
+=> nrel_main_idtf:
+	[Раздел. Предметная область текстов языка P&ID]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел базы знаний, описывающий Предметную область текстов языка P&ID]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;;
+s_sb_d_of_p_id_texts = [*^"file://s_sb_d_of_p_id_texts.scsi"*];;

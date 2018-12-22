@@ -1,0 +1,1600 @@
+sb_d_of_p_id_texts
+=> nrel_main_idtf:
+	[Предметная область текстов языка P&ID]
+	(* <- lang_ru;; *);
+<- subject_domain;
+<- sc_node_struct;
+<- structure;
+-> rrel_maximum_studied_object_class: p_id_element_text;
+-> rrel_not_maximum_studied_object_class:
+	image_of_indicator;
+	image_of_an_instrument_for_management_of;
+	image_of_an_instrument_at_central_management;
+	image_of_tool_on_local_control_panel;
+	image_of_an_instrument_for_local_control;
+	image_of_pressure_controller;
+	image_of_pressure_indicator;
+	image_of_signal_level;
+	image_of_display_computer;
+	image_of_level_controller;
+	image_of_programmable_indicator;
+	image_of_displayed_programmable_device;
+	image_of_computer;
+	image_of_measuring_wedge;
+	image_of_product_control_panel;
+	image_of_indicator_of_type_2;
+	image_of_indicator_of_type_5;
+	image_of_ultrasonic_meter;
+	image_of_temperature_controller;
+	image_of_indicator_thread;
+	image_of_sensor;
+	image_of_gauge;
+	image_of_rotameter_type_1;
+	image_of_converter;
+	image_of_flow_controller;
+	image_of_level_indicator;
+	image_of_thermometer;
+	image_of_probatoria;
+	image_of_an_instrument_with_configurable_display;
+	image_of_indicator_of_type_1;
+	image_of_measuring_diaphragm;
+	image_of_stop_valve;
+	image_of_closed_shut_off_valve;
+	image_of_picture_ball_valve;
+	image_of_regulating_valve;
+	image_of_piston_valve;
+	image_of_check_valve;
+	image_of_check_valve_type_2;
+	image_of_flange_valve;
+	image_of_corner_valve;
+	image_of_solenoid_valve;
+	image_of_piloted_shut_off_valve;
+	image_of_valve_with_power;
+	image_of_float_valve;
+	image_of_three_way_valve;
+	image_of_three_way_valve_type_2;
+	image_of_four_way_valve;
+	image_of_valve_with_four_pin_connector;
+	image_of_way_valve;				//не описано
+	image_of_stop_valve_with_a_balanced_diaphragm;
+	image_of_centrifugal_pump;
+	image_of_welded_joint;
+	image_of_traced_line;
+	image_of_electric_binary_signal_line;
+	image_of_electric_signal_line;
+	image_of_pneumatic_control;
+	image_of_main_straight_pipe;
+	image_of_connecting_pipeline;
+	image_of_main_pipeline;
+	image_of_tubular_heat_exchanger;
+	image_of_coolant;
+	image_of_boiler;
+	image_of_piston_pump;
+	image_of_screw_pump_type_2;
+	image_of_screw_pump;
+	image_of_centrifugal_pump_type_4;
+	image_of_centrifugal_pump_type_3;
+	image_of_centrifugal_pump_type_2;
+	image_of_tool; 					//не описано
+	image_of_valve; 				//не описано
+	image_of_pump; 					//не описано
+	image_of_compressor; 				//не описано
+	image_of_tank; 					//не описано
+	image_of_device_for_heat_exchange; 		//не описано
+	image_of_connecting_element;			//не описано
+	image_of_computer_indicator;			//не описано
+	image_of_meters;				//не описано
+	image_of_tool_with_custom_display;   		//не описано
+	image_of_tool_with_common_control_display; 	//не описано
+	image_of_tool_with_programmable_logic_control; 	//не описано
+	image_of_location_of_tool;			//не описано
+	image_of_tool_with_a_common_control; 		//не описано
+	image_of_valve_type_1;				//не описано
+	image_of_rotary_compressor;			//не описано
+	image_of_three_way_valve_type_1;; 		//не описано
+
+sc_node_not_relation -> image_of_way_valve;;
+
+sc_node_not_relation -> p_id_element_text;;
+p_id_element_text
+=> nrel_main_idtf:
+	[изображение элемента языка P&ID]
+	(* <- lang_ru;; *);
+=> nrel_strict_inclusion: 
+	image_of_tool;
+	image_of_valve;
+	image_of_pump;
+	image_of_compressor;
+	image_of_tank;
+	image_of_device_for_heat_exchange;
+	image_of_connecting_element;;
+
+sc_node_not_relation -> image_of_indicator;;
+image_of_indicator
+=> nrel_main_idtf:
+	[изображение индикатора]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/image_of_indicator.png";
+=> nrel_strict_inclusion: 
+	image_of_level_indicator; 
+	image_of_indicator_thread; 
+	image_of_pressure_indicator;
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора — изображение, представляющие собой примитив окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_an_instrument_for_management_of;;
+image_of_an_instrument_for_management_of
+=> nrel_main_idtf:
+	[изображение инструмента за управлением]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_an_instrument_for_management_of.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение инструмента за управлением — изображение инструмента со штриховой  горизонтальной линией симметрии.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_an_instrument_at_central_management;;
+image_of_an_instrument_at_central_management
+=> nrel_main_idtf:
+	[изображение инструмента на центральном управлении]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_an_instrument_at_Central_management.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение инструмента на центральном управлении — изображение инструмента со сплошной горизонтальной линией 				симметрии.]
+		(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_tool_on_local_control_panel;;
+image_of_tool_on_local_control_panel
+=> nrel_main_idtf:
+	[изображение инструмента на локальной панели управления]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_tool_on_local_control_panel.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение инструмента на локальной панели управления — изображение инструмента с двумя параллельными горизонтальными 			примитивами отрезка, соединяющими противолежащие точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_an_instrument_for_local_control;;
+image_of_an_instrument_for_local_control
+=> nrel_main_idtf:
+	[изображение инструмента за локальным управлением]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_an_instrument_for_local_control.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение инструмента за локальным управлением — изображение иструмента с двумя параллельными штриховыми 				горизонтальными примитивами отрезка, соединяющими противолежащие точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_pressure_controller;;
+image_of_pressure_controller
+=> nrel_main_idtf:
+	[изображение контроллера давления]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_pressure_controller.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение контроллера давления — изображение, представляющие собой примитив окружности, разделенный линейным 			примитивом по горизонтали на два секторных примитива, где верхний сектор содержит подпись PC, а нижний - 55.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_pressure_indicator;;
+image_of_pressure_indicator
+=> nrel_main_idtf:
+	[изображение индикатора давления]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_pressure_indicator.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора давления — изображение, представляющие собой примитив окружности, разделенный линейным 				примитивом по горизонтали на два секторных примитива, где верхний сектор содержит подпись PIC, а нижний - 105.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_signal_level;;
+image_of_signal_level
+	=> nrel_main_idtf:
+	[изображение сигнала уровня]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_signal_level.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение сигнала уровня — изображение, представляющие собой прмитив окружности, разделенный линейным примитивом по 				горизонтали на два секторных примитива, где верхний сектор содержит подпись LA, а нижний - 25.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_display_computer;;
+image_of_display_computer
+=> nrel_main_idtf:
+	[изображение индикатора компьютера]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_display_computer.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора компьютера — изображение, представляющие собой примитив восьмиугольника с горизонтальным 				примитивом отрезка, разделяющим восьмиугольник пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_level_controller;;
+image_of_level_controller
+=> nrel_main_idtf:
+	[изображение контроллера уровня]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_level_controller.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение контроллера уровня — изображение, представляющие собой примитив окружности, разделенный линейным 				примитивом по горизонтали на два секторных примитива, где верхний сектор содержит подпись LC, а нижний - 65.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_programmable_indicator;;
+image_of_programmable_indicator
+=> nrel_main_idtf:
+	[изображение программируемого индикатора]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_programmable_indicator.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение программируемого индикатора — изображение прямоугольного примитива, середины сторон которого являются 				вершинами другого прямоугольного примитива, находящегося внутри первого, причём середины первого прямоугольного 			примитива, расположенные по горизонтали, соединены примитивом отрезка.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_displayed_programmable_device;;
+image_of_displayed_programmable_device
+=> nrel_main_idtf:
+	[изображение отображаемого программируемого устройства]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_displayed_programmable_device.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение отображаемого программируемого устройства — изображение прямоугольного примитива, середины сторон которого 			являются вершинами примитива многоугольника, находящегося внутри первого, причем первый прямоугольный примитив 				находится внутри третьего прямоугольного примитива и не пересекается с ним.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_computer;;
+image_of_computer
+=> nrel_main_idtf:
+	[изображение компьютера]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/computer_image.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение компьютера — изображение двух  примитивов равнобедренных трапеций, у которых основание - общее и невидимо 				для наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_measuring_wedge;;
+image_of_measuring_wedge
+=> nrel_main_idtf:
+	[изображение измерителя клина]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_measuring_wedge.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение измерителя клина — изображение примитива треугольника, одна из сторон которого лежит на верхней стороне 				прямоугольного примитива.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_product_control_panel;;
+image_of_product_control_panel
+=> nrel_main_idtf:
+	[изображение панели управления устройством]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_product_control_panel.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение панели управления устройством — изображение примитива восьмиугольника с равными сторонами.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_indicator_of_type_5;;
+image_of_indicator_of_type_5
+=> nrel_main_idtf:
+	[изображение индикатора типа 5]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/picture_type_indicator_5.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора типа 5 — изображение полуокружности, лежащей в верхней полуплоскости и вертикального линейного 				примитива, конечная точка которого совпадает с ее центром.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_ultrasonic_meter;;
+image_of_ultrasonic_meter
+=> nrel_main_idtf:
+	[изображение ультразвукового измерителя]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_ultrasonic_meter.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение ультразвукового измерителя — изображение прямоугольного примитива, содержащего две непересекающихся 				тильды, находящихся на одинаковом расстоянии от верхнего и нижнего основания.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_temperature_controller;;
+image_of_temperature_controller
+=> nrel_main_idtf:
+	[изображение контроллера температуры]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_temperature_controller.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение контроллера температуры — изображение примитива окружности, содержащего внутри надпись ТС.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_indicator_thread;;
+image_of_indicator_thread
+=> nrel_main_idtf:
+	[изображение индикатора потока]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_indicator_thread.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора потока — изображение примитива окружности, содержащего внутри надпись FI.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_sensor;;
+image_of_sensor
+=> nrel_main_idtf:
+	[изображение уровнемера]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_sensor.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение уровнемера — изображение примитива окружности, содержащего внутри надпись LG.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_gauge;;
+image_of_gauge
+=> nrel_main_idtf:
+	[изображение манометра]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_gauge.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение манометра — изображение примитива окружности,  содержащего изображение стрелки, направленной вверх под 				углом 45 градусов, и линейного примитива, конечная точка которого совпадает с нижней точкой примитива окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_rotameter_type_1;;
+image_of_rotameter_type_1
+=> nrel_main_idtf:
+	[изображение расходометра типа 1]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_rotameter_type_1.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение расходометра типа 1 — изображение примитива окружности,  содержащего изображение стрелки, направленной 				вверх под углом 45 градусов, четырех вертикальных параллельных линейных примитивов, два из которых касаются окружности 				слева и справа, и двух линейных примитивов, перпендикулярных линейным примитивам, не имеющим с окружностью общих 				точек .]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_rotameter_type_2;;
+image_of_rotameter_type_2
+=> nrel_main_idtf:
+	[изображение расходометра типа 2]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_of_rotameter_type_2.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение расходометра типа 2 — изображение прямоугольного примитива и двух вложенных в него примитивов касающихся 				окружностей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_converter;;
+image_of_converter
+=> nrel_main_idtf:
+	[изображение преобразователя]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_Converter.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение преобразователя — изображение примитива окружности, разделенного линейным примитивом под углом 45 				градусов, при этом верхний сегмент содержит число - 1, а нижний сегмент букву - Р.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_flow_controller;;
+image_of_flow_controller
+=> nrel_main_idtf:
+	[изображение контроллера потока]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_of_flow_controller.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение контроллера потока — изображение примитива окружности, содержащего внутри надпись FC.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_level_indicator;;
+image_of_level_indicator
+=> nrel_main_idtf:
+	[изображение индикатора уровня]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_level_indicator.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора уровня — изображение примитива окружности, содержащего внутри надпись LI.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> image_of_thermometer;;
+image_of_thermometer
+=> nrel_main_idtf:
+	[изображение термометра]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_of_thermometer.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение термометра — изображение стрелки вправо и двух линейных примитивов, один из которых направлен под углом 45 			градусов к другому и конец которого является точкой пересечения двух линейных примитивов; второй сонаправлен со 			стрелкой и имеет конец, совпадающий с ее концом.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_probatoria;;
+image_of_probatoria
+=> nrel_main_idtf:
+	[изображение проботборщика]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:							//файл отсутствует
+//	"file://images/image_probatoria.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение проботборщика — изображение примитива окружности, содержащего внутри надпись S.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_an_instrument_with_configurable_display;;
+image_of_an_instrument_with_configurable_display
+=> nrel_main_idtf:
+	[изображение инструмента с настраиваемым отображением]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_of_an_instrument_with_configurable_display.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение инструмента с настраиваемым отображением — изображение примитива окружности, вписанного в примитив 			квадрата, вложенного в другой примитив квадрата.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_indicator_of_type_2;;
+image_of_indicator_of_type_2
+=> nrel_main_idtf:
+	[изображение общего индикатора типа 2]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_indicator_of_type_2.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение индикатора типа 2 — изображение примитива окружности и линейного примитива, конечная точка которого 				совпадает  с его нижней точкой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_indicator_of_type_1;;
+image_of_indicator_of_type_1
+=> nrel_main_idtf:
+	[изображение общего индикатора типа 1 ]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/indicator_of_type_1.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение общего индикатора типа 1 — изображение индикатора на центральном управлении, вписанного в примитив 			квадрата.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_measuring_diaphragm;;
+image_of_measuring_diaphragm
+=> nrel_main_idtf:
+	[изображение измерителя диафрагмы]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_measuring_diaphragm.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение измерителя диафрагмы — изображение прямоугольного примитива, содержащего надпись D, и двух линейных 				горизонтальных примитивов, имеющих единственную с ним общую точку, совпадающую с серединой одной из его боковых сторон.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_stop_valve;;
+image_of_stop_valve
+=> nrel_main_idtf:
+	[изображение запорного клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_of_stop_valve.png";
+=> nrel_strict_inclusion: 
+	image_of_closed_shut_off_valve; 
+	image_of_stop_valve_with_a_balanced_diaphragm; 
+	image_of_piloted_shut_off_valve;
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение запорного клапана — изображение двух примитивов равнобедренных треугольников, имеющих одну общую точку.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_closed_shut_off_valve;;
+image_of_closed_shut_off_valve
+=> nrel_main_idtf:
+	[изображение закрытого запорного клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/closed_shut_off_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение закрытого запорного клапана— изображение двух закрашенных примитивов равнобедренных треугольников, имеющих 			одну общую точку.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_ball_valve;;
+image_of_ball_valve
+=> nrel_main_idtf:
+	[изображение шарового вентиля]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/picture_ball_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение шарового вентиля — изображение задвижки с закрашенным примитивом окружности в общей точке примитивов 				треугольников.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_regulating_valve;;
+image_of_regulating_valve
+=> nrel_main_idtf:
+	[изображение регулирующего вентиля]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_for_regulating_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение регулирующего вентиля — изображение задвижки и примитива отрезка, один из концов которого совпадает с 				общей точкой треугольных примитивов, второй - с центром полуокружности, лежащей в верхней полуплоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_piston_valve;;
+image_of_piston_valve
+=> nrel_main_idtf:
+	[изображение поршневого клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_piston_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение поршневого клапана — изображение задвижки и примитива отрезка, соединяющего точку пересечения треугольных 				примитивов и  середину нижней стороны прямоугольного примитива, включающей стороны двух других прямоугольных смежных 				примитивов, правый из которых имеет такой же входящий в его боковую сторону перпендикулярный линейный примитив, 			пересеченный двумя параллельными линейными примитивами под углом 45 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_check_valve;;
+image_of_check_valve
+=> nrel_main_idtf:
+	[изображение обратного клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_of_check_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение обратного клапана — изображение двух вертикальных параллельных примитивов отрезков одинаковой длины, 				примитивом отрезка, соединяющего верхний конец левого примитива отрезка и нижний конец правого, и направленного вправо 				изображения стрелки, находящегося над примитивами отрезков.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_check_valve_type_2;;
+image_of_check_valve_type_2
+=> nrel_main_idtf:
+	[изображение обратного клапана типа 2]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:										//файл отсутствует
+//	"file://images/image_of_check_valve_type_2.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение обратного клапана типа 2 — изображение двух вертикальных параллельных примитивов отрезков одинаковой 				длины, изображения стрелки, соединяющеей верхний конец левого примитива отрезка и нижний конец правого, и закрашенного
+			примитива окружности без сегмента четвертой четверти, центр которого совпадает с верхним концом левого примитива 				отрезка.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_flange_valve;;
+image_of_flange_valve
+=> nrel_main_idtf:
+	[изображение фланцевого клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_for_flange_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+			-> rrel_example: 
+			[Изображение фланцевого клапана — изображение задвижки с двумя линейными примитивами, параллельными сторонам 				треугольных примитивов, противолежащим их общей точке.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_corner_valve;;
+image_of_corner_valve
+=> nrel_main_idtf:
+	[изображение углового клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_corner_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение углового клапана — изображение двух перпендикулярных треугольным примитивов, имеющих общую точку, один из 				которых расположен справа.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_solenoid_valve;;
+image_of_solenoid_valve
+=> nrel_main_idtf:
+	[изображение соленоидного клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_solenoid_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение соленоидного клапана — изображение клапана с питанием, прямоугольный примитив которого содержит надпись S.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_piloted_shut_off_valve;;
+image_of_piloted_shut_off_valve
+=> nrel_main_idtf:
+	[изображение пилотируемого запорного клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_piloted_shut_off_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение пилотируемого запорного клапана — изображение клапана с питанием, прямоугольный примитив которого содержит 			надпись P.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_valve_with_power;;
+image_of_valve_with_power
+=> nrel_main_idtf:
+	[изображение клапана с питанием]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_valve_with_power.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение клапана с питанием — изображение вертикального примитива отрезка, соединяющего середину нижней стороны 				прямоугольного примитива и двух треугольных примитивов, имеющих общую точку.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_float_valve;;
+image_of_float_valve
+=> nrel_main_idtf:
+	[изображение поплавкового клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_float_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение поплавкового клапана — изображение задвижки и примитива отрезка, соединяющего точку пересечения 				треугольных примитивов, и середину нижней стороны прямоугольного примитива, включающей стороны двух других 				прямоугольных смежных примитивов, продолжение которой вправо пересекается двумя параллельными линейными примитивами 				углом 45 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_three_way_valve;;
+image_of_three_way_valve
+=> nrel_main_idtf:
+	[изображение трехходового клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_three_way_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение трехходового клапана — изображение трех последовательно перпендикулярных равносторонних треугольных 				примитивов, имеющих общую точку, два из которых имеют общую ось, а третий находится в правой полуплоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_three_way_valve_type_2;;
+image_of_three_way_valve_type_2
+=> nrel_main_idtf:
+	[изображение трехходового клапана типа 2]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_three_way_valve_type_2.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение трехходового клапана типа 2 — изображение двух пересекающихся примитивов прямоугольного треугольника, 				имеющих общий катет; перпендикулярных их непересекающимся сторонам линейных примитивов и примитива отрезка, 				соединяющего центр полуокружности, лежащей в верхней полуплоскости и точку пересечения треугольных примитивов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_valve_with_four_pin_connector;;
+image_of_valve_with_four_pin_connector
+=> nrel_main_idtf:
+	[изображение четырехходового клапана]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/picture_of_valve_with_four_pin_connector.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение четырехходового клапана — изображение четырех последовательно перпендикулярных треугольных примитивов, 				имеющих общую точку.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_four_way_valve;;
+image_of_four_way_valve
+=> nrel_main_idtf:
+	[изображение четырехходового клапана ]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_four_way_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение четырехходового клапана — изображение четырех последовательно смежных перпендикулярных треугольных 			примитивов, объединение которых образует примитив квадрата, который имеет перпендикулярные его сторонам линейные 				примитивы и примитив отрезка, соединяющего центр полуокружности и правой верхней вершины примитива квадрата под угол 45 			градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_stop_valve_with_a_balanced_diaphragm;;
+image_of_stop_valve_with_a_balanced_diaphragm
+=> nrel_main_idtf:
+	[изображение запорного клапана со сбалансированной диафрагмой]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_stop_valve_with_a_balanced_diaphragm.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение запорного клапана со сбалансированной диафрагмой — изображение задвижки и примитива отрезка, соединяющего 				общую точку треугольных примитивов и середину нижней дуги перпендикулярного ему примитива овала, разделенного 				горизонтально примитивом отрезка.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_centrifugal_pump;;
+image_of_centrifugal_pump
+=> nrel_main_idtf:
+	[изображение центробежного насоса]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_centrifugal_pump.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение центробежного насоса — изображение примитива окружности, из верхней точки которой выходит горизонтально 				вправо примитив стрелки и при этом окружность горизонтально пересекает другой примитив стрелки, начало которой взято 				вне окружности, а конец совпадает с центром.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_welded_joint;;
+image_of_welded_joint
+=> nrel_main_idtf:
+	[изображение сварного соединения]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_welded_joint.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение сварного соединения — изображение примитива круга черного цвета, который горизонтально пересекается 				линейный примитив.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_traced_line;;
+image_of_traced_line
+=> nrel_main_idtf:
+	[изображение трассированной линии]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_traced_line.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение трассированной линии— изображение двух параллельных линейных примитивов, при этом нижний линейный примитив 			- пунктирная линия.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_electric_binary_signal_line;;
+image_of_electric_binary_signal_line
+=> nrel_main_idtf:
+	[изображение электрической двоичной сигнальной линии]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_electric_binary_signal_line.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение электрической двоичной сигнальной линии — изображение линейного примитива, расположенного под углом 135 				градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_electric_signal_line;;
+image_of_electric_signal_line
+=> nrel_main_idtf:
+	[изображение электрической сигнальной линии]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_electric_signal_line.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение электрической сигнальной линии — изображение трех параллельных линейных  примитивов,, расположенных под 				углом 45 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_pneumatic_control;;
+image_of_pneumatic_control
+=> nrel_main_idtf:
+	[изображение пневматического контроля]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_pneumatic_control.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение пневматического контроля — изображение двух параллельных линейных примитивов,, расположенных под углом 45 				градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_main_straight_pipe;;
+image_of_main_straight_pipe
+=> nrel_main_idtf:
+	[изображение главной прямой трубы]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_main_straight_pipe.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение главной прямой трубы — изображение примитива стрелки, направленного вправо.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_connecting_pipeline;;
+image_of_connecting_pipeline
+=> nrel_main_idtf:
+	[изображение соединительного трубопровода]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_connecting_pipeline.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение соединительного трубопровода — изображение линейного примитива, расположенного горизонтально.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_main_pipeline;;
+image_of_main_pipeline
+=> nrel_main_idtf:
+	[изображение главного трубопровода]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_main_pipeline.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение главного трубопровода — изображение жирного линейного примитива, расположенного горизонтально.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_tubular_heat_exchanger;;
+image_of_tubular_heat_exchanger
+=> nrel_main_idtf:
+	[изображение трубчатого теплообменника]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_tubular_heat_exchanger.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение трубчатого теплообменника — изображение 6 прямоугольных примитивов, четыре из которых расположены 				горизонтально два из которых имеют общую сторону друг с другом и еще с 1 прямоугольным примитивом, при этом 2 				оставшихся прямоугольных примитива расположены вертикально, сторона каждого из которых имеет общую сторону с 4 другими 				прямоугольными примитивами.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> image_of_coolant;;
+image_of_coolant
+=> nrel_main_idtf:
+	[изображение теплоносителя]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/picture_of_coolant.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение теплоносителя — изображение прямоугольного примитива, поверх которого расположен другой прямоугольный 				примитив, при этом верхняя и нижняя сторона данного примитива является основанием треугольников.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_boiler;;
+image_of_boiler
+=> nrel_main_idtf:
+	[изображение бойлера]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_boiler.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение бойлера — изображение прямоугольного примитива без верхнего основания, объединенного с примитивом трапеции 			без оснований и объединенного с прямоугольным примитивом без нижнего и верхнего основания.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_piston_pump;;
+image_of_piston_pump
+=> nrel_main_idtf:
+	[изображение поршневого насоса]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_piston_pump.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение поршневого насоса — изображение линейного примитива, поверх которого расположен прямоугольный примитив, 				который горизонтально пересекает два линейных примитива, при этом середина нижнего примитива является концом другого 				линейного примитива, который пересекает нижнее основание прямоугольного примитива.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_screw_pump_type_2;;
+image_of_screw_pump_type_2
+=> nrel_main_idtf:
+	[изображение винтового насоса типа 2]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:								//файл отсутствует
+//	"file://images/image_of_screw_pump_type_2.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение винтового насоса типа 2 — изображение прямоугольного примитива, внутри которого расположена ломаная, 				которая поочередно пересекает верхнее и нижнее основание, при этом слева расположен другой прямоугольный примитив, 				боковые стороны которого являются основанием примитива треугольников, при этом два прямоугольных примитива соединены 				черным квадратом.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_screw_pump;;
+image_of_screw_pump
+=> nrel_main_idtf:
+	[изображение винтового насоса]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_screw_pump.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение винтового насоса — изображение примитива треугольника, поверх которого расположен примитив дуги, каждая 				точка которой равноудалена от некоторой точки, при этом поверх примитива дуги расположен прямоугольный примитив, 				сторона которого расположена справа от примитива дуги. Также слева от прямоугольного примитива расположен примитив 				дуги, представляющий собой зигзаг]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_centrifugal_pump_type_4;;
+image_of_centrifugal_pump_type_4
+=> nrel_main_idtf:
+	[изображение центробежного насоса типа 4]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_centrifugal_pump_type_4.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение центробежного насоса типа 4 — изображение примитива треугольника, поверх которого расположен примитив 				дуги, каждая точка которой равноудалена от некоторой точки, при этом поверх примитива дуги расположен прямоугольный 				примитив, сторона которого расположена слева от примитива дуги. Также справа от прямоугольного примитива расположен 				примитив дуги, каждая точка которой расположена на равном расстоянии от некоторой точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_centrifugal_pump_type_3;;
+image_of_centrifugal_pump_type_3
+=> nrel_main_idtf:
+	[изображение центробежного насоса типа 3]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:									//файл отсутствует
+//	"file://images/image_of_centrifugal_pump_type_3.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение центробежного насоса типа 3 — изображение примитива треугольника, поверх которого расположен примитив 				дуги, каждая точка которой равноудалена от некоторой точки, при этом поверх примитива дуги расположен прямоугольный 				примитив, сторона которого расположена над примитивом дуги. Также под прямоугольным примитивом расположен примитив 				дуги, каждая точка которой расположена на равном расстоянии от некоторой точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_centrifugal_pump_type_2;;
+image_of_centrifugal_pump_type_2
+=> nrel_main_idtf:
+	[изображение центробежного насоса типа 2]
+	(* <- lang_ru;; *);
+//=> nrel_idtf: 							//файл отсутствует
+//	"file://images/image_of_centrifugal_pump_type_2.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Изображение центробежного насоса типа 2 — изображение примитива треугольника, поверх которого расположен примитив 				дуги, каждая точка которой равноудалена от некоторой точки, при этом поверх примитива дуги расположен прямоугольный 				примитив, сторона которого расположена справа от примитива дуги. Также над прямоугольным примитивом расположен примитив 			дуги, каждая точка которой расположена на равном расстоянии от некоторой точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> image_of_computer_indicator;;
+
+sc_node_not_relation -> image_of_meters;;
+
+sc_node_not_relation -> image_of_tool;;
+
+sc_node_not_relation -> image_of_tool_with_custom_display;;
+
+sc_node_not_relation -> image_of_tool_with_common_control_display;;
+image_of_tool 
+=> nrel_strict_inclusion: 
+	image_of_indicator; 
+	image_of_indicator_of_type_2; 
+	image_of_indicator_of_type_5; 
+	image_of_computer_indicator;
+	image_of_gauge; 
+	image_of_meters;
+	image_of_thermometer; 
+	image_of_computer; 
+	image_of_product_control_panel; 
+	image_of_temperature_controller; 
+	image_of_flow_controller; 
+	image_of_level_controller; 
+	image_of_pressure_controller; 
+	image_of_signal_level; 
+	image_of_equation; 
+	image_of_converter; 
+	image_of_probatoria; 
+	image_of_measuring_diaphragm; 
+	image_of_measuring_wedge; 
+	image_of_ultrasonic_meter; 
+	image_of_tool_with_custom_display;
+	image_of_tool_with_common_control_display;
+	image_of_tool_with_programmable_logic_control;
+	image_of_location_of_tool;;
+
+sc_node_not_relation -> image_of_tool_with_a_common_control;;
+image_of_tool_with_a_common_control
+=> nrel_strict_inclusion: 
+	image_of_indicator;;
+
+sc_node_not_relation -> image_of_tool_with_programmable_logic_control;;
+image_of_tool_with_programmable_logic_control 
+=> nrel_strict_inclusion: 
+	image_of_displayed_programmable_device; 
+	image_of_programmable_indicator;;
+
+sc_node_not_relation -> image_of_location_of_tool;;
+image_of_location_of_tool 
+=> nrel_strict_inclusion: 
+	image_of_an_instrument_for_management_of; 
+	image_of_an_instrument_for_local_control; 
+	image_of_tool_on_local_control_panel; 
+	image_of_an_instrument_at_central_management;;
+
+sc_node_not_relation -> image_of_valve_type_1;;
+
+sc_node_not_relation -> image_of_three_way_valve_type_1;;
+
+sc_node_not_relation -> image_of_valve;;
+image_of_valve
+=> nrel_strict_inclusion: 
+	image_of_stop_valve; 
+	image_of_ball_valve; 
+	image_of_piston_valve; 
+	image_of_valve_type_1;
+	image_of_check_valve_type_2; 
+	image_of_regulating_valve; 
+	image_of_flange_valve; 
+	image_of_corner_valve; 
+	image_of_valve_with_power; 
+	image_of_solenoid_valve; 
+	image_of_float_valve; 
+	image_of_valve_with_four_pin_connector; 
+	image_of_three_way_valve_type_1;
+	image_of_three_way_valve_type_2; 
+	image_of_four_way_valve;;
+
+sc_node_not_relation -> image_of_pump;;
+image_of_pump
+=> nrel_strict_inclusion: 
+	image_of_centrifugal_pump; 
+	image_of_centrifugal_pump_type_2; 
+	image_of_centrifugal_pump_type_3; 
+	image_of_centrifugal_pump_type_4; 
+	image_of_screw_pump; 
+	image_of_screw_pump_type_2; 
+	image_of_piston_pump;;
+
+sc_node_not_relation -> image_of_rotary_compressor;;
+	
+sc_node_not_relation -> image_of_compressor;;	
+image_of_compressor 
+=> nrel_strict_inclusion: 
+	image_of_rotary_compressor;;
+
+sc_node_not_relation -> image_of_tank;;
+image_of_tank 
+=> nrel_strict_inclusion: 
+	image_of_boiler; 
+	image_of_coolant;;
+
+sc_node_not_relation -> image_of_device_for_heat_exchange;;
+image_of_device_for_heat_exchange 
+=> nrel_strict_inclusion: 
+	image_of_tubular_heat_exchanger;;
+
+sc_node_not_relation -> image_of_connecting_element;;
+image_of_connecting_element 
+=> nrel_strict_inclusion: 
+	image_of_main_pipeline; 
+	image_of_main_straight_pipe; 
+	image_of_connecting_pipeline; 
+	image_of_traced_line; 
+	image_of_pneumatic_control; 
+	image_of_welded_joint; 
+	image_of_electric_signal_line; 
+	image_of_electric_binary_signal_line;;
