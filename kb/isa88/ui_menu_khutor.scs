@@ -13,6 +13,7 @@ ui_menu_khutor <= nrel_ui_commands_decomposition: .ui_menu_khutor_decomposition
 	-> ui_menu_file_for_searching_time_limits_specified_temporary_nature;;
 	-> ui_menu_for_finding_results_of_process;;
 	-> ui_menu_file_for_finding_subclasses_in_the_structure;;
+        -> ui_finding_reason_of_object_state;;
 *);;
 
 
