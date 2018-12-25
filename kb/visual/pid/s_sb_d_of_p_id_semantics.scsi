@@ -1,0 +1,620 @@
+sb_d_of_p_id_semantics
+=> nrel_main_idtf:
+	[Предметная область семантики языка P&ID]
+	(* <- lang_ru;; *);
+<- subject_domain;
+<- sc_node_struct;
+<- structure;
+-> rrel_maximum_studied_object_class: p_id_element;
+-> rrel_not_maximum_studied_object_class:
+	pump;
+	centrifugal_pump;
+	compressor;
+	rotary_compressor;
+	heat_exchanger;
+	vessel;
+	boiler;
+	valve;
+	gate_valve;
+	check_valve;
+	globe_valve;
+	pipe;
+	major_pipeline;
+	major_straight_line_pipe;
+	instrument;
+	soldered;					//не описано
+	straight_line_pipe;				//не описано
+	indicator;					//не описано
+	on_central_control;				//не описано
+	connect_pipeline;				//не описано
+	diamond;					//не описано
+	triangle_separator;				//не описано
+	tundish;					//не описано
+	mid_arrow;					//не описано
+	hand_operated_gate_valve;			//не описано
+	vertical_vessel;				//не описано
+	indicator_type_2;				//не описано
+	flame_arrester;					//не описано
+	self_operating_release_valve;			//не описано
+	screw_pump;					//не описано
+	reciprocating_pump;				//не описано
+	straight_tubes_heat_exchanger;			//не описано
+	heating_cooling_jacket_vessel;			//не описано
+	piston_operated_valve;				//не описано
+	control_valve;					//не описано
+	flanged_valve;					//не описано
+	angle_valve;					//не описано
+	powered_valve;					//не описано
+	solenoid_valve;					//не описано
+	float_operated_valve;				//не описано
+	four_way_plug_valve;				//не описано
+	balanced_diaphragm_gate_valve;			//не описано
+	pilot_gate_valve;				//не описано
+	closed_gate_valve;				//не описано
+	three_way_valve;				//не описано
+	four_way_valve;					//не описано
+	pressure_gauge;					//не описано
+	flowmeter;					//не описано
+	thermometer;					//не описано
+	computer;					//не описано
+	displayed_configurable;				//не описано
+	displayed_programmable_device;			//не описано
+	unit_control_panel;				//не описано
+	level_alarm;					//не описано
+	level_gauge;					//не описано
+	transducer;					//не описано
+	sampler;					//не описано
+	behind_control;					//не описано
+	behind_local_control;				//не описано
+	on_local_control_pane;				//не описано
+	controller;					//не описано
+	meter;						//не описано
+	traced_line;					//не описано
+	pneumatic_control;				//не описано
+	welded_connection;				//не описано
+	electric_signal_line;				//не описано
+	electric_binary_signal_line;			//не описано
+	temp_controller; 				//не описано
+	flow_controller; 				//не описано
+	level_controller;				//не описано 
+	pressure_controller;				//не описано
+	shared_indicator; 				//не описано
+	computer_indicator; 				//не описано
+	programmable_indicator;				//не описано 
+	level_indicator; 				//не описано
+	pressure_indicating;				//не описано 
+	flow_indicator;					//не описано
+	diaphragm_meter; 				//не описано
+	wedge_meter; 					//не описано
+	ultrasonic_meter;				//не описано
+-> rrel_explored_relation: 
+	p_id_relation;					//не описано
+	nrel_incidence;;  				//не описано
+
+sc_node_norole_relation -> p_id_relation;;
+
+sc_node_norole_relation -> nrel_incidence;;
+
+sc_node_not_relation -> mid_arrow;;
+
+sc_node_not_relation -> self_operating_release_valve;;
+
+sc_node_not_relation -> flame_arrester;;
+
+sc_node_not_relation -> indicator_type_2;;
+
+sc_node_not_relation -> vertical_vessel;;
+
+sc_node_not_relation -> tundish;;
+
+sc_node_not_relation -> screw_pump;;
+
+sc_node_not_relation -> hand_operated_gate_valve;;
+
+sc_node_not_relation -> triangle_separator;;
+
+sc_node_not_relation -> diamond;;
+
+sc_node_not_relation -> straight_line_pipe;;
+
+sc_node_not_relation -> soldered;;
+
+sc_node_not_relation -> reciprocating_pump;;
+
+sc_node_not_relation -> straight_tubes_heat_exchanger;;
+
+sc_node_not_relation -> heating_cooling_jacket_vessel;;
+
+sc_node_not_relation -> piston_operated_valve;;
+
+sc_node_not_relation -> control_valve;;
+
+sc_node_not_relation -> flanged_valve;;
+
+sc_node_not_relation -> angle_valve;;
+
+sc_node_not_relation -> powered_valve;;
+
+sc_node_not_relation -> solenoid_valve;;
+
+sc_node_not_relation -> float_operated_valve;;
+
+sc_node_not_relation -> four_way_plug_valve;;
+
+sc_node_not_relation -> closed_gate_valve;;
+
+sc_node_not_relation -> balanced_diaphragm_gate_valve;;
+
+sc_node_not_relation -> pilot_gate_valve;;
+
+sc_node_not_relation -> three_way_valve;;
+
+sc_node_not_relation -> four_way_valve;;
+
+sc_node_not_relation -> connect_pipeline;;
+
+sc_node_not_relation -> pressure_gauge;;
+
+sc_node_not_relation -> flowmeter;;
+
+sc_node_not_relation -> thermometer;;
+
+sc_node_not_relation -> computer;;
+
+sc_node_not_relation -> displayed_configurable;;
+
+sc_node_not_relation -> displayed_programmable_device;;
+
+sc_node_not_relation -> unit_control_panel;;
+
+sc_node_not_relation -> level_alarm;;
+
+sc_node_not_relation -> level_gauge;;
+
+sc_node_not_relation -> transducer;;
+
+sc_node_not_relation -> sampler;;
+
+sc_node_not_relation -> behind_control;;
+
+sc_node_not_relation -> behind_local_control;;
+
+sc_node_not_relation -> on_local_control_pane;;
+
+sc_node_not_relation -> on_central_control;;
+
+sc_node_not_relation -> pump;;
+pump
+=> nrel_main_idtf:
+	[насос]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/pump.png";
+=> nrel_strict_inclusion: 
+	centrifugal_pump;
+	screw_pump;
+	reciprocating_pump;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Насос — механическое устройство, которое использует всасывание или давление для подъема, сжатия или перемещения 				жидкостей внутрь и снаружи других предметов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> centrifugal_pump;;
+centrifugal_pump
+=> nrel_main_idtf:
+	[центробежный насос]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/centrifugal_pump.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центробежный насос — ротодинамический насос, который использует вращающееся рабочее колесо, чтобы увеличить силу и 				давление жидкостей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> compressor;;
+compressor
+=> nrel_main_idtf:
+	[компрессор]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/compressor.png";
+=> nrel_strict_inclusion: rotary_compressor;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Компрессор — это механическое устройство, которое принимает носитель и сжимает его до меньшего объема.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> rotary_compressor;;
+rotary_compressor
+=> nrel_main_idtf:
+	[ротационный компрессор]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/rotary_compressor.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Ротационный компрессор — это тип газового компрессора, который использует механизм позитивного смещения вращательного 				типа.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> heat_exchanger;;
+heat_exchanger
+=> nrel_main_idtf:
+	[устройство для теплового обмена]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/heat_exchanger.png";
+=> nrel_strict_inclusion: straight_tubes_heat_exchanger;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;		
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Устройство для теплового обмена —  это устройство, предназначенное для эффективного переноса тепла из разных областей 				или сред.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> vessel;;
+vessel
+=> nrel_main_idtf:
+	[резервуар]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/vessel.png";
+=> nrel_strict_inclusion: 
+	boiler; 
+	heating_cooling_jacket_vessel;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Резервуар — контейнер, который используется для хранения жидкости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> boiler;;
+boiler
+=> nrel_main_idtf:
+	[бойлер]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/boiler.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Бойлер — это закрытый сосуд, в котором нагревается вода или другая жидкость.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> valve;;
+valve
+=> nrel_main_idtf:
+	[клапан]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/valve.png";
+=> nrel_strict_inclusion: 
+	gate_valve; 
+	globe_valve; 
+	piston_operated_valve;
+	check_valve; 
+	control_valve;
+	flanged_valve;
+	angle_valve;
+	powered_valve;
+	solenoid_valve;
+	float_operated_valve;
+	four_way_plug_valve;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Клапан — устройство, которое регулирует, направляет или контролирует поток жидкости, открывая, закрывая или частично 				препятствуя проходам в системе трубопроводов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> gate_valve;;
+gate_valve
+=> nrel_main_idtf:
+	[запорный клапан]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/gate_valve.png";
+=> nrel_strict_inclusion: 
+	closed_gate_valve;
+	balanced_diaphragm_gate_valve;
+	pilot_gate_valve;
+<= nrel_subdividing: 
+{
+	three_way_valve;
+	four_way_valve
+};
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Запорный клапан — это устройство, используемое для управления потоком жидкостей и газов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> check_valve;;
+check_valve
+=> nrel_main_idtf:
+	[обратный клапан]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:					//файл отсутствует
+//	"file://images/check_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Обратный клапан - это устройство, которое пропускает поток только в одном направлении.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> globe_valve;;
+globe_valve
+=> nrel_main_idtf:
+	[шаровой вентиль]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:					//файл отсутствует
+//	"file://images/globe_valve.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Шаровой вентиль — это устройство, которое используется для контроля или остановки потока жидкости или газа через 				трубу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> pipe;;
+pipe
+=> nrel_main_idtf:
+	[трубопровод]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:					//файл отсутствует
+//	"file://images/pipe.png";
+=> nrel_strict_inclusion: 
+	major_pipeline; 
+	major_straight_line_pipe; 
+	connect_pipeline;
+<= nrel_strict_inclusion: 
+	connecting_element;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Трубопровод —  это трубка, которая транспортирует жидкие вещества.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> major_pipeline;;
+major_pipeline
+=> nrel_main_idtf:
+	[основной трубопровод]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:					//файл отсутствует
+//	"file://images/major_pipeline.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Основной трубопровод —  трубопроводная линия, используемая для подключения оборудования в любом положении.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> major_straight_line_pipe;;
+major_straight_line_pipe
+=> nrel_main_idtf:
+	[основная прямая труба]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:						//файл отсутствует
+//	"file://images/major_straight_line_pipe.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Основная прямая труба —  трубопроводная линия, используемая для создания потока процесса между оборудованием.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> instrument;;
+instrument
+=> nrel_main_idtf:
+	[инструмент]
+	(* <- lang_ru;; *);
+//=> nrel_idtf:					//файл отсутствует
+//	"file://images/instrument.png";
+=> nrel_strict_inclusion: 
+	indicator;
+	pressure_gauge;
+	flowmeter;
+	thermometer; 
+	computer;
+	displayed_configurable;
+	displayed_programmable_device;
+	unit_control_panel;
+	controller;
+	level_alarm;
+	level_gauge;
+	transducer;
+	sampler;
+	meter;
+<= nrel_subdividing: 
+{
+	behind_control;
+	behind_local_control;
+	on_local_control_pane;
+	on_central_control
+};
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Инструмент —  это устройство, которое измеряет, а иногда и контролирует такие характеристики, как поток, температура, 				угол или давление.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> traced_line;;
+
+sc_node_not_relation -> pneumatic_control;;
+
+sc_node_not_relation -> welded_connection;;
+
+sc_node_not_relation -> electric_binary_signal_line;;
+
+sc_node_not_relation -> connecting_element;;	
+connecting_element 
+=> nrel_strict_inclusion: 
+	traced_line;
+	pneumatic_control;
+	welded_connection;
+	electric_signal_line;;		
+
+sc_node_not_relation -> electric_signal_line;;
+electric_signal_line
+=> nrel_strict_inclusion:
+	electric_binary_signal_line;;
+
+sc_node_not_relation -> temp_controller;;
+
+sc_node_not_relation -> flow_controller;;
+
+sc_node_not_relation -> level_controller;;
+
+sc_node_not_relation -> pressure_controller;;
+
+sc_node_not_relation -> controller;;
+controller 
+<= nrel_subdividing: 
+{
+	temp_controller;
+	flow_controller;
+	level_controller; 
+	pressure_controller
+};;
+
+sc_node_not_relation -> shared_indicator;;
+
+sc_node_not_relation -> computer_indicator;;
+
+sc_node_not_relation -> programmable_indicator;;
+
+sc_node_not_relation -> level_indicator;;
+
+sc_node_not_relation -> pressure_indicating;;
+
+sc_node_not_relation -> flow_indicator;;
+
+sc_node_not_relation -> indicator;;
+indicator 
+=> nrel_strict_inclusion: 	
+	shared_indicator;
+	computer_indicator;
+	programmable_indicator;
+	level_indicator;
+	pressure_indicating;
+	flow_indicator;;
+
+sc_node_not_relation -> diaphragm_meter;;
+
+sc_node_not_relation -> wedge_meter;;
+
+sc_node_not_relation -> ultrasonic_meter;;
+
+sc_node_not_relation -> meter;;
+meter 					
+<= nrel_subdividing: 
+{
+	diaphragm_meter;
+	wedge_meter;
+	ultrasonic_meter
+};;
