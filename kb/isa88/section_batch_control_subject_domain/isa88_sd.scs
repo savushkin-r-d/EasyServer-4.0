@@ -1,183 +1,3 @@
-equipment_relation
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[связь оборудования]
-	(* <- lang_ru;; *);
-	[equipment relation]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_relation_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_relation_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-nrel_contains
-<- sc_node_norole_relation;
-<- taxonomy_relation;
-=> nrel_main_idtf:
-	[содержать*]
-	(* <- lang_ru;; *);
-	[contains*]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_nrel_contains_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_nrel_contains_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-=> nrel_first_domain: nrel_second_domain: equipment_entity;;
-
-process_element
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[элемент процесса]
-	(* <- lang_ru;; *);
-	[process element]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_process_element_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_process_element_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-=> nrel_inclusion: process_stage; process_operation; process_action;;
-
-nrel_process_element_link
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-	[связь элементов процесса*]
-	(* <- lang_ru;; *);
-	[process element link*]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_nrel_process_element_link_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_nrel_process_element_link_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-=> nrel_first_domain: nrel_second_domain: process_element;;
-	
-nrel_execution_order
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-	[порядок исполнения*]
-	(* <- lang_ru;; *);
-	[execution order*]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_nrel_execution_order_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_nrel_execution_order_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-=> nrel_first_domain: nrel_second_domain: procedural_element;;
-	
-process_cell_procedure	
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[процедура ячейки процесса]
-	(* <- lang_ru;; *);
-	[process cell procedure]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_process_cell_procedure_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_process_cell_procedure_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-recipe_procedural_element
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[процедурный элемент процесса]
-	(* <- lang_ru;; *);
-	[recipe procedural element]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_recipe_procedural_element_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_recipe_procedural_element_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_procedural_element
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[процедурный элемент оборудования]
-	(* <- lang_ru;; *);
-	[equipment procedural element]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_procedural_element_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_procedural_element_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
 
 common_resource
 <- sc_node_not_relation;
@@ -197,7 +17,7 @@ common_resource
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_common_resource_ru.html"		
+				"file://content_html/explanation_for_common_resource_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_common_resource_en.html"
 			(* <- lang_en;; *);;
@@ -233,7 +53,7 @@ exclusive_use_resource
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_exclusive_use_resource_ru.html"		
+				"file://content_html/explanation_for_exclusive_use_resource_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_exclusive_use_resource_en.html"
 			(* <- lang_en;; *);;
@@ -255,7 +75,7 @@ shared_use_resource
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_shared_use_resource_ru.html"		
+				"file://content_html/explanation_for_shared_use_resource_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_shared_use_resource_en.html"
 			(* <- lang_en;; *);;
@@ -285,7 +105,7 @@ recipe_entity
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_recipe_entity_ru.html"		
+				"file://content_html/explanation_for_recipe_entity_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_recipe_entity_en.html"
 			(* <- lang_en;; *);;
@@ -302,7 +122,7 @@ recipe
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_recipe_ru.html"		
+				"file://content_html/explanation_for_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_recipe_en.html"
 			(* <- lang_en;; *);;
@@ -338,7 +158,7 @@ general_recipe
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_general_recipe_ru.html"		
+				"file://content_html/explanation_for_general_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_general_recipe_en.html"
 			(* <- lang_en;; *);;
@@ -360,7 +180,7 @@ site_recipe
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_site_recipe_ru.html"		
+				"file://content_html/explanation_for_site_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_site_recipe_en.html"
 			(* <- lang_en;; *);;
@@ -396,7 +216,7 @@ master_recipe
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_master_recipe_ru.html"		
+				"file://content_html/explanation_for_master_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_master_recipe_en.html"
 			(* <- lang_en;; *);;
@@ -418,7 +238,7 @@ control_recipe
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_control_recipe_ru.html"		
+				"file://content_html/explanation_for_control_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_control_recipe_en.html"
 			(* <- lang_en;; *);;
@@ -440,7 +260,7 @@ unit_recipe
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_unit_recipe_ru.html"		
+				"file://content_html/explanation_for_unit_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_unit_recipe_en.html"
 			(* <- lang_en;; *);;
@@ -476,7 +296,7 @@ formula
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_formula_ru.html"		
+				"file://content_html/explanation_for_formula_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_formula_en.html"
 			(* <- lang_en;; *);;
@@ -498,7 +318,7 @@ header
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_header_ru.html"		
+				"file://content_html/explanation_for_header_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_header_en.html"
 			(* <- lang_en;; *);;
@@ -515,443 +335,6 @@ nrel_recipe_procedure
 	(* <- lang_ru;; *);
 	[recipe procedure*]
 	(* <- lang_en;; *);;
-
-recipe_procedure
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[процедура процессной ячейки рецепта]
-	(* <- lang_ru;; *);
-	[recipe process cell procedure]
-	(* <- lang_en;; *);
-=> nrel_idtf:
-	[процедура рецепта]
-	(* <- lang_ru;; *);
-	[recipe procedure]
-	(* <- lang_en;; *);
-<= nrel_inclusion: procedure;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_recipe_procedure_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_recipe_procedure_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-recipe_unit_procedure
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[рецептурный процесс]
-	(* <- lang_ru;; *);
-	[recipe unit procedure]
-	(* <- lang_en;; *);
-<= nrel_inclusion: unit_procedure;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_recipe_unit_procedure_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_recipe_unit_procedure_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-recipe_operation
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[рецептурная производственная операция]
-	(* <- lang_ru;; *);
-	[recipe operation]
-	(* <- lang_en;; *);
-<= nrel_inclusion: operation;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_recipe_operation_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_recipe_operation_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-recipe_phase
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[рецептурная фаза]
-	(* <- lang_ru;; *);
-	[recipe phase]
-	(* <- lang_en;; *);
-<= nrel_inclusion: phase;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_recipe_phase_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_recipe_phase_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_procedure
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[процедура процессной ячейки оборудования]
-	(* <- lang_ru;; *);
-	[equipment process cell procedure]
-	(* <- lang_en;; *);
-
-=> nrel_idtf:
-	[процедура оборудования]
-	(* <- lang_ru;; *);
-	[технология оборудования]
-	(* <- lang_ru;; *);
-	[equipment procedure]
-	(* <- lang_en;; *);
-<= nrel_inclusion: procedure;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_procedure_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_procedure_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_unit_procedure
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[процесс оборудования]
-	(* <- lang_ru;; *);
-	[equipment unit procedure]
-	(* <- lang_en;; *);
-<= nrel_inclusion: unit_procedure;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_unit_procedure_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_unit_procedure_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_operation
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[производственная операция оборудования]
-	(* <- lang_ru;; *);
-	[equipment operation]
-	(* <- lang_en;; *);
-<= nrel_inclusion: operation;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_operation_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_operation_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_phase
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[фаза оборудования]
-	(* <- lang_ru;; *);
-	[equipment phase]
-	(* <- lang_en;; *);
-<= nrel_inclusion: phase;
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_phase_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_phase_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-enterprise
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[предприятие]
-	(* <- lang_ru;; *);
-	[enterprise]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_enterprise_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_enterprise_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-site
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[производство]
-	(* <- lang_ru;; *);
-	[site]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_site_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_site_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_site_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_site_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-area
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[производственный участок]
-	(* <- lang_ru;; *);
-	[area]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_area_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_area_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_area_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_area_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-process_cell
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[ячейка процесса]
-	(* <- lang_ru;; *);
-	[process cell]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_process_cell_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_process_cell_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_process_cell_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_process_cell_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-unit
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[аппарат]
-	(* <- lang_ru;; *);
-	[unit]
-	(* <- lang_en;; *);
-	[апарат]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_unit_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_unit_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_unit_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_unit_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_module
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[агрегат]
-	(* <- lang_ru;; *);
-	[equipment_module]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_module_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_module_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_equipment_module_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_equipment_module_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-control_module
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[блок управления]
-	(* <- lang_ru;; *);
-	[control_module]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_control_module_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_control_module_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_control_module_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_control_module_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
 
 line
 <- sc_node_not_relation;
@@ -971,7 +354,7 @@ line
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_line_ru.html"		
+				"file://content_html/explanation_for_line_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_line_en.html"
 			(* <- lang_en;; *);;
@@ -993,7 +376,7 @@ procedure
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_procedure_ru.html"		
+				"file://content_html/explanation_for_procedure_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_procedure_en.html"
 			(* <- lang_en;; *);;
@@ -1014,98 +397,6 @@ procedure
 		*);;
 	*);;
 
-unit_procedure
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[юнит-процедура]
-	(* <- lang_ru;; *);
-	[unit_procedure]
-	(* <- lang_en;; *);
-=> nrel_idtf:
-	[процесс]
-	(* <- lang_ru;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_unit_procedure_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_unit_procedure_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-operation
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[производственная операция]
-	(* <- lang_ru;; *);
-	[operation]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_operation_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_operation_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-phase
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[фаза]
-	(* <- lang_ru;; *);
-	[phase]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_phase_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_phase_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-equipment_entity
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[объект оборудования]
-	(* <- lang_ru;; *);
-	[equipment_entity]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_equipment_entity_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_equipment_entity_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-=> nrel_inclusion: process_cell; unit; equipment_module; control_module; enterprise; site; area;;
-
 batch
 <- sc_node_not_relation;
 => nrel_main_idtf:
@@ -1121,7 +412,7 @@ batch
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_batch_ru.html"		
+				"file://content_html/explanation_for_batch_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_batch_en.html"
 			(* <- lang_en;; *);;
@@ -1157,45 +448,9 @@ process
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_process_ru.html"		
+				"file://content_html/explanation_for_process_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-process_action
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[действие процесса]
-	(* <- lang_ru;; *);
-	[process action]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_process_action_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_process_action_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- note;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/note_for_process_action_ru.html"
-			(* <- lang_ru;; *);
-				"file://content_html/note_for_process_action_en.html"
 			(* <- lang_en;; *);;
 		*);;
 	*);;
@@ -1215,7 +470,7 @@ process_input
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_process_input_ru.html"		
+				"file://content_html/explanation_for_process_input_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_input_en.html"
 			(* <- lang_en;; *);;
@@ -1237,31 +492,9 @@ process_output
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_process_output_ru.html"		
+				"file://content_html/explanation_for_process_output_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_output_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-process_operation
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[операция процесса]
-	(* <- lang_ru;; *);
-	[process operation]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_process_operation_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_process_operation_en.html"
 			(* <- lang_en;; *);;
 		*);;
 	*);;
@@ -1281,31 +514,9 @@ process_parameter
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_process_parameter_ru.html"		
+				"file://content_html/explanation_for_process_parameter_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_parameter_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);;
-
-process_stage
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[стадия процесса]
-	(* <- lang_ru;; *);
-	[process stage]
-	(* <- lang_en;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_process_stage_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_process_stage_en.html"
 			(* <- lang_en;; *);;
 		*);;
 	*);;
@@ -1325,7 +536,7 @@ state
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_state_ru.html"		
+				"file://content_html/explanation_for_state_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_state_en.html"
 			(* <- lang_en;; *);;
@@ -1361,7 +572,7 @@ lot
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_lot_ru.html"		
+				"file://content_html/explanation_for_lot_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_lot_en.html"
 			(* <- lang_en;; *);;
@@ -1397,7 +608,7 @@ mode
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_mode_ru.html"		
+				"file://content_html/explanation_for_mode_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_mode_en.html"
 			(* <- lang_en;; *);;
@@ -1424,35 +635,12 @@ path
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_path_ru.html"		
+				"file://content_html/explanation_for_path_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_path_en.html"
 			(* <- lang_en;; *);;
 		*);;
 	*);;
-
-procedural_element
-<- sc_node_not_relation;
-=> nrel_main_idtf: 
-	[procedural element] (* <- lang_en;; *);
-	[процедурный элемент] (* <- lang_ru;; *);
-	
-=> nrel_idtf: [элемент технологии] (* <- lang_ru;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_procedural_element_ru.html"		
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_procedural_element_en.html"
-			(* <- lang_en;; *);;
-		*);;
-	*);
-=> nrel_inclusion: process_cell_procedure; unit_procedure; operation; phase;;
 
 batch_control
 <- sc_node_not_relation;
@@ -1469,7 +657,7 @@ batch_control
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_batch_control_ru.html"		
+				"file://content_html/explanation_for_batch_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_batch_control_en.html"
 			(* <- lang_en;; *);;
@@ -1491,7 +679,7 @@ procedural_control
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_procedural_control_ru.html"		
+				"file://content_html/explanation_for_procedural_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_procedural_control_en.html"
 			(* <- lang_en;; *);;
@@ -1513,7 +701,7 @@ coordination_control
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_coordination_control_ru.html"		
+				"file://content_html/explanation_for_coordination_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_coordination_control_en.html"
 			(* <- lang_en;; *);;
@@ -1535,7 +723,7 @@ process_control
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_process_control_ru.html"		
+				"file://content_html/explanation_for_process_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_control_en.html"
 			(* <- lang_en;; *);;
@@ -1557,7 +745,7 @@ recipe_management
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_recipe_management_ru.html"		
+				"file://content_html/explanation_for_recipe_management_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_recipe_management_en.html"
 			(* <- lang_en;; *);;
@@ -1579,7 +767,7 @@ basic_control
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_basic_control_ru.html"		
+				"file://content_html/explanation_for_basic_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_basic_control_en.html"
 			(* <- lang_en;; *);;
@@ -1615,7 +803,7 @@ process_management
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_process_management_ru.html"		
+				"file://content_html/explanation_for_process_management_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_management_en.html"
 			(* <- lang_en;; *);;
@@ -1637,7 +825,7 @@ unit_supervision
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_unit_supervision_ru.html"		
+				"file://content_html/explanation_for_unit_supervision_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_unit_supervision_en.html"
 			(* <- lang_en;; *);;
@@ -1659,7 +847,7 @@ equipment_control
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_equipment_control_ru.html"		
+				"file://content_html/explanation_for_equipment_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_equipment_control_en.html"
 			(* <- lang_en;; *);;
@@ -1681,7 +869,7 @@ exception_handling
 		...
 		(*
 		-> rrel_example:
-				"file://content_html/explanation_for_exception_handling_ru.html"		
+				"file://content_html/explanation_for_exception_handling_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_exception_handling_en.html"
 			(* <- lang_en;; *);;
