@@ -2,15 +2,15 @@ subject_domain_isa88
 => nrel_main_idtf: [Предметная область предприятий рецептурного производства] (* <- lang_ru;; *);
 => nrel_main_idtf: [Subject domain of batch manufacturing enterprises] (* <- lang_en;; *);
 => nrel_private_subject_domain:
-subject_domain_isa88_physical; subject_domain_isa88_process; subject_domain_isa88_procedural;;
+subject_domain_isa88_physical; subject_domain_isa88_process; subject_domain_isa88_procedural; subject_domain_control_activities;;
 
 subject_domain_isa88_physical
 => nrel_main_idtf: [Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
 => nrel_main_idtf: [Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
 -> rrel_maximum_studied_object_class: equipment_entity;
--> rrel_not_maximum_studied_object_class: 
+-> rrel_not_maximum_studied_object_class:
 process_cell; unit; equipment_module;
-control_module; enterprise; site; area; 
+control_module; enterprise; site; area;
 equipment_relation;
 -> rrel_explored_relation:
 nrel_contains;;
@@ -31,10 +31,14 @@ subject_domain_isa88_procedural
 -> rrel_maximum_studied_object_class:
 procedural_element;
 -> rrel_not_maximum_studied_object_class:
-process_cell_procedure; unit_procedure; operation; phase; 
+process_cell_procedure; unit_procedure; operation; phase;
 recipe_procedural_element; equipment_procedural_element;
 recipe_procedure; recipe_unit_procedure; recipe_operation; recipe_phase;
 equipment_procedure; equipment_unit_procedure; equipment_operation; equipment_phase;
 
 -> rrel_explored_relation:
 nrel_execution_order;; /*undefined*/
+
+subject_domain_control_activities
+=> nrel_main_idtf: [Предметная область деятельности по управлению рецептурным производством] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Subject domain of batch control activities] (* <- lang_en;; *);;
