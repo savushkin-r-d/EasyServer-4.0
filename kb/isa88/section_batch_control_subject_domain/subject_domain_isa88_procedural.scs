@@ -10,8 +10,10 @@ recipe_procedure; recipe_unit_procedure; recipe_operation; recipe_phase;
 equipment_procedure; equipment_unit_procedure; equipment_operation; equipment_phase;
 
 -> rrel_explored_relation:
-nrel_execution_order;;
+nrel_execution_order;
 
+=> nrel_private_subject_domain:
+sd_of_pfc_semantics;sd_of_pfc_rules;sd_of_pfc_texts;;
 
 process_cell_procedure
 <- sc_node_not_relation;

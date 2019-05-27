@@ -7,7 +7,10 @@ process_cell; unit; equipment_module;
 control_module; enterprise; site; area;
 equipment_relation;
 -> rrel_explored_relation:
-nrel_contains;;
+nrel_contains;
+
+=> nrel_private_subject_domain:
+sb_d_of_p_id_semantics;sb_d_of_p_id_rules;sb_d_of_p_id_texts;;
 
 
 equipment_entity
