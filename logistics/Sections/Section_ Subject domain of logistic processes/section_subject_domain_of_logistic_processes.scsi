@@ -75,7 +75,7 @@ arrival_of_the_vehicle_to_the_warehouse
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		security_specialist;
 		driver;
 		vet;
@@ -90,7 +90,7 @@ bills_forming
 		(*<- lang_en;;*);
 		[формирование счетов]
 		(*<- lang_ru;;*);
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;;
 
 closing_of_a_waybill
@@ -122,7 +122,7 @@ closing_of_a_waybill
 		consignment_voucher;
 		cmr;
 
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;
 
 	=> nrel_document_to_draw_up:
@@ -162,7 +162,7 @@ customs_clearance
 		ct1_certificate;
 		shipping_bill;		
 
-	=> nrel_executor:
+	=> nrel_performer:
 		customs_clearance_specialist;;
 
 delivery_process
@@ -211,7 +211,7 @@ delivery_process
 	=> nrel_required_document:
 		travel_document;
 
-	=> nrel_executor: 
+	=> nrel_performer: 
 		driver;;
 
 departure_of_a_vehicle
@@ -250,7 +250,7 @@ departure_of_a_vehicle_from_the_territory_of_the_factory
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		security_specialist;;
 
 departure_of_a_vehicle_from_the_warehouse
@@ -277,7 +277,7 @@ departure_of_a_vehicle_from_the_warehouse
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		storekeeper;
 		driver;;
 
@@ -344,7 +344,7 @@ distribution_of_the_application_for_vehicles
 	=> nrel_document_to_draw_up:
 		travel_document;
 
-	=> nrel_executor:
+	=> nrel_performer:
 		transport_logistician;
 		carrier;;
 
@@ -464,7 +464,7 @@ flight_planning
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		dispatcher;
 		logistician;;
 
@@ -494,7 +494,7 @@ forming_tasks_for_the_warehouse
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;
 		ood_operator;
 		customs_clearance_specialist;
@@ -606,7 +606,7 @@ processing_of_customer_application
 		-> rrel_end_time: ten_am;;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;;
 
 product_shipment
@@ -658,7 +658,7 @@ product_shipment
 	=> nrel_document_to_draw_up:
 		warehouse_task;
 
-	=> nrel_executor:
+	=> nrel_performer:
 		ood_operator;
 		vet;;
 
@@ -689,7 +689,7 @@ receive_customer_applications
 	*);
 	=> nrel_working_days:
 		daily;
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;
 	=> nrel_required_document:
 		customer_application;
@@ -731,7 +731,7 @@ route_calculation
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;;
 
 shipping_documents_formalization
@@ -800,7 +800,7 @@ shipping_documents_formalization
 		transport_order;
 		customer_application;
 
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;;
 
 submission_and_processing_of_requests_for_transport
@@ -855,7 +855,7 @@ vehicle_planning
 	*);
 	=> nrel_required_document:
 		shipping_schedule;
-	=> nrel_executor:
+	=> nrel_performer:
 		transport_logistician;;
 
 warehouse_task_creation
@@ -919,7 +919,7 @@ work_with_certificates_of_work_performed
 		*);;
 	*);
 
-	=> nrel_executor:
+	=> nrel_performer:
 		logistician;
 		bookkeeper;;
 
