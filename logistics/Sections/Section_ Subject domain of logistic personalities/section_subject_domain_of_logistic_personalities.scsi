@@ -13,17 +13,11 @@ subject_domain_of_logistic_personalities
     subject_domain_of_staff;
 
 -> rrel_explored_relation:
-	nrel_executor;;
+	nrel_performer;;
 
-nrel_executor
-<- sc_node_norole_relation;
-<= nrel_inclusion: binary_relation;
-=> nrel_main_idtf:
-	[исполнитель*] 
-	(* <- lang_ru;; *);
-	[executor*]
-	(* <- lang_en;; *);
-	<- rrel_key_sc_element:
+nrel_performer
+<- binary_relation;
+<- rrel_key_sc_element:
 		...
 		(*
 			<- explanation;;
@@ -31,7 +25,7 @@ nrel_executor
 				...
 				(*
 				-> rrel_example:
-					"file://content_html/explanation_for_nrel_executor.html"
+					"file://content_html/explanation_for_nrel_performer.html"
 						(* <- lang_ru;; *);; 
 				*);;
 			<= nrel_using_constants: ...
