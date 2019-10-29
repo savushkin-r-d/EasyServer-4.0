@@ -1,0 +1,3 @@
+[submodule "kb/s88"]
+	path = kb/s88
+	url = https://github.com/savushkin-r-d/s88-ostis.git
