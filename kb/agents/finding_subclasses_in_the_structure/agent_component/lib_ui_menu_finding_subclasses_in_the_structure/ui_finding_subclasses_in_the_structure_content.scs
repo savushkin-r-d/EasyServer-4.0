@@ -1,3 +1,4 @@
+lib_component_ui_menu_file_for_finding_subclasses_in_the_structure =  [*
 ui_menu_file_for_finding_subclasses_in_the_structure 
 <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;
 
@@ -18,3 +19,5 @@ ui_menu_file_for_finding_subclasses_in_the_structure
 => ui_nrel_command_lang_template: [Какие подклассы класса $ui_arg_1 входят в структуру $ui_arg_2?] (* <- lang_ru;; *);
 
 => ui_nrel_command_lang_template: [Which subclasses of $ui_arg_1 are in the $ui_arg_2 structure?] (* <- lang_en;; *);;
+
+*];;

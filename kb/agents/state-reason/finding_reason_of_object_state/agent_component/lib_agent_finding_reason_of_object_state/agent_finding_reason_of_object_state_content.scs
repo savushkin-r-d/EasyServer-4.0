@@ -1,0 +1,242 @@
+agent_finding_reason_of_object_state
+=> nrel_main_idtf:
+	[агентная scp-программа поиска причин текущего состояния заданного объекта] (* <- lang_ru;; *);
+	[agent scp-program of finding the reasons of the given object current state] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+agent_finding_reason_of_object_state = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: rrel_in:: _event;
+_-> rrel_2:: rrel_in:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._agent_finding_reason_of_object_state_operator1A (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _temp;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _input_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _quest;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operator1B;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator1B (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: action_find_reason_of_object_state;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operator_return;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operator1C;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator1C (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _param;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operator_return;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operatorD;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorD (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_node:: rrel_scp_var:: _answer;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorD1;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorD1 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_node:: rrel_scp_var:: _object_set;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorD2;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorD2 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _object_set;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _param;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorE1;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorE1 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_find_general_entities;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param0 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _param;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _object_set;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _descr1;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorE2;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorE2 (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _descr1;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorF;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _object_set;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _elem;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operatorE3;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operatorF1;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF1 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _arc1;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorF2;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorE3 (*
+		_<- genElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_4:: rrel_assign:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operator_clean1;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator_clean1 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _object_set;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operator_clean2;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator_clean2 (*
+		_<- ifVarAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _real_found;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operator_clean4;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operator_clean3;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator_clean3 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _real_found;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operator_clean4;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator_clean4 (*
+		_<- ifVarAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _last_found;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operator_return;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operator_clean5;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operator_clean5 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _last_found;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operator_return;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF2 (*
+		_<- sys_search;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param1;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param2;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param3 (*
+			_-> .._agent_finding_reason_of_object_state_param4 (*
+				_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _x;;
+				_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _elem;;
+			*);;
+		*);;
+		_-> rrel_4:: rrel_fixed:: rrel_scp_var:: _answer;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operatorF3;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operatorF2_1;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF2_1 (*
+		_<- ifVarAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _last_found;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operatorF2_2;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operatorF3;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF3 (*
+		_<- sys_search;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param6;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param7;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param8 (*
+			_-> .._agent_finding_reason_of_object_state_param10 (*
+				_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _p;;
+				_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _param;;
+			*);;
+		*);;
+		_-> rrel_4:: rrel_fixed:: rrel_scp_var:: _answer;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operatorF;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operatorF3_1;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF3_1 (*
+		_<- ifVarAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _real_found;;
+
+		_=> nrel_else:: .._agent_finding_reason_of_object_state_operatorF3_2;;
+		_=> nrel_then:: .._agent_finding_reason_of_object_state_operatorF;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF3_2 (*
+		_<- searchSetStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param6;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _elem;;
+		_-> rrel_set_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorF3_3;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF3_3 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_node:: rrel_scp_var:: _real_found;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorF;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF2_2 (*
+		_<- searchSetStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: .._agent_finding_reason_of_object_state_param1;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _elem;;
+		_-> rrel_set_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorF2_3;;
+	*);;
+
+	_-> .._agent_finding_reason_of_object_state_operatorF2_3 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_node:: rrel_scp_var:: _last_found;;
+
+		_=> nrel_goto:: .._agent_finding_reason_of_object_state_operatorF3;;
+	*);;
+
+*);;
+
+*];;

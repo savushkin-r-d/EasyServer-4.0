@@ -1,3 +1,4 @@
+lib_component_ui_menu_file_for_searching_time_limits_specified_temporary_nature =  [*
 ui_menu_file_for_searching_time_limits_specified_temporary_nature <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;;
 
 ui_menu_file_for_searching_time_limits_specified_temporary_nature => nrel_main_idtf: [Каковы временные границы указанной временной сущности?] (* <- lang_ru;; *);;
@@ -14,3 +15,5 @@ ui_menu_file_for_searching_time_limits_specified_temporary_nature => ui_nrel_com
 
 ui_menu_file_for_searching_time_limits_specified_temporary_nature => ui_nrel_command_lang_template: [Каковы временные границы $ui_arg_1?] (* <- lang_ru;; *);;
 ui_menu_file_for_searching_time_limits_specified_temporary_nature => ui_nrel_command_lang_template: [What are time limits of $ui_arg_1?] (* <- lang_en;; *);;
+
+*];;

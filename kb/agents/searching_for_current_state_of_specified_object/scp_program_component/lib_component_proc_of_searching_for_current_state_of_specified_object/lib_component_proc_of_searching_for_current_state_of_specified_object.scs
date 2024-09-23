@@ -23,5 +23,4 @@ lib_component_proc_of_searching_for_current_state_of_specified_object
 		*);;
 	*);;
 
-lib_component_proc_of_searching_for_current_state_of_specified_object = [*^"file://proc_of_searching_for_current_state_of_specified_object.scsi"*];;
 

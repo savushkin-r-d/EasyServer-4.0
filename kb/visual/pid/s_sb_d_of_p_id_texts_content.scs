@@ -1,3 +1,4 @@
+s_sb_d_of_p_id_texts =  [*
 sb_d_of_p_id_texts
 => nrel_main_idtf:
 	[Предметная область текстов языка P&ID]
@@ -1598,3 +1599,5 @@ image_of_connecting_element
 	image_of_welded_joint; 
 	image_of_electric_signal_line; 
 	image_of_electric_binary_signal_line;;
+
+*];;

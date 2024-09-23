@@ -3,4 +3,3 @@ sc_text_of_agent_of_searching_for_current_state_of_specified_object
 	agent_of_searching_for_current_state_of_specified_object;
 <- scp_program_sc_text;;
 
-sc_text_of_agent_of_searching_for_current_state_of_specified_object = [*^"file://agent_of_searching_for_current_state_of_specified_object.scsi"*];;

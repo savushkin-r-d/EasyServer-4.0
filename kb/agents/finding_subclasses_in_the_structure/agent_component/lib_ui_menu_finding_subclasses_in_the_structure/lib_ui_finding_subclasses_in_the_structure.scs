@@ -22,4 +22,3 @@ lib_component_ui_menu_file_for_finding_subclasses_in_the_structure
 		*);;
 	*);;
 
-lib_component_ui_menu_file_for_finding_subclasses_in_the_structure = [*^"file://ui_finding_subclasses_in_the_structure.scsi"*];; 

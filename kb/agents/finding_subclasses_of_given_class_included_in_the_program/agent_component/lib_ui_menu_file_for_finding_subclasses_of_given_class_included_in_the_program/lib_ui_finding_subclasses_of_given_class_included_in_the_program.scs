@@ -22,4 +22,3 @@ lib_component_ui_menu_file_for_finding_subclasses_of_given_class_included_in_the
 		*);;
 	*);;
 
-lib_component_ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes = [*^"file://ui_finding_subclasses_of_given_class_included_in_the_program.scsi"*];; 

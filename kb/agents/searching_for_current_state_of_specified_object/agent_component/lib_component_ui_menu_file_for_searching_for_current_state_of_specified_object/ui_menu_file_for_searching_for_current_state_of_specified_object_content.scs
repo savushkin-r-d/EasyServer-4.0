@@ -1,3 +1,4 @@
+lib_component_ui_menu_file_for_searching_for_current_state_of_specified_object =  [*
 ui_menu_file_for_searching_for_current_state_of_specified_object <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
 
 ui_menu_file_for_searching_for_current_state_of_specified_object => nrel_main_idtf: [Каково текущее состояние заданного объекта?] (* <- lang_ru;; *);;
@@ -14,3 +15,5 @@ ui_menu_file_for_searching_for_current_state_of_specified_object => ui_nrel_comm
 
 ui_menu_file_for_searching_for_current_state_of_specified_object => ui_nrel_command_lang_template: [Каково текущее состояние для $ui_arg_1?] (* <- lang_ru;; *);;
 ui_menu_file_for_searching_for_current_state_of_specified_object => ui_nrel_command_lang_template: [What is current state of $ui_arg_1?](* <- lang_en;; *);;
+
+*];;

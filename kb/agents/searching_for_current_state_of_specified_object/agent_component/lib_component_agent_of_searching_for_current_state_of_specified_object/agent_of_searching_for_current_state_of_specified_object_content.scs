@@ -1,0 +1,90 @@
+agent_of_searching_for_current_state_of_specified_object
+=> nrel_main_idtf:
+	[агентная scp-программа поиска текущего состояния заданного объекта] (* <- lang_ru;; *);
+	[agent scp-program of searching fora a current state of specified object] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+agent_of_searching_for_current_state_of_specified_object = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: rrel_in:: _event;
+_-> rrel_2:: rrel_in:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._agent_of_searching_for_current_state_of_specified_object_operator1 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _temp;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _input_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _quest;;
+
+		_=> nrel_goto:: .._agent_of_searching_for_current_state_of_specified_object_operator2;;
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator2 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: action_of_searching_for_current_state_of_specified_object;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
+
+		_=> nrel_else:: .._agent_of_searching_for_current_state_of_specified_object_operator_return;;
+		_=> nrel_then:: .._agent_of_searching_for_current_state_of_specified_object_operator3;;
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator3 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _param;;
+
+		_=> nrel_else:: .._agent_of_searching_for_current_state_of_specified_object_operator_return;;
+		_=> nrel_then:: .._agent_of_searching_for_current_state_of_specified_object_operator4;;
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator4 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_node:: rrel_scp_var:: _answer_of_searching_for_current_state_of_specified_object;;
+
+		_=> nrel_goto:: .._agent_of_searching_for_current_state_of_specified_object_operator5;;
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator5 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_of_searching_for_current_state_of_specified_object;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._agent_of_searching_for_current_state_of_specified_object_param0 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _param;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _answer_of_searching_for_current_state_of_specified_object;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _descr;;
+
+		_=> nrel_goto:: .._agent_of_searching_for_current_state_of_specified_object_operator6;;
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator6 (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _descr;;
+
+		_=> nrel_goto:: .._agent_of_searching_for_current_state_of_specified_object_operator_gen_answer;;
+	*);;
+
+	_-> .._agent_of_searching_for_current_state_of_specified_object_operator_gen_answer (*
+		_<- genElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer_of_searching_for_current_state_of_specified_object;;
+		_-> rrel_4:: rrel_assign:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+		_=> nrel_goto:: .._agent_of_searching_for_current_state_of_specified_object_operator_return;;
+	*);;
+
+*);;
+
+*];;

@@ -22,4 +22,3 @@ lib_component_ui_menu_file_for_searching_for_current_state_of_specified_object
 		*);;
 	*);;
 
-lib_component_ui_menu_file_for_searching_for_current_state_of_specified_object = [*^"file://ui_menu_file_for_searching_for_current_state_of_specified_object.scsi"*];;

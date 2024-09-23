@@ -3,4 +3,3 @@ sc_text_proc_find_general_entities
 	proc_find_general_entities;
 <- scp_program_sc_text;;
 
-sc_text_of_proc_find_general_entities = [*^"file://proc_find_general_entities.scsi"*];;

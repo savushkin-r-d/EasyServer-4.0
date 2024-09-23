@@ -1,3 +1,4 @@
+lib_component_ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes =  [*
 ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;;
 
 ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes=> nrel_main_idtf: [Каковы подклассы заданного класса, входящие в программу, соответствующую указанному классу процессов?] (* <- lang_ru;; *);;
@@ -15,3 +16,5 @@ ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corre
 
 ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes => ui_nrel_command_lang_template: [Каковы подклассы заданного класса $ui_arg_1, входящих в программу, соответствующую указанному классу процессов $ui_arg_2?] (* <- lang_ru;; *);;
 ui_menu_file_for_finding_subclasses_of_given_class_included_in_the_program_corresponding_to_the_specified_class_of_the_processes => ui_nrel_command_lang_template: [What are subclasses of given class $ui_arg_1, included in the program, corresponding to the specified class of the processes $ui_arg_2?] (* <- lang_en;; *);;
+
+*];;

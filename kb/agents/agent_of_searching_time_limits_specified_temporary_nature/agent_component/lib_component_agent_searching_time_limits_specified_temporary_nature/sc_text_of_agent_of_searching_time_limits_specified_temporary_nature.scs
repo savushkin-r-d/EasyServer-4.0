@@ -3,4 +3,3 @@ sc_text_of_agent_of_searching_time_limits_specified_temporary_nature
 	agent_of_searching_time_limits_specified_temporary_nature;
 <- scp_program_sc_text;;
 
-sc_text_of_agent_of_searching_time_limits_specified_temporary_nature = [*^"file://agent_of_searching_time_limits_specified_temporary_nature.scsi"*];;

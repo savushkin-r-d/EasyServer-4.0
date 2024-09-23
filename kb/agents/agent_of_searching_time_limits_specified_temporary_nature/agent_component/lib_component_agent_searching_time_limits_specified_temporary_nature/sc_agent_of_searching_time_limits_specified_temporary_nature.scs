@@ -5,6 +5,9 @@ sc_agent_of_searching_time_limits_specified_temporary_nature
 	
 <- abstract_sc_agent;
 
+=> nrel_sc_agent_action_class:
+    action_of_searching_time_limits_specified_temporary_nature;
+
 => nrel_primary_initiation_condition: 
 	(sc_event_add_output_arc => question_initiated);
 	

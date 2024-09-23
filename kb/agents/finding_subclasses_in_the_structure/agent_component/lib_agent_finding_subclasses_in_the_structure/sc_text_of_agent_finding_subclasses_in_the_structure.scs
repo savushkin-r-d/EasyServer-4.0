@@ -3,4 +3,3 @@ sc_text_of_agent_of_finding_subclasses_in_the_structure
 	agent_finding_subclasses_in_the_structure;
 <- scp_program_sc_text;;
 
-sc_text_of_agent_of_finding_subclasses_in_the_structure = [*^"file://agent_finding_subclasses_in_the_structure.scsi"*];;

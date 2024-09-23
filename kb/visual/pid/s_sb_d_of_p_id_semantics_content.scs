@@ -1,3 +1,4 @@
+s_sb_d_of_p_id_semantics =  [*
 sb_d_of_p_id_semantics
 => nrel_main_idtf:
 	[Предметная область семантики языка P&ID]
@@ -618,3 +619,5 @@ meter
 	wedge_meter;
 	ultrasonic_meter
 };;
+
+*];;

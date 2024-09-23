@@ -1,3 +1,4 @@
+s_sb_d_of_p_id_rules =  [*
 sb_d_of_p_id_rules
 => nrel_main_idtf:
 	[Предметная область правил языка P&ID]
@@ -61,3 +62,5 @@ nrel_isomorphism_state
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+*];;

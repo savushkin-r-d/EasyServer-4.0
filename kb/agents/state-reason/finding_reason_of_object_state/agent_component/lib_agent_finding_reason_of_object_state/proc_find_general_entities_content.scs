@@ -1,0 +1,52 @@
+proc_find_general_entities
+=> nrel_main_idtf:
+	[scp-программа поиска сущностей, общих по отношению к заданной сущности] (* <- lang_ru;; *);
+	[scp-program of finding the entities, general for given entity] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_find_general_entities = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: rrel_in:: _param;
+_-> rrel_2:: rrel_in:: _result;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_find_general_entities_operator0 (*
+		_<- sys_search;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: .._proc_find_general_entities_param0;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_find_general_entities_param1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: .._proc_find_general_entities_param2 (*
+			_-> .._proc_find_general_entities_param3 (*
+				_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _x;;
+				_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _param;;
+			*);;
+		*);;
+
+		_=> nrel_goto:: .._proc_find_general_entities_operator2;;
+	*);;
+
+	_-> .._proc_find_general_entities_operator2 (*
+		_<- sys_search;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: .._proc_find_general_entities_param4;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_find_general_entities_param5;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: .._proc_find_general_entities_param6 (*
+			_-> .._proc_find_general_entities_param7 (*
+				_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _x;;
+				_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _param;;
+			*);;
+		*);;
+
+		_=> nrel_goto:: .._proc_find_general_entities_operator_return;;
+	*);;
+
+	_-> .._proc_find_general_entities_operator_return (*
+		_<- return;;
+
+	*);;
+
+*);;
+
+*];;
